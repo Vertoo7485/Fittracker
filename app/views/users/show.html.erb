@@ -1,0 +1,66 @@
+<% provide :page_title, current_user.name %>
+<% currently_at t('user.title') %>
+
+<body class="my-profile">
+<div class="container overflow-hidden">
+
+  <h1 style="color:#ffffff">Мой профиль</h1>
+
+
+  <div class="row gx-5">
+    <div class="col">
+      <div class="p-3", style="color:#ffffff">Для похудения необходимо употреблять: 
+        <strong>
+          <%= if current_user.gender.downcase == "male" || current_user.gender.downcase == "мужской"
+                men_weight_loss_diet
+              else
+                fem_weight_loss_diet
+              end %>
+          ккал.
+        </strong>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="p-3", style="color:#ffffff"> Для набора массы необходимо употреблять:
+        <strong>
+          <%= if current_user.gender.downcase == "male"
+                men_weight_gain_diet
+              else
+                fem_weight_gain_diet
+              end %>
+          ккал.
+        </strong>
+      </div>
+    </div>
+  </div>
+<div>
+
+<div class="my-3">
+  <%= link_to t('global.button.new_power_training'), new_user_power_path(@user),
+    class: 'btn btn-success btn-lg'%>
+</div>
+
+<h2 class="my-3", style="color:#ffffff">Мои тренировки</h2>
+
+
+<div>
+  <% @powers.each do |power| %>
+    <article>
+      <p class="mt-2">
+        <strong style="color:#ffffff">Силовая тренировка № 
+          <%= power.id %>
+        </strong>
+      </p>
+      <p>
+        <%= link_to t('global.button.show'), user_power_path(@user, power), 
+          class: 'btn btn-primary btn-sm' %>
+        <%= link_to t('global.button.edit'), edit_user_power_path(@user, power), 
+          class: 'btn btn-warning btn-sm' %>
+        <%= link_to t('global.button.delete'), user_power_path(@user, power), 
+          class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
+      </p>
+    </article>
+  <% end %>
+</div>
+</body>

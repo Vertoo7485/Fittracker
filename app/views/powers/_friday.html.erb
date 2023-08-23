@@ -1,0 +1,78 @@
+<h3 class="my-4 center", style="color:#ffffff">
+  <strong>Тренировка: Ноги, Плечи</strong>
+</h3>
+
+<body style="color:#ffffff">
+  <div class="container my-4">
+    <div class="row row-cols-4 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во подходов</strong></div>
+      <div class="col"><strong>Кол-во повторений</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Присед в гакке:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.friday_reps %></div>
+      <div class="col"><%= current_training.gack_squats.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Разгибания голени сидя:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.friday_reps %></div>
+      <div class="col"><%= current_training.seated_leg_extension.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Жим ногами:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.friday_reps %></div>
+      <div class="col"><%= current_training.leg_press.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Жим в хамере на плечи:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.friday_reps %></div>
+      <div class="col"><%= current_training.hamer_shoulder_press.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Махи гантелей через сторону:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.friday_reps %></div>
+      <div class="col"><%= current_training.dumbbells_through_the_side.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Сгибание голени лежа:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.friday_reps %></div>
+      <div class="col"><%= current_training.lying_leg_flexion.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Мах блина перед собой:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.friday_reps %></div>
+      <div class="col"><%= current_training.pancake_swing_in_front_of_you.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Тяга штанги к подбородку:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.friday_reps %></div>
+      <div class="col"><%= current_training.barbell_pull_to_chin.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Подъем ног в висе:</div>
+      <div class="col">4</div>
+      <div class="col">30</div>
+      <div class="col"><%= current_training.hanging_leg_raise.round(2)%> кг.</div>
+    </div>
+  </div>
+  </div>
+
+  <div class="row row-cols-2 my-5">
+    <div class="col left">
+      <%= link_to "Не удалось", user_path(current_user),
+        class: 'btn btn-danger btn-lg'%></div>
+
+    <div class="col right"><%= link_to "Завершено", user_update_power_path(@user, @power, complete_training: 'friday'), method: :put,
+      class: 'btn btn-success btn-lg'%></div>
+  </div>
+</body>

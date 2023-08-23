@@ -1,0 +1,134 @@
+en:
+  en: "English"
+  ru: "Russian"
+  activerecord:
+    attributes:
+      power:
+        barbell_bench_press: "Barbell bench press"
+        reverse_push_ups: "Reverse push-ups"
+        dumbbell_bench_press: "Dumbbell bench press"
+        push_ups_on_bars: "Push-ups on bars"
+        stacked_chest_press: "Stacked chest press"
+        extension_with_rope_handle: "Extension with rope handle"
+        dumbbell_abduction: "Dumbbell abduction"
+        hanging_leg_raise: "Hanging leg raise"
+        austrian_pull_ups: "Austrian pull ups"
+        horizontal_pull_block: "Horizontal pull block"
+        pull_ups: "Pull-ups"
+        barbell_forearm_curls: "Barbell forearm curls"
+        incline_dumbbell_row: "Incline dumbbell row"
+        vertical_pull_block: "Vertical pull block"
+        hyperextension: "Hyperextension"
+        hammers: "Hammers"
+        book: "Book"
+        gack_squats: "Gack squats"
+        seated_leg_extension: "Seated leg extension"
+        leg_press: "Leg press"
+        hamer_shoulder_press: "Hamer shoulder press"
+        dumbbells_through_the_side: "Dumbbells through the side"
+        lying_leg_flexion: "Lying leg flexion"
+        pancake_swing_in_front_of_you: "Pancake swing in front of you"
+        barbell_pull_to_chin: "Barbell pull to chin"
+      powers:
+        placeholder: "Max weight for 8 reps"
+      user:
+        created_at: Created at
+        email: Email
+        name: Name
+        old_password: Old password
+        password: Password
+        password_confirmation: Password confirmation
+        updated_at: Updated at
+        weight: Weight
+        growth: Growth
+        years: Years
+        gender: Gender
+        placeholder:
+          email: Email
+          name: Name
+          weight: Weight in kg
+          growth: Growth in cm
+          years: Years
+          gender: Male/Female
+      models:
+        power: Power Training
+  admin:
+    users:
+      create:
+        success: Users imported!
+      index:
+        download_zipped: Download zipped XLSX
+        title: Admin Users
+        upload_form:
+          archive: Select archive
+          submit: Upload!
+        upload_zipped: Upload users from XLSX
+    global:
+      button:
+        delete: Delete
+        edit: Edit
+        show: Show
+        submit: Submit
+        new_power_training: New power training
+      dialog:
+        you_sure: Are you sure?
+      flash:
+        already_signed_in: You are already signed in!
+        not_signed_in: You are not signed in!
+  pages:
+    index:
+      title: "Welcome to Fit tracker!"
+  menu:
+    edit_profile: Profile
+    my_profile: My profile
+    home: Home
+    log_in: Log In
+    log_out: Log out
+    powers: Power Training
+    sign_up: Sign Up
+    users: Users
+  powers:
+    new:
+      title: "New Training"
+    edit:
+      title: "Edit Training"
+    show:
+      title: "Power Training"
+    create:
+      success: "Training create!"
+    update:
+      success: "Your training updated!"
+    update_power:
+      success: "Training complete!"
+    update_power_normal:
+      success: "Training complete!"
+    destroy:
+      success: "Training delete!"
+  sessions:
+    create:
+      invalid_creds: Incorrect email and/or password!
+      success: Welcome back, %{name}!
+    destroy:
+      success: See you later!
+    new:
+      form:
+        email: Email
+        password: Password
+        remember_me: Remember me
+        submit: Sign in!
+      title: Log In
+  users:
+    title: User
+    create:
+      success: Welcome to the app, %{name}!
+    edit:
+      title: Edit profile
+    global:
+      forms:
+        register: Register
+        save: Save
+    new:
+      title: Registration
+    update:
+      success: Your profile was successfully updated!
+      

@@ -1,0 +1,67 @@
+@import 'bootstrap';
+
+.field_with_errors {
+  .form-control {
+    border-color: $red;
+  }
+  label {
+    color: $red;
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.my-main {
+  background-image: url(asset-path("cc711b8a4bf70f719c23ea85bb643235.jpg"));
+}
+
+.my-power {
+  background-image: url(asset-path("fon.jpg"));
+}
+
+.my-profile {
+  background-image: url(asset-path("profile.jpg"));
+}
+
+.my-black-fon {
+  background-image: url(asset-path("black_fon.jpg"));
+}
+
+.flag {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url(asset-path("flags.png"));
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.ru-flag {
+  background-position: -1px -0px;
+
+}
+.en-flag {
+  background-position: -1px -17px;
+}
+
+.nav {
+  .flag {
+    position: relative;
+    top: 2px;
+  }
+}

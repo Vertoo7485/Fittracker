@@ -1,0 +1,77 @@
+<h3 class="my-4 center", style="color:#ffffff">
+  <strong>Тренировка: Спина, Бицепс</strong>
+</h3>
+
+<body style="color:#ffffff">
+  <div class="container my-4">
+    <div class="row row-cols-4 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во подходов</strong></div>
+      <div class="col"><strong>Кол-во повторений</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Австрийские подтягивания:</div>
+      <div class="col">4</div>
+      <div class="col">20</div>
+      <div class="col"><%= current_training.austrian_pull_ups.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Горизонтальная тяга блока:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.wednesday_reps %></div>
+      <div class="col"><%= current_training.horizontal_pull_block.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Подтягивания с весом:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.wednesday_reps %></div>
+      <div class="col"><%= current_training.pull_ups.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Сгибания предплечий со штангой:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.wednesday_reps %></div>
+      <div class="col"><%= current_training.barbell_forearm_curls.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Тяга гантели в наклоне:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.wednesday_reps %></div>
+      <div class="col"><%= current_training.incline_dumbbell_row.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Вертикальная тяга блока:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.wednesday_reps %></div>
+      <div class="col"><%= current_training.vertical_pull_block.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Гиперэкстензия:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.wednesday_reps %></div>
+      <div class="col"><%= current_training.hyperextension.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Молотки:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_training.wednesday_reps %></div>
+      <div class="col"><%= current_training.hammers.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Книжка:</div>
+      <div class="col">4</div>
+      <div class="col">30</div>
+      <div class="col"><%= current_training.book.round(2)%> кг.</div>
+    </div>
+  </div>
+
+  <div class="row row-cols-2 my-5">
+    <div class="col left">
+      <%= link_to "Не удалось", user_path(current_user),
+        class: 'btn btn-danger btn-lg'%></div>
+
+    <div class="col right"><%= link_to "Завершено", user_update_power_path(@user, @power, complete_training: 'wednesday'), method: :put,
+      class: 'btn btn-success btn-lg'%></div>
+  </div>
+</body>
