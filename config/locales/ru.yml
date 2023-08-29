@@ -3,6 +3,33 @@ ru:
   ru: "Русский"
   activerecord:
     attributes:
+      crossfit:
+        front_squat: Фронтальныей приседания со штангой
+        hang_grab: Взятие штанги с виса
+        overhead_press: Жим штанги над головой
+        kettlebell_swing: Качели с гирей
+        kettlebell_pull_to_the_chin: Тяга гири к подбородку
+        burpee: Берпи
+        sitap: Ситап
+        russian_twist: Русский твист
+        plank_with_kettlebell_pull: Планка с перетягиванием гири
+        trusters: Трастеры
+        bent_over_barbell_pull: Тяга штанги к поясу в наклоне
+        deadlift: Становая тяга
+        mahi_dumbbells_through_the_sides: Махи гантелями через стороны
+        dumbbell_layout: Разводка гантелей лежа на горизонтальной скамье
+        barbell_pull_to_chin: Тяга штанги к подбородку
+        jumping_on_the_pedestal: Запрыгивания на тумбу
+        leg_raises_to_the_bar: Подъемы ног к перекладине
+        riveting: Склепка
+        forearm_curls_and_press_ups_with_a_barbell: Сгибания предплечий и жим вверх со штангой
+        cross_over: Кросс-овер
+        abduction_in_a_butterfly: Отведение в бабочке
+        lying_leg_flexion: Сгибания голени лежа
+        seated_leg_extension: Разгибания голени сидя
+        jumping_lunges: Выпады с выпрыгиванием
+        sumo_squats: Сумо приседания
+        farm_walk: Фермерская прогулка
       power:
         barbell_bench_press: "Жим штанги"
         reverse_push_ups: "Обратные отжимания"
@@ -100,7 +127,20 @@ ru:
       success: "Ваша тренировка обновлена!"
     update_power:
       success: "Тренировка завершена!"
-    update_power_normal:
+    destroy:
+      success: "Тренировка удалена!"
+  crossfits:
+    new:
+      title: "Новая Кроссфит Тренировка"
+    edit:
+      title: "Редактирование Кроссфит Тренировки"
+    show:
+      title: "Кроссфит Тренировка"
+    create:
+      success: "Кроссфит Тренировка создана!"
+    update:
+      success: "Ваша Кроссфит Тренировка обновлена!"
+    update_crossfit:
       success: "Тренировка завершена!"
     destroy:
       success: "Тренировка удалена!"

@@ -10,7 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_08_12_105458) do
+ActiveRecord::Schema.define(version: 2023_08_24_135316) do
+
+  create_table "crossfits", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.float "front_squat"
+    t.float "hang_grab"
+    t.float "overhead_press"
+    t.float "kettlebell_swing"
+    t.float "kettlebell_pull_to_the_chin"
+    t.float "burpee", default: 0.0
+    t.float "sitap", default: 0.0
+    t.float "russian_twist"
+    t.float "plank_with_kettlebell_pull"
+    t.float "trusters"
+    t.float "bent_over_barbell_pull"
+    t.float "deadlift"
+    t.float "mahi_dumbbells_through_the_sides"
+    t.float "dumbbell_layout"
+    t.float "barbell_pull_to_chin"
+    t.float "jumping_on_the_pedestal", default: 0.0
+    t.float "leg_raises_to_the_bar", default: 0.0
+    t.float "riveting", default: 0.0
+    t.float "forearm_curls_and_press_ups_with_a_barbell"
+    t.float "cross_over"
+    t.float "abduction_in_a_butterfly"
+    t.float "lying_leg_flexion"
+    t.float "seated_leg_extension"
+    t.float "jumping_lunges", default: 0.0
+    t.float "sumo_squats"
+    t.float "farm_walk"
+    t.integer "count_update_training", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_crossfits_on_user_id"
+  end
 
   create_table "powers", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -62,5 +96,6 @@ ActiveRecord::Schema.define(version: 2023_08_12_105458) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  add_foreign_key "crossfits", "users"
   add_foreign_key "powers", "users"
 end

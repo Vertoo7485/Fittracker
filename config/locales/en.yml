@@ -3,6 +3,33 @@ en:
   ru: "Russian"
   activerecord:
     attributes:
+      crossfit:
+        front_squat: Front squat
+        hang_grab: Hang grab
+        overhead_press: Overhead press
+        kettlebell_swing: Kettlebell swing
+        kettlebell_pull_to_the_chin: Kettlebell pull to the chin
+        burpee: Burpee
+        sitap: Sitap
+        russian_twist: Russian twist
+        plank_with_kettlebell_pull: Plank with kettlebell pull
+        trusters: Trusters
+        bent_over_barbell_pull: Bent over barbell pull
+        deadlift: Deadlift
+        mahi_dumbbells_through_the_sides: Mahi dumbbells through the sides
+        dumbbell_layout: Dumbbell layout
+        barbell_pull_to_chin: Barbell pull to chin
+        jumping_on_the_pedestal: Jumping on the pedestal
+        leg_raises_to_the_bar: Leg raises to the bar
+        riveting: Riveting
+        forearm_curls_and_press_ups_with_a_barbell: Forearm curls and press ups with a barbell
+        cross_over: Cross-over
+        abduction_in_a_butterfly: Abduction in a butterfly
+        lying_leg_flexion: Lying leg flexion
+        seated_leg_extension: Seated leg extension
+        jumping_lunges: Jumping lunges
+        sumo_squats: Sumo squats
+        farm_walk: Farm walk
       power:
         barbell_bench_press: "Barbell bench press"
         reverse_push_ups: "Reverse push-ups"
@@ -100,7 +127,20 @@ en:
       success: "Your training updated!"
     update_power:
       success: "Training complete!"
-    update_power_normal:
+    destroy:
+      success: "Training delete!"
+  crossfits:
+    new:
+      title: "New Crossfit Training"
+    edit:
+      title: "Edit Crossfit Training"
+    show:
+      title: "Crossfit Training"
+    create:
+      success: "Crossfit Training create!"
+    update:
+      success: "Your Crossfit training updated!"
+    update_crossfit:
       success: "Training complete!"
     destroy:
       success: "Training delete!"

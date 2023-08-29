@@ -4,6 +4,7 @@ class User < ApplicationRecord
   attr_accessor :old_password, :remember_token
 
   has_many :powers
+  has_many :crossfits
 
   has_secure_password validations: false
 

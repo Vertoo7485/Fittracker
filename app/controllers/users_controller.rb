@@ -8,6 +8,8 @@ class UsersController < ApplicationController
   def show
     @power = @user.powers.build
     @powers = @user.powers.order created_at: :desc
+    @crossfit = @user.crossfits.build
+    @crossfits = @user.crossfits.order created_at: :desc
   end
 
   def new

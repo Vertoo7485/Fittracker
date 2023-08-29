@@ -6,4 +6,5 @@ class ApplicationController < ActionController::Base
   include CountCalories
   include CountPowerTraining
   include Internationalization
+  include CountCrossfitTraining
 end

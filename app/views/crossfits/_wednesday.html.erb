@@ -1,0 +1,114 @@
+<body style="color:#ffffff">
+
+  <h2 class="my-4 center", style="color:#ffffff">
+    <strong>1 Блок</strong>
+  </h2>
+
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во повторений на 1 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 2 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 3 цикле</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Трастеры:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_crossfit_training.trusters.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Тяга штанги к поясу в наклоне:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_crossfit_training.bent_over_barbell_pull.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Становая тяга:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_crossfit_training.deadlift.round(2)%> кг.</div>
+    </div>
+
+  <h2 class="my-4 center", style="color:#ffffff">
+    <strong>2 Блок</strong>
+  </h2>
+
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во повторений на 1 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 2 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 3 цикле</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Махи гантелями через стороны:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_crossfit_training.mahi_dumbbells_through_the_sides.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Разводка лежа на горизонтальной скамье:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_crossfit_training.dumbbell_layout.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Тяга штанги к подбородку:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_crossfit_training.barbell_pull_to_chin.round(2)%> кг.</div>
+    </div>
+
+  <h2 class="my-4 center", style="color:#ffffff">
+    <strong>3 Блок</strong>
+  </h2>
+
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во повторений на 1 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 2 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 3 цикле</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Запрыгивания на тумбу:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_crossfit_training.jumping_on_the_pedestal.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Подъемы ног к перекладине:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_crossfit_training.leg_raises_to_the_bar.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Склепка:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_crossfit_training.riveting.round(2)%> кг.</div>
+    </div> 
+
+  <div class="row row-cols-2 my-5">
+    <div class="col left">
+      <%= link_to "Не удалось", user_path(current_user),
+        class: 'btn btn-danger btn-lg'%></div>
+
+    <div class="col right"><%= link_to "Завершено", user_update_crossfit_path(@user, @crossfit, complete_training: 'wednesday'), method: :put,
+      class: 'btn btn-success btn-lg'%></div>
+  </div>
+  
+</body>
