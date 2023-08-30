@@ -3,6 +3,13 @@ en:
   ru: "Russian"
   activerecord:
     attributes:
+      tabat:
+        mahi_dumbbells_through_the_sides: Mahi dumbbells through the sides
+        incline_dumbbell_mahi: Incline dumbbell mahi
+        trusters: Trusters
+        kettlebell_swing: Kettlebell swing
+        barbell_forearm_curl: Barbell forearm curl
+        squats: Squats
       crossfit:
         front_squat: Front squat
         hang_grab: Hang grab

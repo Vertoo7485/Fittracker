@@ -5,6 +5,7 @@ class User < ApplicationRecord
 
   has_many :powers
   has_many :crossfits
+  has_many :tabats
 
   has_secure_password validations: false
 

@@ -1,0 +1,62 @@
+<%= render 'shared/errors', object: @tabat %>
+<%= form_with model: [@user, @tabat] do |f| %>
+
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :mahi_dumbbells_through_the_sides %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :mahi_dumbbells_through_the_sides, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :incline_dumbbell_mahi %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :incline_dumbbell_mahi, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :trusters %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :trusters, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+<div class="my-3 mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :kettlebell_swing %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :kettlebell_swing, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :barbell_forearm_curl %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :barbell_forearm_curl, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <%= f.submit t('users.global.forms.save'),
+    class: 'btn btn-primary btn-lg' %>
+<% end %>
