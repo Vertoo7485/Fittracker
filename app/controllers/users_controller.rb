@@ -10,6 +10,8 @@ class UsersController < ApplicationController
     @powers = @user.powers.order created_at: :desc
     @crossfit = @user.crossfits.build
     @crossfits = @user.crossfits.order created_at: :desc
+    @tabat = @user.tabats.build
+    @tabats = @user.tabats.order created_at: :desc
   end
 
   def new

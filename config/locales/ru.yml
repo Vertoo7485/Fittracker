@@ -3,6 +3,13 @@ ru:
   ru: "Русский"
   activerecord:
     attributes:
+      tabat:
+        mahi_dumbbells_through_the_sides: Махи гантелями через стороны
+        incline_dumbbell_mahi: Махи гантелей в наклоне
+        trusters: Трастеры
+        kettlebell_swing: Качели с гирей
+        barbell_forearm_curl: Сгибание предплечий со штангой
+        squats: Приседания
       crossfit:
         front_squat: Фронтальныей приседания со штангой
         hang_grab: Взятие штанги с виса

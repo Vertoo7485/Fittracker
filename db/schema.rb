@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_08_24_135316) do
+ActiveRecord::Schema.define(version: 2023_08_29_124343) do
 
   create_table "crossfits", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -82,6 +82,41 @@ ActiveRecord::Schema.define(version: 2023_08_24_135316) do
     t.index ["user_id"], name: "index_powers_on_user_id"
   end
 
+  create_table "tabats", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.float "burpee", default: 0.0
+    t.float "touching_the_heels", default: 0.0
+    t.float "running_in_place", default: 0.0
+    t.float "statics_in_the_squat", default: 0.0
+    t.float "mahi_dumbbells_through_the_sides"
+    t.float "incline_dumbbell_mahi"
+    t.float "sitap", default: 0.0
+    t.float "plank", default: 0.0
+    t.float "pushups", default: 0.0
+    t.float "reverse_plank", default: 0.0
+    t.float "skating", default: 0.0
+    t.float "jumping_jack", default: 0.0
+    t.float "jump_rope", default: 0.0
+    t.float "plank_touch", default: 0.0
+    t.float "trusters"
+    t.float "kettlebell_swing"
+    t.float "side_climber", default: 0.0
+    t.float "barbell_forearm_curl"
+    t.float "push_ups_with_narrow_arms", default: 0.0
+    t.float "squats", default: 0.0
+    t.float "plank_reversals", default: 0.0
+    t.integer "monday_reps", default: 30
+    t.integer "wednesday_reps", default: 30
+    t.integer "friday_reps", default: 30
+    t.integer "monday_sets", default: 4
+    t.integer "wednesday_sets", default: 4
+    t.integer "friday_sets", default: 4
+    t.integer "count_update_training", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_tabats_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "name"
@@ -98,4 +133,5 @@ ActiveRecord::Schema.define(version: 2023_08_24_135316) do
 
   add_foreign_key "crossfits", "users"
   add_foreign_key "powers", "users"
+  add_foreign_key "tabats", "users"
 end
