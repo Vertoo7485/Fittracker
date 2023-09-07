@@ -1,0 +1,76 @@
+<h3 class="my-4 center"><strong>Протокол Табатта</strong></h3>
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во подходов</strong></div>
+      <div class="col"><strong>Время работы</strong></div>
+      <div class="col"><strong>Время отдыха</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Берпи:</div>
+      <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
+      <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
+      <div class="col">20 сек.</div>
+      <div class="col"><%= current_gain_training.burpee.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Поочередные касания пяток лежа на полу:</div>
+      <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
+      <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
+      <div class="col">20 сек.</div>
+      <div class="col"><%= current_gain_training.touching_the_heels.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Бег на месте:</div>
+      <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
+      <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
+      <div class="col">20 сек.</div>
+      <div class="col"><%= current_gain_training.running_in_place.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Статика в приседе:</div>
+      <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
+      <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
+      <div class="col">20 сек.</div>
+      <div class="col"><%= current_gain_training.statics_in_the_squat.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Махи гантелей через стороны:</div>
+      <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
+      <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
+      <div class="col">20 сек.</div>
+      <div class="col"><%= current_gain_training.dumbbells_through_the_side.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Махи гантелей в наклоне:</div>
+      <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
+      <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
+      <div class="col">20 сек.</div>
+      <div class="col"><%= current_gain_training.incline_dumbbell_mahi.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Ситап:</div>
+      <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
+      <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
+      <div class="col">20 сек.</div>
+      <div class="col"><%= current_gain_training.sitap.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Планка:</div>
+      <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
+      <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
+      <div class="col">20 сек.</div>
+      <div class="col"><%= current_gain_training.plank.round(2)%> кг.</div>
+    </div>
+  </div>
+
+<div class="row row-cols-2 my-5">
+  <div class="col left">
+    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+  </div>
+
+  <div class="col right"><%= link_to "Завершено",
+     user_update_gain_path(@user, @gain, complete_training: 'tabat_monday'),
+     method: :put, class: 'btn btn-success btn-lg'%></div>
+</div>

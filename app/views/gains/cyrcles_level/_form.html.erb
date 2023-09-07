@@ -1,0 +1,85 @@
+<%= render 'shared/errors', object: @gain %>
+<%= form_with model: [@user, @gain] do |f| %>
+
+<h1 class="mb-4 row">Самое время изменить тренировки! Введите новые параметры</h1> 
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :russian_twist %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :russian_twist, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :bent_over_barbell_pull %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :bent_over_barbell_pull, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :trapeze_in_smith %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :trapeze_in_smith, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+<div class="my-3 mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :lifting_dumbbells_in_scott %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :lifting_dumbbells_in_scott, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :biceps_sitting %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :biceps_sitting, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :hull_reversals %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :hull_reversals, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :standing_dumbbell_french_press %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :standing_dumbbell_french_press, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <%= f.submit t('users.global.forms.save'),
+    class: 'btn btn-primary btn-lg' %>
+<% end %>

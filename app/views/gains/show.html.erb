@@ -1,0 +1,30 @@
+<% provide :page_title, 'Комплексная тренировка' %>
+<% currently_at 'Комплексная тренировка' %>
+
+
+<%= current_gain_training.count_update_training %>
+
+<body class="my-black-fon", style="color:#ffffff">
+  <h1 class="center">Комплексная тренировка</h1>
+
+  <div class="dropdown center my-3">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Выбор тренировки
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+        <%= link_to 'Понедельник', user_gain_path(@user, @gain, day: 'monday'),
+          class: 'dropdown-item'%>
+      </li>
+      <li>
+        <%= link_to 'Среда', user_gain_path(@user, @gain, day: 'wednesday'),
+          class: 'dropdown-item'%>
+      </li>
+      <li>
+        <%= link_to 'Пятница', user_gain_path(@user, @gain, day: 'friday'),
+          class: 'dropdown-item'%>
+      </li>
+    </ul>
+  </div>
+  <%= render 'gains/change_training' %>
+</body>

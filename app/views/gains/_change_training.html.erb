@@ -1,0 +1,50 @@
+<% case params[:day] %>
+  <% when 'monday'%>
+    <% if current_gain_training.count_update_training == 3 && current_gain_training.russian_twist.nil? %>
+      <%= render 'gains/cyrcles_level/form' %>
+    <% elsif Gain::CYRCLES_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
+      <%= render 'gains/cyrcles_level/monday' %>
+    <% elsif current_gain_training.count_update_training == 6 && current_gain_training.incline_dumbbell_mahi.nil? %>
+      <%= render 'gains/tabats_level/form' %>
+    <% elsif Gain::TABATS_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
+      <%= render 'gains/tabats_level/monday' %>
+    <% elsif current_gain_training.count_update_training == 32 && current_gain_training.front_squat.nil? %>
+      <%= render 'gains/crossfits_level/form' %>
+    <% elsif Gain::CROSSFITS_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
+      <%= render 'gains/crossfits_level/monday' %>
+    <% else %>
+      <%= render 'gains/power_level/monday' %>
+    <% end %>
+  <% when 'wednesday'%>
+    <% if current_gain_training.count_update_training == 3 && current_gain_training.russian_twist.nil? %>
+      <%= render 'gains/cyrcles_level/form' %>
+    <% elsif Gain::CYRCLES_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
+      <%= render 'gains/cyrcles_level/wednesday' %>
+    <% elsif current_gain_training.count_update_training == 6 && current_gain_training.incline_dumbbell_mahi.nil? %>
+      <%= render 'gains/tabats_level/form' %>
+    <% elsif Gain::TABATS_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
+      <%= render 'gains/tabats_level/wednesday' %>
+    <% elsif current_gain_training.count_update_training == 32 && current_gain_training.front_squat.nil? %>
+      <%= render 'gains/crossfits_level/form' %>
+    <% elsif Gain::CROSSFITS_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
+      <%= render 'gains/crossfits_level/wednesday' %>
+    <% else %>
+      <%= render 'gains/power_level/wednesday' %>
+    <% end %>
+  <% when 'friday'%>
+    <% if current_gain_training.count_update_training == 3 && current_gain_training.russian_twist.nil? %>
+      <%= render 'gains/cyrcles_level/form' %>
+    <% elsif Gain::CYRCLES_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
+      <%= render 'gains/cyrcles_level/friday' %>
+    <% elsif current_gain_training.count_update_training == 6 && current_gain_training.incline_dumbbell_mahi.nil? %>
+      <%= render 'gains/tabats_level/form' %>
+    <% elsif Gain::TABATS_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
+      <%= render 'gains/tabats_level/friday' %>
+    <% elsif current_gain_training.count_update_training == 32 && current_gain_training.front_squat.nil? %>
+      <%= render 'gains/crossfits_level/form' %>
+    <% elsif Gain::CROSSFITS_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
+      <%= render 'gains/crossfits_level/friday' %>
+    <% else %>
+      <%= render 'gains/power_level/friday' %>
+    <% end %>
+<% end %>

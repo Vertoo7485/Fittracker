@@ -1,0 +1,107 @@
+<h3 class="my-4 center"><strong>Кроссфит тренировка</strong></h3>
+
+  <h2 class="my-4 center"><strong>1 Блок</strong></h2>
+
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во повторений на 1 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 2 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 3 цикле</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Фронтальный присед:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.front_squat.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Взятие с виса:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.hang_grab.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Жим штанги над головой:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.overhead_press.round(2)%> кг.</div>
+    </div>
+
+  <h2 class="my-4 center"><strong>2 Блок</strong></h2>
+
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во повторений на 1 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 2 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 3 цикле</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Качели с гирей:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.kettlebell_swing.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Тяга гири к подбородку:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.kettlebell_pull_to_the_chin.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Берпи:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.burpee.round(2)%> кг.</div>
+    </div>
+
+  <h2 class="my-4 center"><strong>3 Блок</strong></h2>
+
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во повторений на 1 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 2 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 3 цикле</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Ситап:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.sitap.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Русский твист:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.russian_twist.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Планка с перетягиванием гири:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.plank_with_kettlebell_pull.round(2)%> кг.</div>
+    </div> 
+
+<div class="row row-cols-2 my-5">
+  <div class="col left">
+    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+  </div>
+
+  <div class="col right"><%= link_to "Завершено",
+     user_update_gain_path(@user, @gain, complete_training: 'crossfit_monday'),
+     method: :put, class: 'btn btn-success btn-lg'%></div>
+</div>

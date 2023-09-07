@@ -11,6 +11,8 @@ Rails.application.routes.draw do
       put '/crossfits/:id/update_crossfit', to: 'crossfits#update_crossfit', as: 'update_crossfit'
       resources :tabats, except: %i[index]
       put '/tabats/:id/update_tabat', to: 'tabats#update_tabat', as: 'update_tabat'
+      resources :gains, except: %i[index]
+      put '/gains/:id/update_gain', to: 'gains#update_gain', as: 'update_gain'
     end
 
     namespace :admin do

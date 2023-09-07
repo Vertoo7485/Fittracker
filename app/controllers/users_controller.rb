@@ -12,6 +12,8 @@ class UsersController < ApplicationController
     @crossfits = @user.crossfits.order created_at: :desc
     @tabat = @user.tabats.build
     @tabats = @user.tabats.order created_at: :desc
+    @gain = @user.gains.build
+    @gains = @user.gains.order created_at: :desc
   end
 
   def new

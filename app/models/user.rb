@@ -3,9 +3,10 @@
 class User < ApplicationRecord
   attr_accessor :old_password, :remember_token
 
-  has_many :powers
-  has_many :crossfits
-  has_many :tabats
+  has_many :powers, dependent: :destroy
+  has_many :crossfits, dependent: :destroy
+  has_many :tabats, dependent: :destroy
+  has_many :gains, dependent: :destroy
 
   has_secure_password validations: false
 

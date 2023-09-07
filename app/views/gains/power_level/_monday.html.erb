@@ -1,0 +1,67 @@
+<h3 class="my-4 center"><strong>Силовая тренировка</strong></h3>
+  <div class="container my-4">
+    <div class="row row-cols-4 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во подходов</strong></div>
+      <div class="col"><strong>Кол-во повторений</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Жим штанги на скамье +45°:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_gain_training.monday_reps %></div>
+      <div class="col"><%= current_gain_training.barbell_bench_press.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Обратные отжимания:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_gain_training.monday_reps %></div>
+      <div class="col"><%= current_gain_training.reverse_push_ups.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Жим гантелей лежа:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_gain_training.monday_reps %></div>
+      <div class="col"><%= current_gain_training.dumbbell_bench_press.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Отжимания на брусьях с весом:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_gain_training.monday_reps %></div>
+      <div class="col"><%= current_gain_training.push_ups_on_bars.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Жим на грудь в стеке:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_gain_training.monday_reps %></div>
+      <div class="col"><%= current_gain_training.stacked_chest_press.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Разгибание с канатной рукояткой:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_gain_training.monday_reps %></div>
+      <div class="col"><%= current_gain_training.extension_with_rope_handle.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Отведение гантели:</div>
+      <div class="col">4</div>
+      <div class="col"><%= current_gain_training.monday_reps %></div>
+      <div class="col"><%= current_gain_training.dumbbell_abduction.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">Подъем ног в висе:</div>
+      <div class="col">4</div>
+      <div class="col">30</div>
+      <div class="col"><%= current_gain_training.hanging_leg_raise.round(2)%> кг.</div>
+    </div>
+  </div>
+
+<div class="row row-cols-2 my-5">
+  <div class="col left">
+    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+  </div>
+
+  <div class="col right"><%= link_to "Завершено", user_update_gain_path(@user, @gain, complete_training: 'monday'),
+     method: :put, class: 'btn btn-success btn-lg'%>
+  </div>
+</div>

@@ -1,0 +1,111 @@
+<h3 class="my-4 center"><strong>Кроссфит тренировка</strong></h3>
+
+  <h2 class="my-4 center"><strong>1 Блок</strong></h2>
+
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во повторений на 1 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 2 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 3 цикле</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Сгибания предплечий и жим вверх со штангой:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.forearm_curls_and_press_ups_with_a_barbell.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Кросс-овер:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.cross_over.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Отведение в бабочке:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.abduction_in_a_butterfly.round(2)%> кг.</div>
+    </div>
+
+  <h2 class="my-4 center", style="color:#ffffff">
+    <strong>2 Блок</strong>
+  </h2>
+
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во повторений на 1 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 2 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 3 цикле</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Сгибания голени лежа:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.lying_leg_flexion.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Разгибания голени сидя:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.seated_leg_extension.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Выпады с выпрыгиванием:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.jumping_lunges.round(2)%> кг.</div>
+    </div>
+
+  <h2 class="my-4 center", style="color:#ffffff">
+    <strong>3 Блок</strong>
+  </h2>
+
+  <div class="container my-4">
+    <div class="row row-cols-5 center">
+      <div class="col"><strong>Упражнение</strong></div>
+      <div class="col"><strong>Кол-во повторений на 1 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 2 цикле</strong></div>
+      <div class="col"><strong>Кол-во повторений на 3 цикле</strong></div>
+      <div class="col"><strong>Вес</strong></div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Сумо приседания:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.sumo_squats.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Качели с гирей:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.kettlebell_swing.round(2)%> кг.</div>
+    </div>
+    <div class="row row-cols-5 my-3 center">
+      <div class="col">Фермерская прогулка:</div>
+      <div class="col">21</div>
+      <div class="col">15</div>
+      <div class="col">10</div>
+      <div class="col"><%= current_gain_training.farm_walk.round(2)%> кг.</div>
+    </div> 
+
+<div class="row row-cols-2 my-5">
+  <div class="col left">
+    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+  </div>
+
+  <div class="col right"><%= link_to "Завершено",
+     user_update_gain_path(@user, @gain, complete_training: 'crossfit_friday'),
+     method: :put, class: 'btn btn-success btn-lg'%></div>
+</div>

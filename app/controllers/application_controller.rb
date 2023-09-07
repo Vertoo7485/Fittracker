@@ -8,4 +8,5 @@ class ApplicationController < ActionController::Base
   include Internationalization
   include CountCrossfitTraining
   include CountTabatTraining
+  include CountGainTraining
 end

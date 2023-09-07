@@ -38,13 +38,15 @@
 
 <body style="color:#ffffff">
   <div class="container my-4">
-    <div class="row row-cols-3 center">
+    <div class="row row-cols-4 center">
       <div class="col"><%= link_to t('global.button.new_power_training'), new_user_power_path(@user),
           class: 'btn btn-success btn-lg'%></div>
       <div class="col"><%= link_to 'Новая Кроссфит тренировка', new_user_crossfit_path(@user),
           class: 'btn btn-dark btn-lg'%></div>
       <div class="col"><%= link_to 'Новая тренировка Табата', new_user_tabat_path(@user),
           class: 'btn btn-danger btn-lg'%></div>
+      <div class="col"><%= link_to 'Новая комплексная тренировка', new_user_gain_path(@user),
+          class: 'btn btn-info btn-lg'%></div>
     </div>
   </div>
 </body>
@@ -106,6 +108,26 @@
         <%= link_to t('global.button.edit'), edit_user_tabat_path(@user, tabat), 
           class: 'btn btn-warning btn-sm' %>
         <%= link_to t('global.button.delete'), user_tabat_path(@user, tabat), 
+          class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
+      </p>
+    </article>
+  <% end %>
+</div>
+
+<div>
+  <% @gains.each do |gain| %>
+    <article>
+      <p class="mt-2">
+        <strong style="color:#ffffff">Комплексная тренировка № 
+          <%= gain.id %>
+        </strong>
+      </p>
+      <p>
+        <%= link_to t('global.button.show'), user_gain_path(@user, gain), 
+          class: 'btn btn-primary btn-sm' %>
+        <%= link_to t('global.button.edit'), edit_user_gain_path(@user, gain), 
+          class: 'btn btn-warning btn-sm' %>
+        <%= link_to t('global.button.delete'), user_gain_path(@user, gain), 
           class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
       </p>
     </article>
