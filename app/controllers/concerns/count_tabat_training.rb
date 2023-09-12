@@ -14,7 +14,6 @@ module CountTabatTraining
       current_tabat_training.update(count_update_training: new_count_update)
     end
 
-
     def pump_tabat_monday_reps
       monday_reps = 30
       new_monday_sets = 5
@@ -23,7 +22,7 @@ module CountTabatTraining
         current_tabat_training.update(monday_reps: new_monday_reps)
       else
         current_tabat_training.update(monday_sets: new_monday_sets)
-      end 
+      end
     end
 
     def pump_tabat_wednesday_reps
@@ -52,7 +51,7 @@ module CountTabatTraining
       new_mahi_dumbbells_through_the_sides = current_tabat_training.mahi_dumbbells_through_the_sides * 1.05
       new_incline_dumbbell_mahi = current_tabat_training.incline_dumbbell_mahi * 1.05
       current_tabat_training.update(mahi_dumbbells_through_the_sides: new_mahi_dumbbells_through_the_sides,
-                                       incline_dumbbell_mahi: new_incline_dumbbell_mahi)
+                                    incline_dumbbell_mahi: new_incline_dumbbell_mahi)
     end
 
     def pump_tabat_wednesday

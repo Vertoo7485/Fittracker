@@ -1,5 +1,4 @@
 class Gain < ApplicationRecord
-
   CYRCLES_COUNT_TRAINING = [3, 11, 17, 18, 20, 47]
   TABATS_COUNT_TRAINING = [6, 7, 12, 13, 19, 30, 31]
   CROSSFITS_COUNT_TRAINING = [32, 33, 34, 35, 42, 43, 50, 51]
@@ -28,5 +27,4 @@ class Gain < ApplicationRecord
   validates :pancake_swing_in_front_of_you, presence: true
   validates :barbell_pull_to_chin, presence: true
   validates :leg_press, presence: true
-
 end

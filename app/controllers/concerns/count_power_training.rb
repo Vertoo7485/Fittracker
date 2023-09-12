@@ -20,7 +20,7 @@ module CountPowerTraining
       if current_training.monday_reps <= 9
         current_training.update(monday_reps: new_monday_reps)
       else
-        current_training.update(monday_reps: monday_reps)
+        current_training.update(monday_reps:)
       end
     end
 
@@ -30,7 +30,7 @@ module CountPowerTraining
       if current_training.wednesday_reps <= 9
         current_training.update(wednesday_reps: new_wednesday_reps)
       else
-        current_training.update(wednesday_reps: wednesday_reps)
+        current_training.update(wednesday_reps:)
       end
     end
 
@@ -40,7 +40,7 @@ module CountPowerTraining
       if current_training.friday_reps <= 9
         current_training.update(friday_reps: new_friday_reps)
       else
-        current_training.update(friday_reps: friday_reps)
+        current_training.update(friday_reps:)
       end
     end
 
@@ -57,7 +57,7 @@ module CountPowerTraining
                               dumbbell_bench_press: new_dumbbell_bench_press,
                               push_ups_on_bars: new_push_ups_on_bars, stacked_chest_press: new_stacked_chest_press,
                               extension_with_rope_handle: new_extension_with_rope_handle,
-                              dumbbell_abduction: new_dumbbell_abduction)   
+                              dumbbell_abduction: new_dumbbell_abduction)
     end
 
     def pump_power_wednesday
@@ -87,7 +87,7 @@ module CountPowerTraining
       current_training.update(gack_squats: new_gack_squats, seated_leg_extension: new_seated_leg_extension,
                               leg_press: new_leg_press, hamer_shoulder_press: new_hamer_shoulder_press,
                               dumbbells_through_the_side: new_dumbbells_through_the_side,
-                              lying_leg_flexion: new_lying_leg_flexion, 
+                              lying_leg_flexion: new_lying_leg_flexion,
                               pancake_swing_in_front_of_you: new_pancake_swing_in_front_of_you,
                               barbell_pull_to_chin: new_barbell_pull_to_chin)
     end

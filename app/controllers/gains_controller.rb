@@ -16,8 +16,7 @@ class GainsController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @gain.update gain_params
@@ -104,8 +103,7 @@ class GainsController < ApplicationController
     redirect_to root_path
   end
 
-  def show
-  end
+  def show; end
 
   def destroy
     @gain.destroy

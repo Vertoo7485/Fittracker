@@ -3,6 +3,77 @@ ru:
   ru: "Русский"
   activerecord:
     attributes:
+      gain:
+        barbell_bench_press: Жим штанги
+        reverse_push_ups: Обратные отжимания
+        dumbbell_bench_press: Жим гантелей лежа
+        push_ups_on_bars: Отжимания на брусьях
+        stacked_chest_press: Жим на грудь в стеке
+        extension_with_rope_handle: Разгибание с канатной рукояткой
+        dumbbell_abduction: Отведение гантели
+        hanging_leg_raise: Подъем ног в висе
+        austrian_pull_ups: Австрийские подтягивания
+        horizontal_pull_block: Горизонтальная тяга блока
+        pull_ups: Подтягивания
+        barbell_forearm_curls: Сгибания предплечий со штангой
+        incline_dumbbell_row: Тяга гантель в наклоне
+        vertical_pull_block: Вертикальная тяга блока
+        hyperextension: Гиперэкстензия
+        hammers: Молотки
+        book: Книжка
+        gack_squats: Гакк приседания
+        seated_leg_extension: Разгибания голени сидя
+        leg_press: Жим ногами
+        hamer_shoulder_press: Жим в хамере на плечи
+        dumbbells_through_the_side: Махи гантелей через сторону
+        lying_leg_flexion: Сгибание голени лежа
+        pancake_swing_in_front_of_you: Мах блина перед собой
+        barbell_pull_to_chin: Тяга штанги к подбородку
+        front_squat: Фронтальный присед
+        hang_grab: Взятие с виса
+        overhead_press: Жим штанги над головой
+        kettlebell_swing: Качели с гирей
+        kettlebell_pull_to_the_chin: Тяга гири к подбородку
+        burpee: Берпи
+        sitap: Ситап
+        russian_twist: Русский твист
+        plank_with_kettlebell_pull: Планка с перетягиванием гири
+        trusters: Трастеры
+        bent_over_barbell_pull: Тяга штанги к поясу в наклоне
+        deadlift: Становая тяга
+        dumbbell_layout: Разводка гантелей лежа на горизонтальной скамье
+        jumping_on_the_pedestal: Запрыгивания на тумбу
+        leg_raises_to_the_bar: Подъемы ног к перекладине
+        riveting: Склепка
+        forearm_curls_and_press_ups_with_a_barbell: Сгибания предплечий и жим вверх со штангой
+        cross_over: Кросс-овер
+        abduction_in_a_butterfly: Отведение в бабочке
+        jumping_lunges: Выпады с выпрыгиванием
+        sumo_squats: Сумо приседания
+        farm_walk: Фермерская прогулка
+        touching_the_heels: Поочередные касания пяток лежа на полу
+        running_in_place: Бег на месте
+        statics_in_the_squat: Статика в приседе
+        incline_dumbbell_mahi: Махи гантелей в наклоне
+        plank: Планка
+        pushups: Отжимания от пола
+        reverse_plank: Обратная планка
+        skating: Коньковый бег
+        jumping_jack: Джампинг Джек
+        jump_rope: Скакалка
+        plank_touch: Касание плеч стоя в планке
+        side_climber: Боковой скалолаз
+        push_ups_with_narrow_arms: Отжимания с узкой постановкой рук
+        squats: Приседания
+        plank_reversals: Развороты в планке
+        rope_strikes: Удары канатами
+        jumping_out: Выпрыгивания
+        track: Дорожка
+        trapeze_in_smith: Подьем на трапеции в Смите
+        lifting_dumbbells_in_scott: Бицепс в Скотте гантелями
+        biceps_sitting: Подъем гантелей на бицепс сидя на скамье
+        hull_reversals: Развороты корпуса
+        standing_dumbbell_french_press: Французский жим с гантелей стоя
       tabat:
         mahi_dumbbells_through_the_sides: Махи гантелями через стороны
         incline_dumbbell_mahi: Махи гантелей в наклоне
@@ -77,6 +148,7 @@ ru:
         growth: Рост
         years: Возраст
         gender: Пол
+        role: Роль
         placeholder:
           email: Email
           name: Имя
@@ -88,6 +160,12 @@ ru:
         power: Силовая Тренировка
   admin:
     users:
+      edit:
+        title: Редактирование Пользователя
+      update:
+        success: Пользователь обновлен!
+      destroy:
+        success: Пользователь удален!
       create:
         success: Пользователи загружены!
       index:
@@ -98,6 +176,11 @@ ru:
           submit: Загрузить!
         upload_zipped: Загрузить пользователей в XLSX
   global:
+    user:
+      roles:
+        basic: Базовый
+        moderator: Модератор
+        admin: Администратор
     button:
       delete: Удалить
       edit: Изменить
@@ -121,6 +204,21 @@ ru:
     powers: Силовая Тренировка
     sign_up: Регистрация
     users: Пользователи
+  gains:
+    new:
+      title: "Новая Комплексная тренировка"
+    edit:
+      title: "Редактирования тренировки"
+    show:
+      title: "Комплексная Тренировка"
+    create:
+      success: "Тренировка создана!"
+    update:
+      success: "Ваша тренировка обновлена!"
+    update_gain:
+      success: "Тренировка завершена!"
+    destroy:
+      success: "Тренировка удалена!"
   powers:
     new:
       title: "Новая тренировка"

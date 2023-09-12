@@ -22,15 +22,16 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
+gem 'activerecord-import', '1.2'
 gem 'bcrypt', '~> 3.1.7'
-gem 'draper', '~> 4.0'
-gem 'valid_email2', '4.0'
-gem 'rubyzip', '~> 2'
 gem 'caxlsx', '~> 3.1'
 gem 'caxlsx_rails', '~> 0.6'
-gem 'rubyXL', '~> 3.4'
-gem 'activerecord-import', '1.2'
+gem 'draper', '~> 4.0'
+gem 'pundit', '~> 2.1'
 gem 'rails-i18n', '~> 6'
+gem 'rubyXL', '~> 3.4'
+gem 'rubyzip', '~> 2'
+gem 'valid_email2', '~> 4.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -51,6 +52,7 @@ group :development do
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'bullet'
   gem 'rubocop', '~> 1.18', require: false
   gem 'rubocop-performance', '~> 1.11', require: false
   gem 'rubocop-rails', '~> 2.11', require: false

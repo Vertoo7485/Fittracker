@@ -21,5 +21,4 @@ class Crossfit < ApplicationRecord
   validates :seated_leg_extension, presence: true
   validates :sumo_squats, presence: true
   validates :farm_walk, presence: true
-
 end

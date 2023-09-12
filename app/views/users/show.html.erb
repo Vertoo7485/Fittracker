@@ -1,136 +1,106 @@
 <% provide :page_title, current_user.name %>
 <% currently_at t('user.title') %>
 
-<body class="my-profile">
-<div class="container overflow-hidden">
+<body class="my-profile" style="color:#ffffff">
+  <div class="container overflow-hidden">
 
-  <h1 style="color:#ffffff">Мой профиль</h1>
+    <h1 class="center">Мой профиль</h1>
 
 
-  <div class="row gx-5">
-    <div class="col">
-      <div class="p-3", style="color:#ffffff">Для похудения необходимо употреблять: 
-        <strong>
-          <%= if current_user.gender.downcase == "male" || current_user.gender.downcase == "мужской"
-                men_weight_loss_diet
-              else
-                fem_weight_loss_diet
-              end %>
-          ккал.
-        </strong>
+    <div class="row gx-5">
+      <div class="col">
+        <div class="p-3">Для похудения необходимо употреблять: 
+          <strong>
+            <%= if current_user.gender.downcase == "male" || current_user.gender.downcase == "мужской"
+                  men_weight_loss_diet
+                else
+                  fem_weight_loss_diet
+                end %>
+            ккал.
+          </strong>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="p-3"> Для набора массы необходимо употреблять:
+          <strong>
+            <%= if current_user.gender.downcase == "male"
+                  men_weight_gain_diet
+                else
+                  fem_weight_gain_diet
+                end %>
+            ккал.
+          </strong>
+        </div>
       </div>
     </div>
+  <div>
 
-    <div class="col">
-      <div class="p-3", style="color:#ffffff"> Для набора массы необходимо употреблять:
-        <strong>
-          <%= if current_user.gender.downcase == "male"
-                men_weight_gain_diet
-              else
-                fem_weight_gain_diet
-              end %>
-          ккал.
-        </strong>
-      </div>
-    </div>
-  </div>
-<div>
-
-<body style="color:#ffffff">
   <div class="container my-4">
-    <div class="row row-cols-4 center">
+    <div class="row row-cols-3 center">
       <div class="col"><%= link_to t('global.button.new_power_training'), new_user_power_path(@user),
           class: 'btn btn-success btn-lg'%></div>
       <div class="col"><%= link_to 'Новая Кроссфит тренировка', new_user_crossfit_path(@user),
           class: 'btn btn-dark btn-lg'%></div>
-      <div class="col"><%= link_to 'Новая тренировка Табата', new_user_tabat_path(@user),
-          class: 'btn btn-danger btn-lg'%></div>
       <div class="col"><%= link_to 'Новая комплексная тренировка', new_user_gain_path(@user),
           class: 'btn btn-info btn-lg'%></div>
     </div>
   </div>
 </body>
 
-<h2 class="my-3", style="color:#ffffff">Мои тренировки</h2>
+  <h2 class="my-3">Мои тренировки</h2>
 
+  <div>
+    <% @powers.each do |power| %>
+      <article>
+        <p class="mt-2">
+          <strong>Силовая тренировка № <%= power.id %></strong>
+        </p>
+        <p>
+          <%= link_to t('global.button.show'), user_power_path(@user, power), 
+            class: 'btn btn-primary btn-sm' %>
+          <%= link_to t('global.button.edit'), edit_user_power_path(@user, power), 
+            class: 'btn btn-warning btn-sm' %>
+          <%= link_to t('global.button.delete'), user_power_path(@user, power), 
+            class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
+        </p>
+      </article>
+    <% end %>
+  </div>
 
-<div>
-  <% @powers.each do |power| %>
-    <article>
-      <p class="mt-2">
-        <strong style="color:#ffffff">Силовая тренировка № 
-          <%= power.id %>
-        </strong>
-      </p>
-      <p>
-        <%= link_to t('global.button.show'), user_power_path(@user, power), 
-          class: 'btn btn-primary btn-sm' %>
-        <%= link_to t('global.button.edit'), edit_user_power_path(@user, power), 
-          class: 'btn btn-warning btn-sm' %>
-        <%= link_to t('global.button.delete'), user_power_path(@user, power), 
-          class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
-      </p>
-    </article>
-  <% end %>
-</div>
+  <div>
+    <% @crossfits.each do |crossfit| %>
+      <article>
+        <p class="mt-2">
+          <strong>Кроссфит тренировка № <%= crossfit.id %></strong>
+        </p>
+        <p>
+          <%= link_to t('global.button.show'), user_crossfit_path(@user, crossfit), 
+            class: 'btn btn-primary btn-sm' %>
+          <%= link_to t('global.button.edit'), edit_user_crossfit_path(@user, crossfit), 
+            class: 'btn btn-warning btn-sm' %>
+          <%= link_to t('global.button.delete'), user_crossfit_path(@user, crossfit), 
+            class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
+        </p>
+      </article>
+    <% end %>
+  </div>
 
-<div>
-  <% @crossfits.each do |crossfit| %>
-    <article>
-      <p class="mt-2">
-        <strong style="color:#ffffff">Кроссфит тренировка № 
-          <%= crossfit.id %>
-        </strong>
-      </p>
-      <p>
-        <%= link_to t('global.button.show'), user_crossfit_path(@user, crossfit), 
-          class: 'btn btn-primary btn-sm' %>
-        <%= link_to t('global.button.edit'), edit_user_crossfit_path(@user, crossfit), 
-          class: 'btn btn-warning btn-sm' %>
-        <%= link_to t('global.button.delete'), user_crossfit_path(@user, crossfit), 
-          class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
-      </p>
-    </article>
-  <% end %>
-</div>
-
-<div>
-  <% @tabats.each do |tabat| %>
-    <article>
-      <p class="mt-2">
-        <strong style="color:#ffffff">Тренировка Табата № 
-          <%= tabat.id %>
-        </strong>
-      </p>
-      <p>
-        <%= link_to t('global.button.show'), user_tabat_path(@user, tabat), 
-          class: 'btn btn-primary btn-sm' %>
-        <%= link_to t('global.button.edit'), edit_user_tabat_path(@user, tabat), 
-          class: 'btn btn-warning btn-sm' %>
-        <%= link_to t('global.button.delete'), user_tabat_path(@user, tabat), 
-          class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
-      </p>
-    </article>
-  <% end %>
-</div>
-
-<div>
-  <% @gains.each do |gain| %>
-    <article>
-      <p class="mt-2">
-        <strong style="color:#ffffff">Комплексная тренировка № 
-          <%= gain.id %>
-        </strong>
-      </p>
-      <p>
-        <%= link_to t('global.button.show'), user_gain_path(@user, gain), 
-          class: 'btn btn-primary btn-sm' %>
-        <%= link_to t('global.button.edit'), edit_user_gain_path(@user, gain), 
-          class: 'btn btn-warning btn-sm' %>
-        <%= link_to t('global.button.delete'), user_gain_path(@user, gain), 
-          class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
-      </p>
-    </article>
-  <% end %>
-</div>
+  <div>
+    <% @gains.each do |gain| %>
+      <article>
+        <p class="mt-2">
+          <strong>Комплексная тренировка № <%= gain.id %></strong>
+        </p>
+        <p>
+          <%= link_to t('global.button.show'), user_gain_path(@user, gain), 
+            class: 'btn btn-primary btn-sm' %>
+          <%= link_to t('global.button.edit'), edit_user_gain_path(@user, gain), 
+            class: 'btn btn-warning btn-sm' %>
+          <%= link_to t('global.button.delete'), user_gain_path(@user, gain), 
+            class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
+        </p>
+      </article>
+    <% end %>
+  </div>
 </body>

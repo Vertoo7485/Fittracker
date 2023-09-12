@@ -1,18 +1,6 @@
 # frozen_string_literal: true
 
 module ApplicationHelper
-
-  def link_level_2(title, url, options = {})
-    current_count = current_training.count_update_training
-    css_class = current_count >= 8 ? 'active' : 'disabled'
-    options[:class] = if options[:class]
-                        "#{options[:class]} #{css_class}"
-                      else
-                        css_class
-                      end
-    link_to title, url, options                  
-  end
-
   def nav_tab(title, url, options = {})
     current_page = options.delete :current_page
 

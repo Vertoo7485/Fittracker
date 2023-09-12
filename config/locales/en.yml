@@ -3,6 +3,77 @@ en:
   ru: "Russian"
   activerecord:
     attributes:
+      gain:
+        barbell_bench_press: Barbell bench press
+        reverse_push_ups: Reverse push-ups
+        dumbbell_bench_press: Dumbbell bench press
+        push_ups_on_bars: Push-ups on bars
+        stacked_chest_press: Stacked chest press
+        extension_with_rope_handle: Extension with rope handle
+        dumbbell_abduction: Dumbbell abduction
+        hanging_leg_raise: Hanging leg raise
+        austrian_pull_ups: Austrian pull-ups
+        horizontal_pull_block: Horizontal pull block
+        pull_ups: Pull-ups
+        barbell_forearm_curls: Barbell forearm curls
+        incline_dumbbell_row: Incline dumbbell row
+        vertical_pull_block: Vertical pull block
+        hyperextension: Hyperextension
+        hammers: Hammers
+        book: Book
+        gack_squats: Gack squats
+        seated_leg_extension: Seated leg extension
+        leg_press: Leg press
+        hamer_shoulder_press: Hamer shoulder press
+        dumbbells_through_the_side: Dumbbells through the side
+        lying_leg_flexion: Lying leg flexion
+        pancake_swing_in_front_of_you: Pancake swing in front of you
+        barbell_pull_to_chin: Barbell pull to chin
+        front_squat: Front squat
+        hang_grab: Hang grab
+        overhead_press: Overhead press
+        kettlebell_swing: Kettlebell swing
+        kettlebell_pull_to_the_chin: Kettlebell pull to the chin
+        burpee: Burpee
+        sitap: Sitap
+        russian_twist: Russian twist
+        plank_with_kettlebell_pull: Plank with kettlebell pull
+        trusters: Trusters
+        bent_over_barbell_pull: Bent over barbell pull
+        deadlift: Deadlift
+        dumbbell_layout: Dumbbell layout
+        jumping_on_the_pedestal: Jumping on the pedestal
+        leg_raises_to_the_bar: Leg raises to the bar
+        riveting: Riveting
+        forearm_curls_and_press_ups_with_a_barbell: Forearm curls and press ups with a barbell
+        cross_over: Cross-over
+        abduction_in_a_butterfly: Abduction in a butterfly
+        jumping_lunges: Jumping lunges
+        sumo_squats: Sumo squats
+        farm_walk: Farm walk
+        touching_the_heels: Touching the heels
+        running_in_place: Running in place
+        statics_in_the_squat: Statics in the squat
+        incline_dumbbell_mahi: Incline dumbbell mahi
+        plank: Plank
+        pushups: push-ups
+        reverse_plank: Reverse plank
+        skating: Skating
+        jumping_jack: Jumping jack
+        jump_rope: Jump rope
+        plank_touch: Plank touch
+        side_climber: Side climber
+        push_ups_with_narrow_arms: push-ups with narrow arms
+        squats: Squats
+        plank_reversals: Plank reversals
+        rope_strikes: Rope strikes
+        jumping_out: Jumping out
+        track: Track
+        trapeze_in_smith: Trapeze in smith
+        lifting_dumbbells_in_scott: Lifting dumbbells in scott
+        biceps_sitting: Biceps sitting
+        hull_reversals: Hull reversals
+        standing_dumbbell_french_press: Standing dumbbell french press
       tabat:
         mahi_dumbbells_through_the_sides: Mahi dumbbells through the sides
         incline_dumbbell_mahi: Incline dumbbell mahi
@@ -77,6 +148,7 @@ en:
         growth: Growth
         years: Years
         gender: Gender
+        role: Role
         placeholder:
           email: Email
           name: Name
@@ -88,6 +160,12 @@ en:
         power: Power Training
   admin:
     users:
+      edit:
+        title: Edit User
+      update:
+        success: User updated!
+      destroy:
+        success: User deleted!
       create:
         success: Users imported!
       index:
@@ -97,18 +175,23 @@ en:
           archive: Select archive
           submit: Upload!
         upload_zipped: Upload users from XLSX
-    global:
-      button:
-        delete: Delete
-        edit: Edit
-        show: Show
-        submit: Submit
-        new_power_training: New power training
-      dialog:
-        you_sure: Are you sure?
-      flash:
-        already_signed_in: You are already signed in!
-        not_signed_in: You are not signed in!
+  global:
+    user:
+      roles:
+        basic: Basic
+        moderator: Moderator
+        admin: Admin
+    button:
+      delete: Delete
+      edit: Edit
+      show: Show
+      submit: Submit
+      new_power_training: New power training
+    dialog:
+      you_sure: Are you sure?
+    flash:
+      already_signed_in: You are already signed in!
+      not_signed_in: You are not signed in!
   pages:
     index:
       title: "Welcome to Fit tracker!"
@@ -121,6 +204,21 @@ en:
     powers: Power Training
     sign_up: Sign Up
     users: Users
+  gains:
+    new:
+      title: "New Complex Training"
+    edit:
+      title: "Edit Complex Training"
+    show:
+      title: "Complex Training"
+    create:
+      success: "Training create!"
+    update:
+      success: "Your training updated!"
+    update_gain:
+      success: "Training complete!"
+    destroy:
+      success: "Training delete!"
   powers:
     new:
       title: "New Training"

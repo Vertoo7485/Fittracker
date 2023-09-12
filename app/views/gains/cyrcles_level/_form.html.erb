@@ -1,7 +1,7 @@
 <%= render 'shared/errors', object: @gain %>
 <%= form_with model: [@user, @gain] do |f| %>
 
-<h1 class="mb-4 row">Самое время изменить тренировки! Введите новые параметры</h1> 
+<h2 class="mb-4 row, center">Самое время изменить тренировку! Введите новые параметры</h2> 
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
@@ -79,6 +79,8 @@
        class: 'form-control form-control-lg' %>
     </div>
   </div>
+
+    <h3 class="mb-4 row, center">Перед сохранением, обязательно заполните все поля<h3>
 
   <%= f.submit t('users.global.forms.save'),
     class: 'btn btn-primary btn-lg' %>

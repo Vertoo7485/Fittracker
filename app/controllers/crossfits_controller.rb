@@ -9,19 +9,18 @@ class CrossfitsController < ApplicationController
   def create
     @crossfit = @user.crossfits.build crossfit_params
     if @crossfit.save
-      flash[:success] = "Crossfit training create"
+      flash[:success] = 'Crossfit training create'
       redirect_to user_path(@user)
     else
       render :new
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @crossfit.update crossfit_params
-      flash[:success] = "Crossfit training create"
+      flash[:success] = 'Crossfit training create'
       redirect_to user_path(@user)
     else
       render :edit
@@ -44,12 +43,11 @@ class CrossfitsController < ApplicationController
     redirect_to root_path
   end
 
-  def show
-  end
+  def show; end
 
   def destroy
     @crossfit.destroy
-    flash[:success] = "Crossfit training deleted"
+    flash[:success] = 'Crossfit training deleted'
     redirect_to user_path(@user)
   end
 
@@ -65,10 +63,10 @@ class CrossfitsController < ApplicationController
 
   def crossfit_params
     params.require(:crossfit).permit(:front_squat, :hang_grab, :overhead_press, :kettlebell_swing,
-                                 :kettlebell_pull_to_the_chin, :russian_twist, :plank_with_kettlebell_pull,
-                                 :trusters, :bent_over_barbell_pull, :deadlift, :mahi_dumbbells_through_the_sides,
-                                 :dumbbell_layout, :barbell_pull_to_chin, :forearm_curls_and_press_ups_with_a_barbell,
-                                 :cross_over, :abduction_in_a_butterfly, :lying_leg_flexion, :seated_leg_extension, 
-                                 :sumo_squats, :farm_walk)
+                                     :kettlebell_pull_to_the_chin, :russian_twist, :plank_with_kettlebell_pull,
+                                     :trusters, :bent_over_barbell_pull, :deadlift, :mahi_dumbbells_through_the_sides,
+                                     :dumbbell_layout, :barbell_pull_to_chin, :forearm_curls_and_press_ups_with_a_barbell,
+                                     :cross_over, :abduction_in_a_butterfly, :lying_leg_flexion, :seated_leg_extension,
+                                     :sumo_squats, :farm_walk)
   end
 end

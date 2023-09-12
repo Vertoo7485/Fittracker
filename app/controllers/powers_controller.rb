@@ -16,8 +16,7 @@ class PowersController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @power.update power_params
@@ -59,8 +58,7 @@ class PowersController < ApplicationController
     redirect_to root_path
   end
 
-  def show
-  end
+  def show; end
 
   def destroy
     @power.destroy
@@ -80,10 +78,10 @@ class PowersController < ApplicationController
 
   def power_params
     params.require(:power).permit(:barbell_bench_press, :reverse_push_ups, :dumbbell_bench_press, :push_ups_on_bars,
-                                 :stacked_chest_press, :extension_with_rope_handle, :dumbbell_abduction,
-                                 :horizontal_pull_block, :pull_ups, :barbell_forearm_curls, :incline_dumbbell_row,
-                                 :vertical_pull_block, :hyperextension, :hammers, :gack_squats, :seated_leg_extension,
-                                 :leg_press, :hamer_shoulder_press, :dumbbells_through_the_side,
-                                 :lying_leg_flexion, :pancake_swing_in_front_of_you, :barbell_pull_to_chin)
+                                  :stacked_chest_press, :extension_with_rope_handle, :dumbbell_abduction,
+                                  :horizontal_pull_block, :pull_ups, :barbell_forearm_curls, :incline_dumbbell_row,
+                                  :vertical_pull_block, :hyperextension, :hammers, :gack_squats, :seated_leg_extension,
+                                  :leg_press, :hamer_shoulder_press, :dumbbells_through_the_side,
+                                  :lying_leg_flexion, :pancake_swing_in_front_of_you, :barbell_pull_to_chin)
   end
 end

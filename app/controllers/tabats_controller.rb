@@ -9,19 +9,18 @@ class TabatsController < ApplicationController
   def create
     @tabat = @user.tabats.build tabat_params
     if @tabat.save
-      flash[:success] = "Tabat training create"
+      flash[:success] = 'Tabat training create'
       redirect_to user_path(@user)
     else
       render :new
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @tabat.update tabat_params
-      flash[:success] = "Tabat training create"
+      flash[:success] = 'Tabat training create'
       redirect_to user_path(@user)
     else
       render :edit
@@ -59,12 +58,11 @@ class TabatsController < ApplicationController
     redirect_to root_path
   end
 
-  def show
-  end
+  def show; end
 
   def destroy
     @tabat.destroy
-    flash[:success] = "Tabat training deleted"
+    flash[:success] = 'Tabat training deleted'
     redirect_to user_path(@user)
   end
 
