@@ -17,13 +17,14 @@ class GainsController < ApplicationController
   end
 
   def edit; end
-
+  
   def update
     if @gain.update gain_params
       flash[:success] = t('.success')
       redirect_to user_path(@user)
     else
-      render :edit
+      flash[:danger] = 'Заполните все параметры!'
+      redirect_to(request.referer)
     end
   end
 
@@ -134,6 +135,6 @@ class GainsController < ApplicationController
                                  :kettlebell_swing, :front_squat, :hang_grab, :overhead_press,
                                  :kettlebell_pull_to_the_chin, :plank_with_kettlebell_pull, :deadlift,
                                  :dumbbell_layout, :forearm_curls_and_press_ups_with_a_barbell, :cross_over,
-                                 :abduction_in_a_butterfly, :sumo_squats, :farm_walk)
+                                 :abduction_in_a_butterfly, :sumo_squats, :farm_walk, :day)
   end
 end

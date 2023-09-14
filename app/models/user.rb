@@ -4,6 +4,7 @@ class User < ApplicationRecord
   enum role: { basic: 0, moderator: 1, admin: 2 }, _suffix: :role
 
   attr_accessor :old_password, :remember_token, :admin_edit
+  attr_accessor :day
 
   has_many :powers, dependent: :destroy
   has_many :crossfits, dependent: :destroy
@@ -19,11 +20,16 @@ class User < ApplicationRecord
 
   validates :email, presence: true, uniqueness: true, 'valid_email_2/email': true
   validate :password_complexity
+  validates :role, presence: true
 
   validates :weight, presence: true
   validates :growth, presence: true
   validates :years, presence: true
   validates :gender, presence: true
+
+  def guest?
+    false
+  end
 
   def remember_me
     self.remember_token = SecureRandom.urlsafe_base64

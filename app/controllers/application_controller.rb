@@ -9,4 +9,5 @@ class ApplicationController < ActionController::Base
   include CountCrossfitTraining
   include CountTabatTraining
   include CountGainTraining
+  include Authorization
 end

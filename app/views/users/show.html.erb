@@ -54,7 +54,7 @@
     <% @powers.each do |power| %>
       <article>
         <p class="mt-2">
-          <strong>Силовая тренировка № <%= power.id %></strong>
+          <strong>Силовая тренировка</strong>
         </p>
         <p>
           <%= link_to t('global.button.show'), user_power_path(@user, power), 
@@ -72,7 +72,7 @@
     <% @crossfits.each do |crossfit| %>
       <article>
         <p class="mt-2">
-          <strong>Кроссфит тренировка № <%= crossfit.id %></strong>
+          <strong>Кроссфит тренировка</strong>
         </p>
         <p>
           <%= link_to t('global.button.show'), user_crossfit_path(@user, crossfit), 
@@ -90,7 +90,7 @@
     <% @gains.each do |gain| %>
       <article>
         <p class="mt-2">
-          <strong>Комплексная тренировка № <%= gain.id %></strong>
+          <strong>Комплексная тренировка</strong>
         </p>
         <p>
           <%= link_to t('global.button.show'), user_gain_path(@user, gain), 

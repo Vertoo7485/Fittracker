@@ -28,6 +28,8 @@
       <%= render 'gains/crossfits_level/form' %>
     <% elsif Gain::CROSSFITS_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
       <%= render 'gains/crossfits_level/wednesday' %>
+    <% elsif current_gain_training.horizontal_pull_block.nil? %>
+      <%= render 'gains/wednesday' %>
     <% else %>
       <%= render 'gains/power_level/wednesday' %>
     <% end %>
@@ -44,7 +46,10 @@
       <%= render 'gains/crossfits_level/form' %>
     <% elsif Gain::CROSSFITS_COUNT_TRAINING.include?(current_gain_training.count_update_training) %>
       <%= render 'gains/crossfits_level/friday' %>
+    <% elsif current_gain_training.gack_squats.nil? %>
+      <%= render 'gains/friday' %>
     <% else %>
       <%= render 'gains/power_level/friday' %>
     <% end %>
 <% end %>
+

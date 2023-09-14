@@ -1,0 +1,84 @@
+<%= render 'shared/errors', object: @gain %>
+<%= form_with model: [@user, @gain] do |f| %>
+
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :barbell_bench_press %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :barbell_bench_press, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :reverse_push_ups %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :reverse_push_ups, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :dumbbell_bench_press %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :dumbbell_bench_press, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+<div class="my-3 mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :push_ups_on_bars %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :push_ups_on_bars, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :stacked_chest_press %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :stacked_chest_press, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :extension_with_rope_handle %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :extension_with_rope_handle, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :dumbbell_abduction %>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :dumbbell_abduction, placeholder: t('activerecord.attributes.powers.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <%= f.submit t('users.global.forms.save'),
+    class: 'btn btn-primary btn-lg' %>
+<% end %>
