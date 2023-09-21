@@ -193,6 +193,25 @@ ru:
       already_signed_in: Вы уже вошли в систему!
       not_signed_in: Вы не вошли в систему!
       not_authorized: У вас нет прав на выполнение этого действия
+  password_resets:
+    create:
+      success: Инструкции были отправленны на ваш email
+    new:
+      title: Сборсить пароль
+      form:
+        email: Email
+        submit: Отправить инструкции для сброса пароля
+        back: Назад ко входу в систему
+    fail: Не удалось сбросить ваш пароль...
+    edit:
+      title: Введите новый пароль
+      form:
+        submit: Сбросить пароль!
+    update:
+      success: Ваш пароль был сброшен!
+  password_reset_mailer:
+    reset_email:
+      subject: Сброс пароля | FitTracker
   pages:
     index:
       title: "Добро пожаловать в Fit tracker!"
@@ -262,6 +281,7 @@ ru:
         password: Пароль
         remember_me: Запомнить меня
         submit: Войти!
+        forgot_password: Забыл пароль
       title: Войти
   users:
     title: Пользователь

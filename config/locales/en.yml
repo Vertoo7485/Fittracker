@@ -193,6 +193,25 @@ en:
       already_signed_in: You are already signed in!
       not_signed_in: You are not signed in!
       not_authorized: You are not authorized to perfom this action!
+  password_resets:
+    create:
+      success: Password reset instructions were sent to your email address
+    new:
+      title: Reset password
+      form:
+        email: Email
+        submit: Send reset instructions
+        back: Back to sign in
+    fail: Could not reset your password...
+    edit:
+      title: Enter new password
+      form:
+        submit: Reset my password!
+    update:
+      success: Your password was reset!
+  password_reset_mailer:
+    reset_email:
+      subject: Password reset | FitTracker
   pages:
     index:
       title: "Welcome to Fit tracker!"
@@ -262,6 +281,7 @@ en:
         password: Password
         remember_me: Remember me
         submit: Sign in!
+        forgot_password: I forgot my password
       title: Log In
   users:
     title: User

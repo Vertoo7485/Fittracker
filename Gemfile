@@ -32,6 +32,7 @@ gem 'rails-i18n', '~> 6'
 gem 'rubyXL', '~> 3.4'
 gem 'rubyzip', '~> 2'
 gem 'valid_email2', '~> 4.0'
+gem 'sidekiq', '~> 6'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -58,6 +59,7 @@ group :development do
   gem 'rubocop-performance', '~> 1.11', require: false
   gem 'rubocop-rails', '~> 2.11', require: false
   gem 'spring'
+  gem 'letter_opener'
 end
 
 group :test do
