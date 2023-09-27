@@ -269,6 +269,21 @@ en:
       success: "Training complete!"
     destroy:
       success: "Training delete!"
+  tabats:
+    new:
+      title: "New Tabat Training"
+    edit:
+      title: "Edit Tabat Training"
+    show:
+      title: "Tabat Training"
+    create:
+      success: "Tabat Training create!"
+    update:
+      success: "Your Tabat training updated!"
+    update_crossfit:
+      success: "Training complete!"
+    destroy:
+      success: "Training delete!"
   sessions:
     create:
       invalid_creds: Incorrect email and/or password!
@@ -290,6 +305,9 @@ en:
     edit:
       title: Edit profile
     global:
+      flash:
+        not_signed_in: 'You are not signed in!'
+        already_signed_in: 'You are already signed in!'
       forms:
         register: Register
         save: Save

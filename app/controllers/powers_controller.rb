@@ -1,10 +1,16 @@
+# frozen_string_literal: true
+
 class PowersController < ApplicationController
   before_action :set_user
   before_action :set_power, except: %i[new create]
 
+  def show; end
+
   def new
     @power = @user.powers.build
   end
+
+  def edit; end
 
   def create
     @power = @user.powers.build power_params
@@ -15,8 +21,6 @@ class PowersController < ApplicationController
       render :new
     end
   end
-
-  def edit; end
 
   def update
     if @power.update power_params
@@ -57,8 +61,6 @@ class PowersController < ApplicationController
     end
     redirect_to root_path
   end
-
-  def show; end
 
   def destroy
     @power.destroy

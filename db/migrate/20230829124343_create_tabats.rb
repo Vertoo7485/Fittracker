@@ -1,4 +1,9 @@
+# frozen_string_literal: true
+
 class CreateTabats < ActiveRecord::Migration[6.1]
+  # rubocop:disable Metrics/BlockLength
+  # rubocop:disable Metrics/MethodLength
+  # rubocop:disable Metrics/AbcSize
   def change
     create_table :tabats do |t|
       t.belongs_to :user, null: false, foreign_key: true
@@ -34,4 +39,7 @@ class CreateTabats < ActiveRecord::Migration[6.1]
       t.timestamps
     end
   end
+  # rubocop:enable Metrics/BlockLength
+  # rubocop:enable Metrics/MethodLength
+  # rubocop:enable Metrics/AbcSize
 end

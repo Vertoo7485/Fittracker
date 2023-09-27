@@ -1,27 +1,31 @@
+# frozen_string_literal: true
+
 class TabatsController < ApplicationController
   before_action :set_user
   before_action :set_tabat, except: %i[new create]
+
+  def show; end
 
   def new
     @tabat = @user.tabats.build
   end
 
+  def edit; end
+
   def create
     @tabat = @user.tabats.build tabat_params
     if @tabat.save
-      flash[:success] = 'Tabat training create'
       redirect_to user_path(@user)
+      flash.now[:success] = t('.success')
     else
       render :new
     end
   end
 
-  def edit; end
-
   def update
     if @tabat.update tabat_params
-      flash[:success] = 'Tabat training create'
       redirect_to user_path(@user)
+      flash.now[:success] = t('.success')
     else
       render :edit
     end
@@ -58,12 +62,10 @@ class TabatsController < ApplicationController
     redirect_to root_path
   end
 
-  def show; end
-
   def destroy
     @tabat.destroy
-    flash[:success] = 'Tabat training deleted'
     redirect_to user_path(@user)
+    flash.now[:success] = t('.success')
   end
 
   private

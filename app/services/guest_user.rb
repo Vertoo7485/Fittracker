@@ -5,10 +5,10 @@ class GuestUser
     true
   end
 
-  def method_missing(name, *args, &block)
+  def method_missing(name, *args, &)
     return false if name.to_s.end_with?('_role?')
 
-    super(name, *args, &block)
+    super(name, *args, &)
   end
 
   def respond_to_missing?(name, include_private)

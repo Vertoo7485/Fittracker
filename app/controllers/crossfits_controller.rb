@@ -1,10 +1,16 @@
+# frozen_string_literal: true
+
 class CrossfitsController < ApplicationController
   before_action :set_user
   before_action :set_crossfit, except: %i[new create]
 
+  def show; end
+
   def new
     @crossfit = @user.crossfits.build
   end
+
+  def edit; end
 
   def create
     @crossfit = @user.crossfits.build crossfit_params
@@ -15,8 +21,6 @@ class CrossfitsController < ApplicationController
       render :new
     end
   end
-
-  def edit; end
 
   def update
     if @crossfit.update crossfit_params
@@ -42,8 +46,6 @@ class CrossfitsController < ApplicationController
     end
     redirect_to root_path
   end
-
-  def show; end
 
   def destroy
     @crossfit.destroy

@@ -1,10 +1,16 @@
+# frozen_string_literal: true
+
 class GainsController < ApplicationController
   before_action :set_user
   before_action :set_gain, except: %i[new create]
 
+  def show; end
+
   def new
     @gain = @user.gains.build
   end
+
+  def edit; end
 
   def create
     @gain = @user.gains.build gain_params
@@ -16,8 +22,6 @@ class GainsController < ApplicationController
     end
   end
 
-  def edit; end
-  
   def update
     if @gain.update gain_params
       flash[:success] = t('.success')
@@ -103,8 +107,6 @@ class GainsController < ApplicationController
     end
     redirect_to root_path
   end
-
-  def show; end
 
   def destroy
     @gain.destroy

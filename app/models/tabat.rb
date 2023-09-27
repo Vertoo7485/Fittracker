@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Tabat < ApplicationRecord
   belongs_to :user
 

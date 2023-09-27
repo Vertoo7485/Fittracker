@@ -269,6 +269,21 @@ ru:
       success: "Тренировка завершена!"
     destroy:
       success: "Тренировка удалена!"
+  tabats:
+    new:
+      title: "Новая Тренировка Табата"
+    edit:
+      title: "Редактирование Табата Тренировки"
+    show:
+      title: "Тренировка Табата"
+    create:
+      success: Тренировка создана!
+    update:
+      success: Ваша тренировка обновлена
+    update_crossfit:
+      success: "Тренировка завершена!"
+    destroy:
+      success: "Тренировка удалена!"
   sessions:
     create:
       invalid_creds: Неверный email и/или пароль!
@@ -290,6 +305,9 @@ ru:
     edit:
       title: Редактировать профиль
     global:
+      flash:
+        not_signed_in: Вы не вошли в систему!
+        already_signed_in: Вы уже вошли в систему!
       forms:
         register: Регистрация
         save: Сохранить

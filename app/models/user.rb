@@ -3,11 +3,10 @@
 class User < ApplicationRecord
   include Recoverable
   include Rememberable
-  
+
   enum role: { basic: 0, moderator: 1, admin: 2 }, _suffix: :role
 
-  attr_accessor :old_password, :admin_edit
-  attr_accessor :day
+  attr_accessor :old_password, :admin_edit, :day
 
   has_many :powers, dependent: :destroy
   has_many :crossfits, dependent: :destroy
