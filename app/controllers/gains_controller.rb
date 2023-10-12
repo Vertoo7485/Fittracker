@@ -27,7 +27,7 @@ class GainsController < ApplicationController
       flash[:success] = t('.success')
       redirect_to user_path(@user)
     else
-      flash[:danger] = 'Заполните все параметры!'
+      flash[:danger] = t('.danger')
       redirect_to(request.referer)
     end
   end

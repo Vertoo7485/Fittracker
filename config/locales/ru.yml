@@ -169,6 +169,7 @@ ru:
       create:
         success: Пользователи загружены!
       index:
+        success: Вы получите письмо, когда операция завершится
         download_zipped: Загрузить архив с XLSX
         title: Управление пользователями
         upload_form:
@@ -235,6 +236,7 @@ ru:
       success: "Тренировка создана!"
     update:
       success: "Ваша тренировка обновлена!"
+      danger: "Заполните все параметры!"
     update_gain:
       success: "Тренировка завершена!"
     destroy:

@@ -7,7 +7,6 @@ class ApplicationController < ActionController::Base
   include CountPowerTraining
   include Internationalization
   include CountCrossfitTraining
-  include CountTabatTraining
   include CountGainTraining
   include Authorization
 end

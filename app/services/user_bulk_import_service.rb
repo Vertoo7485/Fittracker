@@ -49,11 +49,15 @@ class UserBulkImportService < ApplicationService
   def users_from(data)
     sheet = RubyXL::Parser.parse_buffer(data)[0]
     sheet.map do |row|
-      cells = row.cells[0..2].map { |c| c&.value.to_s }
+      cells = row.cells[0..6].map { |c| c&.value.to_s }
       User.new name: cells[0],
                email: cells[1],
                password: cells[2],
-               password_confirmation: cells[2]
+               password_confirmation: cells[2],
+               weight: cells[3],
+               growth: cells[4],
+               years: cells[5],
+               gender: cells[6]
     end
   end
 end

@@ -5,15 +5,13 @@ class UsersController < ApplicationController
   before_action :require_authentication, only: %i[edit update]
   before_action :set_user!, only: %i[edit update show]
   before_action :authorize_user!
-  after_action :verify_authorized
+
 
   def show
     @power = @user.powers.build
     @powers = @user.powers.order created_at: :desc
     @crossfit = @user.crossfits.build
     @crossfits = @user.crossfits.order created_at: :desc
-    @tabat = @user.tabats.build
-    @tabats = @user.tabats.order created_at: :desc
     @gain = @user.gains.build
     @gains = @user.gains.order created_at: :desc
   end
