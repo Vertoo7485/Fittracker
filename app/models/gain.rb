@@ -9,7 +9,7 @@ class Gain < ApplicationRecord
 
   attr_accessor :day
 
-  ## validates for monday
+  ## validates for monday 
   validates :barbell_bench_press, presence: true
   validates :reverse_push_ups, presence: true
   validates :dumbbell_bench_press, presence: true
@@ -30,7 +30,7 @@ class Gain < ApplicationRecord
 
   ## validates for friday
 
-  validates :gack_squats, :seated_leg_extension, presence: true, on: :update, if: proc { |u| u.day == 'friday' }
+  validates :gack_squats, presence: true, on: :update, if: proc { |u| u.day == 'friday' }
   validates :seated_leg_extension, presence: true, on: :update, if: proc { |u| u.day == 'friday' }
   validates :hamer_shoulder_press, presence: true, on: :update, if: proc { |u| u.day == 'friday' }
   validates :dumbbells_through_the_side, presence: true, on: :update, if: proc { |u| u.day == 'friday' }

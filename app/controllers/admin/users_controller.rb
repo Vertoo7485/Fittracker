@@ -15,7 +15,7 @@ module Admin
 
         format.zip do
           UserBulkExportJob.perform_later current_user
-          flash[:success] = t '.success'
+          flash[:success] = t('.success')
           redirect_to admin_users_path
         end
       end
@@ -26,7 +26,7 @@ module Admin
     def create
       if params[:archive].present?
         UserBulkImportJob.perform_later create_blob, current_user
-        flash[:success] = t '.success'
+        flash[:success] = t('.success')
       end
 
       redirect_to admin_users_path
@@ -34,7 +34,7 @@ module Admin
 
     def update
       if @user.update user_params
-        flash[:success] = t '.success'
+        flash[:success] = t('.success')
         redirect_to admin_users_path
       else
         render :edit
@@ -43,7 +43,7 @@ module Admin
 
     def destroy
       @user.destroy
-      flash[:success] = t '.success'
+      flash[:success] = t('.success')
       redirect_to admin_users_path
     end
 

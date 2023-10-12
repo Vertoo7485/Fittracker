@@ -4,7 +4,7 @@ class CrossfitsController < ApplicationController
   before_action :set_user
   before_action :set_crossfit, except: %i[new create]
 
-  def show; end
+  def show; end 
 
   def new
     @crossfit = @user.crossfits.build
@@ -15,7 +15,7 @@ class CrossfitsController < ApplicationController
   def create
     @crossfit = @user.crossfits.build crossfit_params
     if @crossfit.save
-      flash[:success] = 'Crossfit training create'
+      flash[:success] = t('.success')
       redirect_to user_path(@user)
     else
       render :new
@@ -24,7 +24,7 @@ class CrossfitsController < ApplicationController
 
   def update
     if @crossfit.update crossfit_params
-      flash[:success] = 'Crossfit training create'
+      flash[:success] = t('.success')
       redirect_to user_path(@user)
     else
       render :edit
@@ -49,7 +49,7 @@ class CrossfitsController < ApplicationController
 
   def destroy
     @crossfit.destroy
-    flash[:success] = 'Crossfit training deleted'
+    flash[:success] = t('.success')
     redirect_to user_path(@user)
   end
 

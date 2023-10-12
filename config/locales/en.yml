@@ -169,6 +169,7 @@ en:
       create:
         success: Users imported!
       index:
+        success: You'll get an email once this operation is done
         download_zipped: Download zipped XLSX
         title: Admin Users
         upload_form:
@@ -235,6 +236,7 @@ en:
       success: "Training create!"
     update:
       success: "Your training updated!"
+      danger: "Fill in all parameters!"
     update_gain:
       success: "Training complete!"
     destroy:

@@ -10,7 +10,6 @@ class User < ApplicationRecord
 
   has_many :powers, dependent: :destroy
   has_many :crossfits, dependent: :destroy
-  has_many :tabats, dependent: :destroy
   has_many :gains, dependent: :destroy
 
   has_secure_password validations: false
