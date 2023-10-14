@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
     redirect_to root_path
   end
 
-  private 
+  private
 
   def do_sign_in(user)
     sign_in user

@@ -1,89 +1,101 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe CrossfitsController, type: :controller do
-  let(:user) { User.create(email: 'Test@example.com', name: 'Test',
-    password: 'Passw0rd!', password_confirmation: 'Passw0rd!', old_password: 'Passw0rd!',
-    weight: 85, growth: 183, years: 27, gender: 'male') }
+  let(:user) do
+    User.create(email: 'Test@example.com', name: 'Test',
+                password: 'Passw0rd!', password_confirmation: 'Passw0rd!', old_password: 'Passw0rd!',
+                weight: 85, growth: 183, years: 27, gender: 'male')
+  end
 
   describe 'POST #create' do
     context 'with valid attributes' do
       it 'creates a new crossfit' do
-        expect {
-          post :create, params: { user_id: user.id, crossfit: { 
-                                        front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
-                                        kettlebell_pull_to_the_chin: 10, russian_twist: 10,
-                                        plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
-                                        deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
-                                        barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-                                        cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-                                        seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10 } }
-        }.to change(Crossfit, :count).by(1)
+        expect do
+          post :create, params: { user_id: user.id, crossfit: {
+            front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
+            kettlebell_pull_to_the_chin: 10, russian_twist: 10,
+            plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
+            deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+            barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+            cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+            seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
+          } }
+        end.to change(Crossfit, :count).by(1)
       end
 
       it 'sets a flash message' do
-        post :create, params: { user_id: user.id, crossfit: { 
-                                        front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
-                                        kettlebell_pull_to_the_chin: 10, russian_twist: 10,
-                                        plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
-                                        deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
-                                        barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-                                        cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-                                        seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10 } }
-        
+        post :create, params: { user_id: user.id, crossfit: {
+          front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
+          kettlebell_pull_to_the_chin: 10, russian_twist: 10,
+          plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
+          deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+          barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+          cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+          seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
+        } }
+
         expect(flash[:success]).to eq(I18n.t('crossfits.create.success'))
       end
 
       it 'redirects to the user page' do
         post :create, params: { user_id: user.id, crossfit: {
-                                        front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
-                                        kettlebell_pull_to_the_chin: 10, russian_twist: 10,
-                                        plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
-                                        deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
-                                        barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-                                        cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-                                        seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10 } }
-        
+          front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
+          kettlebell_pull_to_the_chin: 10, russian_twist: 10,
+          plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
+          deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+          barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+          cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+          seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
+        } }
+
         expect(response).to redirect_to(user_path(user))
       end
     end
 
     context 'with invalid attributes' do
       it 'does not create a new crossfit' do
-        expect {
+        expect do
           post :create, params: { user_id: user.id, crossfit: {
-                                            front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
-                                            kettlebell_pull_to_the_chin: 10, russian_twist: 10,
-                                            plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
-                                            deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
-                                            barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-                                            cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-                                            seated_leg_extension: 10, sumo_squats: 10 } }
-        }.not_to change(Crossfit, :count)
+            front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
+            kettlebell_pull_to_the_chin: 10, russian_twist: 10,
+            plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
+            deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+            barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+            cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+            seated_leg_extension: 10, sumo_squats: 10
+          } }
+        end.not_to change(Crossfit, :count)
       end
 
       it 'renders the new template' do
         post :create, params: { user_id: user.id, crossfit: {
-                                          front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
-                                          kettlebell_pull_to_the_chin: 10, russian_twist: 10,
-                                          plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
-                                          deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
-                                          barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-                                          cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-                                          seated_leg_extension: 10, sumo_squats: 10 } }
-        
+          front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
+          kettlebell_pull_to_the_chin: 10, russian_twist: 10,
+          plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
+          deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+          barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+          cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+          seated_leg_extension: 10, sumo_squats: 10
+        } }
+
         expect(response).to render_template(:new)
       end
     end
   end
 
   describe 'GET #edit' do
-    let(:crossfit) { Crossfit.create(
-          user: user, front_squat: 10, hang_grab: 10, overhead_press: 10,
-          kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
-          trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
-          dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-          cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-          seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10) }
+    let(:crossfit) do
+      Crossfit.create(
+        user:, front_squat: 10, hang_grab: 10, overhead_press: 10,
+        kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
+        trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
+        dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+        cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+        seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
+      )
+    end
 
     before do
       get :edit, params: { user_id: user.id, id: crossfit.id }
@@ -93,24 +105,26 @@ RSpec.describe CrossfitsController, type: :controller do
       expect(assigns(:crossfit)).to eq(crossfit)
     end
 
-    it 'renders the edit template' do        
+    it 'renders the edit template' do
       expect(response).to render_template(:edit)
     end
   end
 
   describe 'PATCH #update' do
-    let(:crossfit) { Crossfit.create(
-          user: user, front_squat: 10, hang_grab: 10, overhead_press: 10,
-          kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
-          trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
-          dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-          cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-          seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
-    ) }
-      
+    let(:crossfit) do
+      Crossfit.create(
+        user:, front_squat: 10, hang_grab: 10, overhead_press: 10,
+        kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
+        trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
+        dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+        cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+        seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
+      )
+    end
+
     context 'with valid attributes' do
       let(:valid_attributes) { { front_squat: 15 } }
-                              
+
       before do
         patch :update, params: { user_id: user.id, id: crossfit.id, crossfit: valid_attributes }
       end
@@ -143,42 +157,46 @@ RSpec.describe CrossfitsController, type: :controller do
     end
   end
 
-  describe "DELETE #destroy" do
-    let(:crossfit) { Crossfit.create(
-      user: user, front_squat: 10, hang_grab: 10, overhead_press: 10,
-      kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
-      trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
-      dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-      cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-      seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
-    ) }
+  describe 'DELETE #destroy' do
+    let(:crossfit) do
+      Crossfit.create(
+        user:, front_squat: 10, hang_grab: 10, overhead_press: 10,
+        kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
+        trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
+        dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+        cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+        seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
+      )
+    end
 
     before do
       delete :destroy, params: { user_id: user.id, id: crossfit.id }
     end
 
-    it "destroys the crossfit record" do
+    it 'destroys the crossfit record' do
       expect(Crossfit.exists?(crossfit.id)).to be_falsey
     end
 
-    it "sets the success flash message" do
+    it 'sets the success flash message' do
       expect(flash[:success]).to eq(I18n.t('crossfits.destroy.success'))
     end
 
-    it "redirects to the user path" do
+    it 'redirects to the user path' do
       expect(response).to redirect_to(user_path(user))
     end
   end
 
   describe '#show' do
-    let(:crossfit) { Crossfit.create(
-      user: user, front_squat: 10, hang_grab: 10, overhead_press: 10,
-      kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
-      trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
-      dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-      cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-      seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
-    ) }
+    let(:crossfit) do
+      Crossfit.create(
+        user:, front_squat: 10, hang_grab: 10, overhead_press: 10,
+        kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
+        trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
+        dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+        cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+        seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
+      )
+    end
 
     before do
       get :show, params: { user_id: user.id, id: crossfit.id }
@@ -193,14 +211,17 @@ RSpec.describe CrossfitsController, type: :controller do
     end
   end
 
-  describe "PUT #update_crossfit" do
-    let(:crossfit) { Crossfit.create(
-          user: user, front_squat: 10, hang_grab: 10, overhead_press: 10,
-          kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
-          trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
-          dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
-          cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
-          seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10) }
+  describe 'PUT #update_crossfit' do
+    let(:crossfit) do
+      Crossfit.create(
+        user:, front_squat: 10, hang_grab: 10, overhead_press: 10,
+        kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
+        trusters: 10, bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
+        dumbbell_layout: 10, barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+        cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+        seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10
+      )
+    end
 
     context "when complete_training is 'monday'" do
       before do
@@ -208,11 +229,11 @@ RSpec.describe CrossfitsController, type: :controller do
         put :update_crossfit, params: { complete_training: 'monday', user_id: user.id, id: crossfit.id }
       end
 
-      it "sets the success flash message" do
+      it 'sets the success flash message' do
         expect(flash[:success]).to eq(I18n.t('crossfits.update_crossfit.success'))
       end
 
-      it "redirects to the root path" do
+      it 'redirects to the root path' do
         expect(response).to redirect_to(root_path)
       end
     end
@@ -223,11 +244,11 @@ RSpec.describe CrossfitsController, type: :controller do
         put :update_crossfit, params: { complete_training: 'wednesday', user_id: user.id, id: crossfit.id }
       end
 
-      it "sets the success flash message" do
+      it 'sets the success flash message' do
         expect(flash[:success]).to eq(I18n.t('crossfits.update_crossfit.success'))
       end
 
-      it "redirects to the root path" do
+      it 'redirects to the root path' do
         expect(response).to redirect_to(root_path)
       end
     end
@@ -238,23 +259,22 @@ RSpec.describe CrossfitsController, type: :controller do
         put :update_crossfit, params: { complete_training: 'friday', user_id: user.id, id: crossfit.id }
       end
 
-      it "sets the success flash message" do
+      it 'sets the success flash message' do
         expect(flash[:success]).to eq(I18n.t('crossfits.update_crossfit.success'))
       end
 
-      it "redirects to the root path" do
+      it 'redirects to the root path' do
         expect(response).to redirect_to(root_path)
       end
     end
 
     context "when complete_training is not 'monday', 'wednesday', or 'friday'" do
-
-      it "does not set the success flash message" do
+      it 'does not set the success flash message' do
         put :update_crossfit, params: { complete_training: 'sunday', user_id: user.id, id: crossfit.id }
         expect(flash[:success]).to be_nil
       end
 
-      it "redirects to the root path" do
+      it 'redirects to the root path' do
         put :update_crossfit, params: { complete_training: 'sunday', user_id: user.id, id: crossfit.id }
         expect(response).to redirect_to(root_path)
       end

@@ -27,6 +27,9 @@ Rails.application.routes.draw do
       put '/gains/:id/update_gain', to: 'gains#update_gain', as: 'update_gain'
     end
 
+    get '/faq', to: 'pages#faq'
+    get '/exercise_technique', to: 'pages#exercise_technique'
+
     namespace :admin do
       resources :users, only: %i[index create edit update destroy]
     end

@@ -9,7 +9,7 @@ class Gain < ApplicationRecord
 
   attr_accessor :day
 
-  ## validates for monday 
+  ## validates for monday
   validates :barbell_bench_press, presence: true
   validates :reverse_push_ups, presence: true
   validates :dumbbell_bench_press, presence: true

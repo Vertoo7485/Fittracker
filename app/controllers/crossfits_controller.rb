@@ -4,7 +4,7 @@ class CrossfitsController < ApplicationController
   before_action :set_user
   before_action :set_crossfit, except: %i[new create]
 
-  def show; end 
+  def show; end
 
   def new
     @crossfit = @user.crossfits.build

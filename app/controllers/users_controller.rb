@@ -6,7 +6,6 @@ class UsersController < ApplicationController
   before_action :set_user!, only: %i[edit update show]
   before_action :authorize_user!
 
-
   def show
     @power = @user.powers.build
     @powers = @user.powers.order created_at: :desc
