@@ -11,58 +11,196 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Жим штанги на скамье +45°:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Жим штанги на скамье +45°:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Жим лежа.jpeg') %>
+            <ul>
+              <li>Лягте на скамью, поставив ступни на пол и согнув колени.</li>
+              <li>Держите спину прямо, голову вверх.</li>
+              <li>Держите штангу перед грудью.</li>
+              <li>Сожмите лопатки вместе.</li>
+              <li>Опускайте штангу вниз, пока она не коснется верхней части груди.</li>
+              <li>Сделайте паузу, затем снова поднимите штангу.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.monday_reps %></div>
-      <div class="col"><%= current_training.barbell_bench_press.round(2)%> кг.</div>
+      <div class="col"><%= current_training.barbell_bench_press.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Обратные отжимания:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText1" aria-expanded="false"
+              aria-controls="collapseText1">Обратные отжимания:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Обратные отжимания.jpeg') %>
+            <ul>
+              <li>Расположите руки на ширине плеч на спортивной скамье. Локти должны находиться как можно ближе к телу.</li>
+              <li>Вытяните ноги в длину перед собой, немного согните в коленях, пятки упираются в другую скамью.</li>
+              <li>На вдохе согните локти, пока плечо и предплечье не образуют угол 90 градусов.</li>
+              <li>В нижней части движения задержитесь на 3-5 секунд.</li>
+              <li>Оттолкнувшись от скамьи, выпрямите локти и вернитесь в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.monday_reps %></div>
-      <div class="col"><%= current_training.reverse_push_ups.round(2)%> кг.</div>
+      <div class="col"><%= current_training.reverse_push_ups.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Жим гантелей лежа:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText2" aria-expanded="false"
+              aria-controls="collapseText2">Жим гантелей лежа:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Жим гантелей лежа.jpeg') %>
+            <ul>
+              <li>Возьмите гантели в руки, сядьте и облокотите их на колени.</li>
+              <li>Лягте на скамью, прижмите снаряды к груди.</li>
+              <li>Обязательно согните ноги и начинайте делать жим - опускайте на вдохе гантели до уровня грудной клетки.</li>
+              <li>На выдохе поднимайте руки со снарядом вверх.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.monday_reps %></div>
-      <div class="col"><%= current_training.dumbbell_bench_press.round(2)%> кг.</div>
+      <div class="col"><%= current_training.dumbbell_bench_press.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Отжимания на брусьях с весом:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText3" aria-expanded="false"
+              aria-controls="collapseText3">Отжимания на брусьях с весом:
+        </button>
+          <div class="collapse my-2" id="collapseText3">
+            <span>
+              <%= image_tag('Отжимания на брусьях.jpeg') %>
+              <ul>
+                <li>Запрыгните на брусья и опустите плечи.</li>
+                <li>Следите, чтобы плечи не поднимались на протяжении всего упражнения.</li>
+                <li>Выпрямите руки, но не блокируйте локтевой сустав.</li>
+                <li>Опуститесь вниз до параллели плеч с полом.</li>
+                <li>Следите, чтобы локти уходили назад, а не в стороны.</li>
+              </ul>
+            </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.monday_reps %></div>
-      <div class="col"><%= current_training.push_ups_on_bars.round(2)%> кг.</div>
+      <div class="col"><%= current_training.push_ups_on_bars.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Жим на грудь в стеке:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Жим на грудь в стеке:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Жим на грудь в стеке.jpeg') %>
+            <ul>
+              <li>Отрегулируйте высоту рукояток так, чтобы они были на уровне плеч или чуть ниже.</li>
+              <li>Сядьте ровно и прижмитесь спиной и головой к спинке тренажера. Поставьте ноги шире плеч.</li>
+              <li>Возьмитесь за рукоятки хватом сверху (ладони смотрят вперед) на ширине плеч или шире.</li>
+              <li>Вдохните и, задержав дыхание, выжмите рукоятки от груди.</li>
+              <li>Сделайте выдох, когда преодолеете самый сложный участок движения или когда полностью выпрямите руки.</li>
+              <li>В верхней точке сделайте короткую паузу и, задержав дыхание, плавно верните рукоятки в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.monday_reps %></div>
-      <div class="col"><%= current_training.stacked_chest_press.round(2)%> кг.</div>
+      <div class="col"><%= current_training.stacked_chest_press.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Разгибание с канатной рукояткой:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Разгибание с канатной рукояткой:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Разгибание с канатной рукояткой.jpeg') %>
+            <ul>
+              <li>Повесьте канатную рукоять. Возьмитесь за нее параллельным хватом (ладони напротив).</li>
+              <li>Согните руки чуть больше, чем на 90 градусов.</li>
+              <li>Положение стоп может быть на одной прямой либо одна нога чуть вперед, а другая чуть назад.</li>
+              <li>Поясница выгнута, грудь расправлена, взгляд прямо.</li>
+              <li>Весом тела прижимаем рукоять сверху, как бы нависая над ней.</li>
+              <li>Из положения «руки согнуты» опустите вес вниз усилием трицепсов.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.monday_reps %></div>
-      <div class="col"><%= current_training.extension_with_rope_handle.round(2)%> кг.</div>
+      <div class="col"><%= current_training.extension_with_rope_handle.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Отведение гантели:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6">Отведение гантели:
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Отведение гантели.jpeg') %>
+            <ul>
+              <li>Поднимите согнутый локоть до такого уровня, чтобы плечо было параллельно полу.</li>
+              <li>Предплечье с гантелью при этом направлено вниз.</li>
+              <li>Сделайте вдох.</li>
+              <li>Выдыхая, разгибайте локоть строго назад, пока рука не будет полностью прямой.</li>
+              <li>Трицепс в этот момент должен быть максимально напряжен, а положение плеча зафиксировано.</li>
+              <li>Несколько секунд удерживайте гантель в прямой руке.</li>
+              <li>На вдохе плавно верните руку в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.monday_reps %></div>
-      <div class="col"><%= current_training.dumbbell_abduction.round(2)%> кг.</div>
+      <div class="col"><%= current_training.dumbbell_abduction.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Подъем ног в висе:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7">Подъем ног в висе:
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Подъем ног в висе.jpeg') %>
+            <ul>
+              <li>Расположитесь на брусьях в положении свободного виса, опираясь на согнутые в локтях руки.</li>
+              <li>Напрягая пресс, поднимите согнутые в коленях ноги до горизонтального уровня.</li>
+              <li>Задержавшись на несколько секунд, вернитесь в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">30</div>
-      <div class="col"><%= current_training.hanging_leg_raise.round(2)%> кг.</div>
+      <div class="col"><%= current_training.hanging_leg_raise.ceil%> кг.</div>
     </div>
   </div>
 
   <div class="row row-cols-2 my-5">
     <div class="col left">
-      <%= link_to "Не удалось", user_path(current_user),
+      <%= link_to "Не удалось", user_update_power_path(@user, @power, complete_training: 'fail'), method: :put,
         class: 'btn btn-danger btn-lg'%></div>
 
     <div class="col right"><%= link_to "Завершено", user_update_power_path(@user, @power, complete_training: 'monday'), method: :put,

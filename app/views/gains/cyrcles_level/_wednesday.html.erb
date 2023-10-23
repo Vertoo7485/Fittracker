@@ -8,43 +8,181 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Тяга штанги в наклоне:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Тяга штанги в наклоне:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Тяга штанги к поясу в наклоне.jpeg') %>
+            <ul>
+              <li>Встаем перед штангой.</li>
+              <li>Беремся за нее широким хватом (шире, чем плечи) и снимаем со стоек.</li>
+              <li>Хват – прямой (пальцы к себе, кулаки наружу).</li>
+              <li>В пояснице естественный прогиб, спина прямая, ноги чуть согнуты в коленях.</li>
+              <li>Наклоняем туловище вперед, стараемся достичь положения близкого к параллели с полом.</li>
+              <li>Равновесие держится за счет того, что во время наклона вы сгибаете колени, отводя таз назад.</li>
+              <li>Фиксируем корпус в этом положении.</li>
+              <li>Теперь тянем штангу к животу (к нижней части), максимально сводя лопатки вместе.</li>
+              <li>Тяга грифа осуществляется мышцами спины, а не рук.</li>
+              <li>Удерживаем в верхней точке 1 секунду и плавно опускаем снаряд назад, разводя лопатки в стороны.</li>
+              <li>Стараемся не менять положение спины. Просто опускаем руки максимально вниз за счет разведения лопаток.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">12</div>
       <div class="col"><%= current_gain_training.bent_over_barbell_pull.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Австралийские подтягивания:</div>
+      <div class="col">
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1">Австралийские подтягивания:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Австрийские подтягивания.jpeg') %>
+            <ul>
+              <li>Выполняют вис на перекладине с прямым хватом чуть шире плеч.</li>
+              <li>Делают шаг или два вперед и расслабляют корпус.</li>
+              <li>На вдохе подтягивают корпус вверх к перекладине за счет напряжения мышц спины.</li>
+              <li>Не дойдя 3–5 см до грифа штанги, сводят лопатки и задерживают дыхание на пару секунд.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">15</div>
       <div class="col"><%= current_gain_training.austrian_pull_ups.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Подъем штанги на трапеции в Смите:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2">Подъем штанги на трапеции в Смите:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Подьем на трапеции в Смите.jpeg') %>
+            <ul>
+              <li>Установите гриф на уровне бёдер. Подберите корректный вес. </li>
+              <li>Станьте спиной к тренажеру и возьмитесь за перекладину прямым хватом, на ширине плеч.</li>
+              <li>Снимите штангу с замков и удерживайте её на вытянутых руках.</li>
+              <li>Держите спину ровно и подайте грудь вверх.</li>
+              <li>Это стартовая позиция.</li>
+              <li>Делая выдох, поднимайте плечи ровно вверх.</li>
+              <li>Не сгибайте руки и запястья во время движения. </li>
+              <li>Сделайте паузу в верхней точке, затем опускайте штангу в стартовую позицию.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">15</div>
       <div class="col"><%= current_gain_training.trapeze_in_smith.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Махи гантелей через сторону:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3">Махи гантелей через сторону:
+        </button>
+        <div class="collapse my-2" id="collapseText3">
+          <span>
+            <%= image_tag('Махи гантелей через сторону.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, ноги на ширине плеч.</li>
+              <li>Возьмите гантели и держите их нейтральным хватом, чтобы руки были ладонями друг к другу.</li>
+              <li>Руки в локтях слегка согнуты - этот угол нужно удерживать на всей амплитуде, это очень важно.</li>
+              <li>Гантелями не касаемся друг друга, кисти строго под плечами, но не ближе.</li>
+              <li>Сделайте чуть заметный наклон корпуса вперед ровно настолько, чтобы гантели расположились перед вами.</li>
+              <li>На выдохе начинайте отводить руки в стороны и поднимайте гантели, но не выше уровня плеч.</li>
+              <li>Гантели должны быть параллельны земле, кисти не поворачиваем.</li>
+              <li>В верхней точке мы стараемся поднять именно локти, как в тяге гантелей к подбородку.</li>
+              <li>На вдохе медленно верните гантели в исходное положение, но в нижней точке не касайтесь гантелями друг друга!</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">12</div>
       <div class="col"><%= current_gain_training.dumbbells_through_the_side.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Тяга вертикального блока:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Тяга вертикального блока:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Вертикальная тяга блока.jpeg') %>
+            <ul>
+              <li>Сядьте на тренажер так, чтобы рукоятки тренажера были прямо над вашими плечами.</li>
+              <li>Ноги зафиксируйте упором, чтобы при поднятии рук таз не отрывался.</li>
+              <li>Возьмите рукоятку хватом шире плеч.</li>
+              <li>Втяните живот и напрягите пресс, слегка отклонитесь назад.</li>
+              <li>Сведите лопатки вместе, опустите их вниз и плавно начинайте тянуть вниз локти.</li>
+              <li>При правильной ширине хвата в конечной точке локти практически коснутся корпуса.</li>
+              <li>Если локти очень далеко от вашей талии, значит хват слишком широкий.</li>
+              <li>Задержитесь на секунду в нижней точке, затем на вдохе медленно возвращайтесь в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">12</div>
       <div class="col"><%= current_gain_training.vertical_pull_block.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Подъем гантелей на бицепс на скамье Скотта:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Подъем гантелей на бицепс на скамье Скотта:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Бицепс в Скотте гантелями.jpeg') %>
+            <ul>
+              <li>Возь­ми­те ган­тель нуж­но­го ве­са и по­дой­ди­те к скамье Скот­та.</li>
+              <li>Рас­по­ложи­те ее на вер­хней час­ти нак­лонной скамьи, рас­пря­мив прак­ти­чес­ки до кон­ца.</li>
+              <li>Это Ва­ша ис­ходная по­зиция.</li>
+              <li>На вы­дохе, за счет сок­ра­щения двуг­ла­вой мыш­цы пле­ча, под­ни­мите ган­тель вверх до уров­ня плеч.</li>
+              <li>За­дер­жи­тесь на 1-2 сче­та в вер­хней точ­ке тра­ек­то­рии и ста­тичес­ки прож­ми­те би­цепс.</li>
+              <li>Мед­ленно и под­кон­троль­но опус­ти­те ру­ку в стартовую позицию.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">12</div>
       <div class="col"><%= current_gain_training.lifting_dumbbells_in_scott.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Подъем гантелей на бицепс сидя:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6">Подъем гантелей на бицепс сидя:
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Бицепс сидя на скамье.jpeg') %>
+            <ul>
+              <li>Возьмите гантели и сядьте на наклонную скамью.</li>
+              <li>Плечи прижаты к корпусу, хват нейтральный.</li>
+              <li>На выдохе поднимайте гантели, напрягая бицепсы.</li>
+              <li>Во время подъема гантелей поверните кисти в супинированное положение - ладонями вверх.</li>
+              <li>Держите плечи неподвижными, двигаются только предплечья.</li>
+              <li>Продолжайте сгибать руку до уровня плеча.</li>
+              <li>Задержитесь на секунду.</li>
+              <li>На вдохе медленно опускайте гантель обратно, возвращая кисть в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">12</div>
       <div class="col"><%= current_gain_training.biceps_sitting.ceil%> кг.</div>
@@ -56,7 +194,23 @@
       <div class="col"><%= current_gain_training.hull_reversals.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Планка на локтях:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7">Планка на локтях:
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Планка с перетягиванием гири.jpeg') %>
+            <ul>
+              <li>Упражнение выполняется из начальной позиции отжиманий.</li>
+              <li>Локти должны быть согнуты под прямым углом и находиться на одной линии с плечами.</li>
+              <li>Ваше тело должно представлять собой одну прямую линию.</li>
+              <li>Вес тела необходимо удерживать на локтях и пальцах ног, равномерно распределяя его по точкам опоры.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">60 секунд</div>
       <div class="col"><%= current_gain_training.plank.ceil%> кг.</div>
@@ -65,7 +219,8 @@
 
 <div class="row row-cols-2 my-5">
   <div class="col left">
-    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+    <%= link_to "Не удалось", user_update_gain_path(@user, @gain, complete_training: 'fail'),
+     method: :put, class: 'btn btn-danger btn-lg'%>
   </div>
 
   <div class="col right"><%= link_to "Завершено",

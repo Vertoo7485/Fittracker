@@ -1,10 +1,31 @@
 <%= render 'shared/errors', object: @crossfit %>
 <%= form_with model: [@user, @crossfit] do |f| %>
 
+<h4 class="mb-4 center">Для просмотра техники выполнения упражнения, нажмите на его название</h4>
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :front_squat %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText"><%= f.label :front_squat %>
+      </button>
+      <div class="collapse my-2" id="collapseText">
+        <span>
+          <%= image_tag('Фронтальный присед.jpeg') %>
+          <ul>
+            <li>Расположите снаряд на стойках на высоте чуть ниже плеч.
+            <li>Присядьте под грифом, слегка согнув ноги в коленках, и возьмитесь за него руками так, чтобы локти смотрели строго вперед.</li>
+            <li>Штанга должна лечь на передние дельты.</li>
+            <li>Расстояние между кистями – больше ширины плеч.</li>
+            <li>На протяжении всех этапов выполнения фронтального приседания, следите, чтобы в пояснице был прогиб.</li>
+            <li>Аккуратно отойдите от рамы и примите исходное положение: ноги на ширине плеч, носки слегка развернуты, локти приподняты вверх.</li>
+            <li>Делайте вдох и одновременно приседайте, пока бедра и икроножные мышцы не соприкоснутся.</li>
+            <li>Спину при этом держите прямо, таз назад не отводите, колени не сводите, пятки не отрывайте от пола.</li>
+            <li>В нижнем положении не тормозите, сразу начинайте подниматься вверх, одновременно делайте выдох.</li>
+            <li>Выталкивайте вес за счет ног, пятки сильно вдавливайте в поверхность.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -15,7 +36,27 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :hang_grab %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1"><%= f.label :hang_grab %>
+      </button>
+      <div class="collapse my-2" id="collapseText1">
+        <span>
+          <%= image_tag('Взятие с виса.jpeg') %>
+          <ul>
+            <li>Поставьте ноги на ширине плеч.</li>
+            <li>Возьмитесь за штангу прямым  хватом, держите ее на уровне середины бедра.</li>
+            <li>Ваш корпус должен быть прямой и чуть наклонен вперед.</li>
+            <li>Резким движением поднимите штангу вверх, выпрямляя ноги.</li>
+            <li>Когда вы полностью выпрямитесь, сделайте рывок, согните и поднимите локти, чтобы они смотрели вперед.</li>
+            <li>Слегка присядьте.</li>
+            <li>Штанга должна лежать на линии плечей и касаться шеи, руки расслаблены.</li>
+            <li>Продолжайте приседать, чтобы легче было вернуться в исходное положение.</li>
+            <li>Сделайте упор на пятки и начните выпрямляться, корпус держите прямо, локти смотрят вперед.</li>
+            <li>Вернитесь в исходное положение.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -26,7 +67,24 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :overhead_press %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2"><%= f.label :overhead_press %>
+      </button>
+      <div class="collapse my-2" id="collapseText2">
+        <span>
+          <%= image_tag('Жим штанги над головой.jpeg') %>
+          <ul>
+            <li>Возьмите штангу хватом на ширине плеч.</li>
+            <li>Локти направлены немного вперёд.</li>
+            <li>Сведите лопатки вместе и опустите их вниз, чтобы придать жёсткости спине.</li>
+            <li>Поясница с лёгким прогибом.</li>
+            <li>На выдохе выпрямляйте руки, поднимая штангу над головой.</li>
+            <li>На вдохе плавно опускайте штангу вниз и сгибайте руки в локтях.</li>
+            <li>Поднимайте штангу только за счёт рук, без толчка ногами и раскачки корпуса.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -37,7 +95,24 @@
 
 <div class="my-3 mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :kettlebell_swing %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3"><%= f.label :kettlebell_swing %>
+      </button>
+      <div class="collapse my-2" id="collapseText3">
+        <span>
+          <%= image_tag('Качели с гирей.jpeg') %>
+          <ul>
+            <li>Поставьте ступни на ширине плеч, носки слегка направлены наружу.</li>
+            <li>Колени держите слегка согнутыми.</li>
+            <li>Удерживайте гирю обеими руками между ног.</li>
+            <li>Качните гирю между ног назад.</li>
+            <li>Поверните гирю вперед, чтобы она оказалась на одной высоте с вашей головой.</li>
+            <li>Во время движения вперед убедитесь, что бедра открыты, а колени одновременно разгибаются.</li>
+            <li>Держите руки прямыми на протяжении всего движения.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -48,7 +123,24 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :kettlebell_pull_to_the_chin %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4"><%= f.label :kettlebell_pull_to_the_chin %>
+      </button>
+      <div class="collapse my-2" id="collapseText4">
+        <span>
+          <%= image_tag('Тяга гири к подбородку.jpeg') %>
+          <ul>
+            <li>Гирю нужно взять хватом сверху.</li>
+            <li>После этого нужно выпрямиться, слегка прогнув спину в пояснице.</li>
+            <li>Плечи должны быть расправлены, а руки выпрямлены в локтевых суставах.</li>
+            <li>Во время тяги гири к подбородку спортсмен делает выдох, концентрированно поднимает гирю к подбородку, напрягая дельтовидные мышцы.</li>
+            <li>Локти должны тянутся вертикально вверх.</li>
+            <li>В верхней точке амплитуды локтевой сустав должен образовывать тридцати градусный угол.</li>
+            <li>Делайте короткую паузу на пике восходящего движения, после чего медленно опускайте гирю вниз по той же траектории.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -59,7 +151,23 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :russian_twist %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5"><%= f.label :russian_twist %>
+      </button>
+      <div class="collapse my-2" id="collapseText5">
+        <span>
+          <%= image_tag('Русский твист.jpeg') %>
+          <ul>
+            <li>Сядьте на коврик и согните ноги в коленях, слегка отклонитесь назад.</li>
+            <li>Ваш корпус должен образовывать букву «V» с бедрами.</li>
+            <li>Спина в пояснице немного скруглена, пресс напряжен.</li>
+            <li>Вытяните руки вперед. Для удобства можете соединить ладони.</li>
+            <li>Поднимите ноги от пола и начинайте выполнять скрутки корпуса и рук вправо-влево.</li>
+            <li>Колени, в свою очередь, остаются на месте или слегка поворачиваются в противовес корпусу.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -70,7 +178,21 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :plank_with_kettlebell_pull %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6"><%= f.label :plank_with_kettlebell_pull %>
+      </button>
+      <div class="collapse my-2" id="collapseText6">
+        <span>
+          <%= image_tag('Планка с перетягиванием гири.jpeg') %>
+          <ul>
+            <li>Примите позу планки на руках, предварительно поставив гирю по левую сторону от себя.</li>
+            <li>Снаряд должен находится недалеко, поскольку теперь его необходимо ухватить правой рукой через низ и отвести в правую сторону.</li>
+            <li>Следующее движение выполните уже левой рукой по аналогичной амплитуде.</li>
+            <li>Стороны меняются на каждое новое повторение.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -81,7 +203,22 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :trusters %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7"><%= f.label :trusters %>
+      </button>
+      <div class="collapse my-2" id="collapseText7">
+        <span>
+          <%= image_tag('Трастеры.jpeg') %>
+          <ul>
+            <li>Ставим ноги на ширине плеч. Руки согнуты в локтях, держим штангу перед грудью.</li>
+            <li>Выполняем глубокий присед.</li>
+            <li>Из этого положения резко выталкиваем себя вверх.</li>
+            <li>В момент подъёма выбрасываем штангу над головой.</li>
+            <li>Затем штангу опускаем обратно на грудь и возвращаемся в глубокий присед.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -92,7 +229,28 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :bent_over_barbell_pull %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText8" aria-expanded="false"
+                aria-controls="collapseText8"><%= f.label :bent_over_barbell_pull %>
+      </button>
+      <div class="collapse my-2" id="collapseText8">
+        <span>
+          <%= image_tag('Тяга штанги к поясу в наклоне.jpeg') %>
+          <ul>
+            <li>Встаем перед штангой.</li>
+            <li>Беремся за нее широким хватом (шире, чем плечи) и снимаем со стоек.</li>
+            <li>Хват – прямой (пальцы к себе, кулаки наружу).</li>
+            <li>В пояснице естественный прогиб, спина прямая, ноги чуть согнуты в коленях.</li>
+            <li>Наклоняем туловище вперед, стараемся достичь положения близкого к параллели с полом.</li>
+            <li>Равновесие держится за счет того, что во время наклона вы сгибаете колени, отводя таз назад.</li>
+            <li>Фиксируем корпус в этом положении.</li>
+            <li>Теперь тянем штангу к животу (к нижней части), максимально сводя лопатки вместе.</li>
+            <li>Тяга грифа осуществляется мышцами спины, а не рук.</li>
+            <li>Удерживаем в верхней точке 1 секунду и плавно опускаем снаряд назад, разводя лопатки в стороны.</li>
+            <li>Стараемся не менять положение спины. Просто опускаем руки максимально вниз за счет разведения лопаток.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -103,7 +261,22 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :deadlift %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText9" aria-expanded="false"
+                aria-controls="collapseText9"><%= f.label :deadlift %>
+      </button>
+      <div class="collapse my-2" id="collapseText9">
+        <span>
+          <%= image_tag('Становая тяга.jpeg') %>
+          <ul>
+            <li>Встаньте перед штангой, ноги на ширине плеч, пятки прижаты к полу.</li>
+            <li>Согните ноги в коленях и разверните бёдра, отведя таз назад и приблизив продольную ось штанги к себе.</li>
+            <li>Возьмите штангу руками на ширине бёдер, ладони должны быть обращены к вам, хват закрытый.</li>
+            <li>Поднимите штангу, выпрямив ноги и одновременно потянув снаряд к верхней части бёдер.</li>
+            <li>Задержитесь в верхней точке на несколько секунд и медленно опустите штангу на пол, также сгибая ноги и отводя таз назад.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -112,9 +285,28 @@
     </div>
   </div>
 
-<div class="my-3 mb-3 row">
+  <div class="my-3 mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :mahi_dumbbells_through_the_sides %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText10" aria-expanded="false"
+              aria-controls="collapseText10"><%= f.label :mahi_dumbbells_through_the_sides %>
+      </button>
+      <div class="collapse my-2" id="collapseText10">
+        <span>
+          <%= image_tag('Махи гантелей через сторону.jpeg') %>
+          <ul>
+            <li>Встаньте прямо, ноги на ширине плеч.</li>
+            <li>Возьмите гантели и держите их нейтральным хватом, чтобы руки были ладонями друг к другу.</li>
+            <li>Руки в локтях слегка согнуты - этот угол нужно удерживать на всей амплитуде, это очень важно.</li>
+            <li>Гантелями не касаемся друг друга, кисти строго под плечами, но не ближе.</li>
+            <li>Сделайте чуть заметный наклон корпуса вперед ровно настолько, чтобы гантели расположились перед вами.</li>
+            <li>На выдохе начинайте отводить руки в стороны и поднимайте гантели, но не выше уровня плеч.</li>
+            <li>Гантели должны быть параллельны земле, кисти не поворачиваем.</li>
+            <li>В верхней точке мы стараемся поднять именно локти, как в тяге гантелей к подбородку.</li>
+            <li>На вдохе медленно верните гантели в исходное положение, но в нижней точке не касайтесь гантелями друг друга!</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -124,8 +316,28 @@
   </div>
 
   <div class="mb-3 row">
-    <div class="col-sm-2 col-form-label">
-      <%= f.label :dumbbell_layout %>
+    <div class="col-sm-2 col-form-dark">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText11" aria-expanded="false"
+                aria-controls="collapseText11"><%= f.label :dumbbell_layout %>
+      </button>
+      <div class="collapse my-2" id="collapseText11">
+        <span>
+          <%= image_tag('Разводка гантелей лежа на горизонтальной скамье.jpeg') %>
+          <ul>
+            <li>Возьмите гантели в руки и сядьте на край скамьи.</li>
+            <li>Лягте на лавку так, чтобы голова не свисала с нее.</li>
+            <li>Ноги расставьте широко, чтобы обеспечить хорошую устойчивость.</li>
+            <li>Поясница находится в естественном положении, без излишних прогибов и скруглений.</li>
+            <li>Гантели поднимите перед собой под углом 90 градусов к полу.</li>
+            <li>Руки развернуты так, чтобы ладони смотрели друг на друга.</li>
+            <li>Чуть согните их в локте и заморозьте в таком положении.</li>
+            <li>На вдохе начните разводить гантели в стороны так, чтобы локти смотрели вниз.</li>
+            <li>Когда вы почувствуете, что мышцы груди уже начинают тянуться, опустите руки еще чуть дальше, но, разумеется, не до болезненных ощущений.</li>
+            <li>На выдохе сведите руки обратно, почти коснувшись гантелями друг друга.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -136,7 +348,28 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :barbell_pull_to_chin %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText12" aria-expanded="false"
+                aria-controls="collapseText12"><%= f.label :barbell_pull_to_chin %>
+      </button>
+      <div class="collapse my-2" id="collapseText12">
+        <span>
+          <%= image_tag('Тяга штанги к подбородку.jpeg') %>
+          <ul>
+            <li>Держите штангу верхним хватом (промежуток между ладонями немного меньше ширины плеч) и выровняйтесь.</li>
+            <li>В исходном положении спина прямая и чуть прогнута в пояснице, плечи расправлены, руки в локтях ровные, гриф слегка касается бедер.</li>
+            <li>Вдохните и, задержав дыхание, напрягите дельту и трапецепидную.</li>
+            <li>Разведите локти и потяните их вверх вертикально.</li>
+            <li>Движение «направляют» именно локти, а не предплечья или плечи.</li>
+            <li>Когда вы поднимаете локти вверх, гриф штанги должен двигаться в вертикальной плоскости в длину тела от подбородка до бедер.</li>
+            <li>Не нависайте над грифом, прогибая спину.</li>
+            <li>Держите тело и шею прямо, а подбородок — горизонтально.</li>
+            <li>В верхней точке локти находятся максимально вверху.</li>
+            <li>Дотянувшись до верхней точки, сделайте выдох, остановитесь и еще больше напрягите дельты и трапеции.</li>
+            <li>Медленно опустите гриф в исходное положение.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -147,7 +380,19 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :forearm_curls_and_press_ups_with_a_barbell %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText13" aria-expanded="false"
+                aria-controls="collapseText13"><%= f.label :forearm_curls_and_press_ups_with_a_barbell %>
+        </button>
+        <div class="collapse my-2" id="collapseText13">
+          <span>
+            <%= image_tag('Сгибания предплечий со штангой.jpeg') %>
+            <ul>
+              <li>Первая часть движения аналогична Сгибаниям предплечий со штангой</li>
+              <li>Вторая часть движения аналогична Жиму штанги над головой</li>
+            </ul>
+          </span>
+        </div>
     </div>
 
     <div class="col-sm-10">
@@ -158,7 +403,28 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :cross_over %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText14" aria-expanded="false"
+                aria-controls="collapseText14"><%= f.label :cross_over %>
+      </button>
+      <div class="collapse my-2" id="collapseText14">
+        <span>
+          <%= image_tag('Кросс-овер.jpeg') %>
+          <ul>
+            <li>Установите блоки тренажера наверх.</li>
+            <li>Сделайте небольшой шаг вперед, чтобы растянуть грудные.</li>
+            <li>Ноги ставим на одну линию, если тяжело, то одну выводим вперед.</li>
+            <li>Не забываем их чередовать каждый подход.</li>
+            <li>Наклоняем туловище немного вперед.</li>
+            <li>Спину держим ровной, в пояснице небольшой прогиб, грудь немного выставлена вперед.</li>
+            <li>Руки разводим в стороны, пока не почувствуем растяжение грудных мышц.</li>
+            <li>Локти при этом, немного согнуты.</li>
+            <li>На выдохе начинаем сводить руки перед грудью, до касания ими друг друга.</li>
+            <li>Задержитесь ненадолго в этом положении, что бы максимально напрячь грудь.</li>
+            <li>На вдохе начинаем разводить руки в стороны до исходного положения, стараясь как можно сильней растянуть грудные мышцы.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -169,7 +435,23 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :abduction_in_a_butterfly %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText15" aria-expanded="false"
+                aria-controls="collapseText15"><%= f.label :abduction_in_a_butterfly %>
+      </button>
+      <div class="collapse my-2" id="collapseText15">
+        <span>
+          <%= image_tag('Отведение в бабочке.jpeg') %>
+          <ul>
+            <li>Выставите высоту сидения так, чтобы рука отводилась назад в горизонтальной плоскости.</li>
+            <li>Спинку тренажера отрегулируйте, чтобы она фиксировала положение корпуса.</li>
+            <li>Садитесь в тренажер и возьмитесь за рукояти.</li>
+            <li>Начинайте медленно разводить руки в стороны до тех пор, пока кисти не окажутся на одном уровне.</li>
+            <li>Сделайте небольшую паузу и в медленном темпе вернитесь в исходную позицию.</li>
+            <li>Не сводите рукояти вместе, чтобы сохранить напряжение в мышцах.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -180,7 +462,23 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :lying_leg_flexion %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText16" aria-expanded="false"
+                aria-controls="collapseText16"><%= f.label :lying_leg_flexion %>
+      </button>
+      <div class="collapse my-2" id="collapseText16">
+        <span>
+          <%= image_tag('Сгибание голени лежа.jpeg') %>
+          <ul>
+            <li>Лягте на тренажер и заведите ноги под валик.</li>
+            <li>Руками возьмитесь за специальные ручки или за края скамьи.</li>
+            <li>На выдохе согните голени, стараясь максимально приблизить валик к ягодицам.</li>
+            <li>Передняя поверхность бедер при этом прижата к скамье.</li>
+            <li>На вдохе разгибайте голени, аккуратно опуская вес вниз.</li>
+            <li>Полностью выпрямлять колени и расслаблять бицепс бедра в нижней точке не нужно.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -191,7 +489,25 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :seated_leg_extension %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText17" aria-expanded="false"
+                aria-controls="collapseText17"><%= f.label :seated_leg_extension %>
+      </button>
+      <div class="collapse my-2" id="collapseText17">
+        <span>
+          <%= image_tag('Разгибания голени сидя.jpeg') %>
+          <ul>
+            <li>Сядьте в тренажер, прижмитесь спиной к его спинке и заведите ноги за валик.</li>
+            <li>Руками возьмитесь за специальные ручки по бокам от сиденья.</li>
+            <li>Носки стоп поднимите вверх.</li>
+            <li>На выдохе плавно разогните ноги в коленях.</li>
+            <li>Максимально напрягите квадрицепсы в верхней точке, задержитесь в таком положении на 1–2 секунды.</li>
+            <li>На вдохе подконтрольно опустите ноги вниз, но не сгибайте их до конца.</li>
+            <li>То есть даже в нижней точке квадрицепсы должны быть напряжены.</li>
+            <li>Следите за ощущениями в коленях, не бросайте резко ноги вниз.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -202,7 +518,20 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :sumo_squats %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText18" aria-expanded="false"
+                aria-controls="collapseText18"><%= f.label :sumo_squats %>
+      </button>
+      <div class="collapse my-2" id="collapseText18">
+        <span>
+          <%= image_tag('Сумо приседания.jpeg') %>
+          <ul>
+            <li>Встаньте прямо, расставьте ноги шире, чем ширина плеч, а стопы разверните наружу под углом в 45 градусов.</li>
+            <li>Взгляд направьте вперед, спина должна быть прямой, а грудь открытой.</li>
+            <li>Начните опускаться вниз, сгибая колени и отклоняя таз назад, как будто хотите сесть на стул.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -213,7 +542,20 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :farm_walk %>
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText19" aria-expanded="false"
+                aria-controls="collapseText19"><%= f.label :farm_walk %>
+      </button>
+      <div class="collapse my-2" id="collapseText19">
+        <span>
+          <%= image_tag('Фермерская прогулка.jpeg') %>
+          <ul>
+            <li>Поясница прогнута, зафиксирована.</li>
+            <li>Лопатки сведены.</li>
+            <li>Руки «по швам».</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">

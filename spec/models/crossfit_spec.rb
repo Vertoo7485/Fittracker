@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe Crossfit, type: :model do
   let(:user) do
     User.create(name: 'John Doe', email: 'john@example.com', password: 'password123', role: 'basic',
@@ -21,56 +22,56 @@ RSpec.describe Crossfit, type: :model do
 
     it 'is not valid without a front_squat' do
       crossfit = user.crossfits.build(hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
-                                      kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
-                                      trusters: 10, bent_over_barbell_pull: 10, deadlift: 10,
-                                      mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10, barbell_pull_to_chin: 10,
-                                      forearm_curls_and_press_ups_with_a_barbell: 10, cross_over: 10,
-                                      abduction_in_a_butterfly: 10, lying_leg_flexion: 10, seated_leg_extension: 10,
-                                      sumo_squats: 10, farm_walk: 10)
+                                      kettlebell_pull_to_the_chin: 10, russian_twist: 10,
+                                      plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
+                                      deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+                                      barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+                                      cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+                                      seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10)
       expect(crossfit).to_not be_valid
     end
 
     it 'is not valid without a hang_grab' do
       crossfit = user.crossfits.build(front_squat: 10, overhead_press: 10, kettlebell_swing: 10,
-                                      kettlebell_pull_to_the_chin: 10, russian_twist: 10, plank_with_kettlebell_pull: 10,
-                                      trusters: 10, bent_over_barbell_pull: 10, deadlift: 10,
-                                      mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10, barbell_pull_to_chin: 10,
-                                      forearm_curls_and_press_ups_with_a_barbell: 10, cross_over: 10,
-                                      abduction_in_a_butterfly: 10, lying_leg_flexion: 10, seated_leg_extension: 10,
-                                      sumo_squats: 10, farm_walk: 10)
+                                      kettlebell_pull_to_the_chin: 10, russian_twist: 10,
+                                      plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
+                                      deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+                                      barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+                                      cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+                                      seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10)
       expect(crossfit).to_not be_valid
     end
 
     it 'is not valid without a overhead_press' do
-      crossfit = user.crossfits.build(front_squat: 10, hang_grab: 10, kettlebell_swing: 10, kettlebell_pull_to_the_chin: 10,
-                                      russian_twist: 10, plank_with_kettlebell_pull: 10, trusters: 10,
-                                      bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
-                                      dumbbell_layout: 10, barbell_pull_to_chin: 10,
-                                      forearm_curls_and_press_ups_with_a_barbell: 10, cross_over: 10,
-                                      abduction_in_a_butterfly: 10, lying_leg_flexion: 10, seated_leg_extension: 10,
-                                      sumo_squats: 10, farm_walk: 10)
+      crossfit = user.crossfits.build(front_squat: 10, hang_grab: 10, kettlebell_swing: 10,
+                                      kettlebell_pull_to_the_chin: 10, russian_twist: 10,
+                                      plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
+                                      deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+                                      barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+                                      cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+                                      seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10)
       expect(crossfit).to_not be_valid
     end
 
     it 'is not valid without a kettlebell_swing' do
-      crossfit = user.crossfits.build(front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_pull_to_the_chin: 10,
-                                      russian_twist: 10, plank_with_kettlebell_pull: 10, trusters: 10,
-                                      bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
-                                      dumbbell_layout: 10, barbell_pull_to_chin: 10,
-                                      forearm_curls_and_press_ups_with_a_barbell: 10, cross_over: 10,
-                                      abduction_in_a_butterfly: 10, lying_leg_flexion: 10, seated_leg_extension: 10,
-                                      sumo_squats: 10, farm_walk: 10)
+      crossfit = user.crossfits.build(front_squat: 10, hang_grab: 10, overhead_press: 10,
+                                      kettlebell_pull_to_the_chin: 10, russian_twist: 10,
+                                      plank_with_kettlebell_pull: 10, trusters: 10, bent_over_barbell_pull: 10,
+                                      deadlift: 10, mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+                                      barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+                                      cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+                                      seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10)
       expect(crossfit).to_not be_valid
     end
 
     it 'is not valid without a kettlebell_pull_to_the_chin' do
       crossfit = user.crossfits.build(front_squat: 10, hang_grab: 10, overhead_press: 10, kettlebell_swing: 10,
                                       russian_twist: 10, plank_with_kettlebell_pull: 10, trusters: 10,
-                                      bent_over_barbell_pull: 10, deadlift: 10, mahi_dumbbells_through_the_sides: 10,
-                                      dumbbell_layout: 10, barbell_pull_to_chin: 10,
-                                      forearm_curls_and_press_ups_with_a_barbell: 10, cross_over: 10,
-                                      abduction_in_a_butterfly: 10, lying_leg_flexion: 10, seated_leg_extension: 10,
-                                      sumo_squats: 10, farm_walk: 10)
+                                      bent_over_barbell_pull: 10, deadlift: 10,
+                                      mahi_dumbbells_through_the_sides: 10, dumbbell_layout: 10,
+                                      barbell_pull_to_chin: 10, forearm_curls_and_press_ups_with_a_barbell: 10,
+                                      cross_over: 10, abduction_in_a_butterfly: 10, lying_leg_flexion: 10,
+                                      seated_leg_extension: 10, sumo_squats: 10, farm_walk: 10)
       expect(crossfit).to_not be_valid
     end
 
@@ -240,3 +241,4 @@ RSpec.describe Crossfit, type: :model do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

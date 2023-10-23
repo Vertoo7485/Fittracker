@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe Gain, type: :model do
   let(:user) do
     User.create(name: 'John Doe', email: 'john@example.com', password: 'password123', role: 'basic',
@@ -48,14 +49,14 @@ RSpec.describe Gain, type: :model do
     end
 
     it 'is not valid without a extension_with_rope_handle' do
-      gain = user.gains.build(barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10, push_ups_on_bars: 10,
-                              stacked_chest_press: 10, dumbbell_abduction: 10)
+      gain = user.gains.build(barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10,
+                              push_ups_on_bars: 10, stacked_chest_press: 10, dumbbell_abduction: 10)
       expect(gain).to_not be_valid
     end
 
     it 'is not valid without a dumbbell_abduction' do
-      gain = user.gains.build(barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10, push_ups_on_bars: 10,
-                              stacked_chest_press: 10, extension_with_rope_handle: 10)
+      gain = user.gains.build(barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10,
+                              push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10)
       expect(gain).to_not be_valid
     end
   end
@@ -430,3 +431,4 @@ RSpec.describe Gain, type: :model do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

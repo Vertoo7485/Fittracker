@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe CrossfitsController, type: :controller do
   let(:user) do
     User.create(email: 'Test@example.com', name: 'Test',
@@ -281,3 +282,4 @@ RSpec.describe CrossfitsController, type: :controller do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

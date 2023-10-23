@@ -8,49 +8,186 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Жим ногами:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Жим ногами:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Жим ногами.jpeg') %>
+            <ul>
+              <li>Займите исходную позицию: стопы ставят на платформу, поясницу прижимают к скамье.</li>
+              <li>Убрерите фиксаторы отягощения с помощью рычагов.</li>
+              <li>На вдохе опустите платформу, согнув ноги в коленях.</li>
+              <li>В нижней точке ноги образуют угол 90 градусов.</li>
+              <li>На выдохе вытолкните ногами платформу вверх.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.leg_press.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Австралийские подтягивания:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1">Австралийские подтягивания:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Австрийские подтягивания.jpeg') %>
+            <ul>
+              <li>Выполняют вис на перекладине с прямым хватом чуть шире плеч.</li>
+              <li>Делают шаг или два вперед и расслабляют корпус.</li>
+              <li>На вдохе подтягивают корпус вверх к перекладине за счет напряжения мышц спины.</li>
+              <li>Не дойдя 3–5 см до грифа штанги, сводят лопатки и задерживают дыхание на пару секунд.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">20</div>
       <div class="col"><%= current_gain_training.austrian_pull_ups.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Жим гантелей лежа:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2">Жим гантелей лежа:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Жим гантелей лежа.jpeg') %>
+            <ul>
+              <li>Возьмите гантели в руки, сядьте и облокотите их на колени.</li>
+              <li>Лягте на скамью, прижмите снаряды к груди.</li>
+              <li>Обязательно согните ноги и начинайте делать жим - опускайте на вдохе гантели до уровня грудной клетки.</li>
+              <li>На выдохе поднимайте руки со снарядом вверх.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.dumbbell_bench_press.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Берпи:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Берпи:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Берпи.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, ноги на ширине плеч. Это будет вашей исходной позицией.</li>
+              <li>Согните колени и в положении приседа упритесь руками в пол.</li>
+              <li>Перенесите вес тела на руки.</li>
+              <li>Сделайте выпрыгивание ногами назад так, чтобы оказаться в положении планки на прямых руках.</li>
+              <li>Сделайте одно отжимание и вернитесь в позицию планки.</li>
+              <li>Прыжком подтяните ноги к рукам и окажитесь в положении приседа.</li>
+              <li>Сделайте прыжок вверх и резко поднимите руки, издав хлопок над головой.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">20</div>
       <div class="col"><%= current_gain_training.burpee.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Выпады с выпрыгиваниями:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Выпады с выпрыгиваниями:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Выпады с выпрыгиванием.jpeg') %>
+            <ul>
+              <li>Встать в исходное положение для сплит-приседа.</li>
+              <li>Выпрямить спину, подтянуть живот, отшагнуть одной ногой назад на расстояние полного шага.</li>
+              <li>Вторую опорную оставить в обычном для приседания положении, носок чуть отведен в сторону.</li>
+              <li>Опуститься в выпад до параллели рабочей ноги с полом.</li>
+              <li>Выпрыгнуть их приседа вверх.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">20</div>
       <div class="col"><%= current_gain_training.jumping_lunges.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Сгибание предплечий со штангой:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6">Сгибание предплечий со штангой:
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Сгибания предплечий со штангой.jpeg') %>
+            <ul>
+              <li>Сделайте глубокий вдох, задержите дыхание и, сгибая руки в локтях, поднимите штангу до уровня верха груди.</li>
+              <li>Во время подъема штанги не двигайте локтями, держите их по бокам туловища и не сгибайте руки в запястьях.</li>
+              <li>Как только кисти окажутся на уровне верха груди, сделайте паузу, выдохните и еще сильнее напрягите бицепсы.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.barbell_forearm_curls.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Французский жим с гантелей стоя:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7">Французский жим с гантелей стоя:
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Французский жим с гантелей стоя.jpeg') %>
+            <ul>
+              <li>Встаньте прямо.
+              <li>Возьмите гантель обеими руками, держите гантель на вытянутых руках над головой.
+              <li>Обхватите гантель так, как показано на рисунке: диск находится в ладонях, большие пальцы на рукояти.
+              <li>Ладони обращены вверх.
+              <li>Это будет вашим исходным положением.
+              <li>Часть руки от плеча до локтя находится рядом с головой, перпендикулярно полу.
+              <li>На вдохе опустите гантель назад за голову по полукруглой траектории.
+              <li>Продолжайте движение, пока предплечье не коснется бицепса.
+              <li>На выдохе, напрягая трицепсы, поднимите руки, возвращая гантель в исходное положение.
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.standing_dumbbell_french_press.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Планка на локтях:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText8" aria-expanded="false"
+                aria-controls="collapseText8">Планка на локтях:
+        </button>
+        <div class="collapse my-2" id="collapseText8">
+          <span>
+            <%= image_tag('Планка с перетягиванием гири.jpeg') %>
+            <ul>
+              <li>Упражнение выполняется из начальной позиции отжиманий.</li>
+              <li>Локти должны быть согнуты под прямым углом и находиться на одной линии с плечами.</li>
+              <li>Ваше тело должно представлять собой одну прямую линию.</li>
+              <li>Вес тела необходимо удерживать на локтях и пальцах ног, равномерно распределяя его по точкам опоры.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">60 секунд</div>
       <div class="col"><%= current_gain_training.plank.ceil%> кг.</div>
@@ -66,7 +203,8 @@
 
 <div class="row row-cols-2 my-5">
   <div class="col left">
-    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+    <%= link_to "Не удалось", user_update_gain_path(@user, @gain, complete_training: 'fail'),
+     method: :put, class: 'btn btn-danger btn-lg'%>
   </div>
 
   <div class="col right"><%= link_to "Завершено",

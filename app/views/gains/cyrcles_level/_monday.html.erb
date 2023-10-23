@@ -7,49 +7,194 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Жим ногами:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Жим ногами:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Жим ногами.jpeg') %>
+            <ul>
+              <li>Займите исходную позицию: стопы ставят на платформу, поясницу прижимают к скамье.</li>
+              <li>Убрерите фиксаторы отягощения с помощью рычагов.</li>
+              <li>На вдохе опустите платформу, согнув ноги в коленях.</li>
+              <li>В нижней точке ноги образуют угол 90 градусов.</li>
+              <li>На выдохе вытолкните ногами платформу вверх.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">8</div>
       <div class="col"><%= current_gain_training.leg_press.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Австралийские подтягивания:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1">Австралийские подтягивания:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Австрийские подтягивания.jpeg') %>
+            <ul>
+              <li>Выполняют вис на перекладине с прямым хватом чуть шире плеч.</li>
+              <li>Делают шаг или два вперед и расслабляют корпус.</li>
+              <li>На вдохе подтягивают корпус вверх к перекладине за счет напряжения мышц спины.</li>
+              <li>Не дойдя 3–5 см до грифа штанги, сводят лопатки и задерживают дыхание на пару секунд.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">15</div>
       <div class="col"><%= current_gain_training.austrian_pull_ups.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Молотки:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2">Молотки:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Молотки.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, а ноги поставьте на ширину плеч.</li>
+              <li>В пояснице должен образоваться небольшой естественный прогиб.</li>
+              <li>Локти зафиксируйте по бокам туловища.</li>
+              <li>Гантели возьмите таким хватом, что ладони с гантелями смотрят друг на друга.</li>
+              <li>На выдохе выполните подъем рук почти до уровня плеч.</li>
+              <li>Добейтесь пикового сокращения мышц.</li>
+              <li>Задержитесь в верхней пиковой точке на несколько секунд.</li>
+              <li>Медленно опустите гантели вниз, вернувшись в начальное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">8</div>
       <div class="col"><%= current_gain_training.hammers.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Удары канатами:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3">Удары канатами:
+        </button>
+        <div class="collapse my-2" id="collapseText3">
+          <span>
+            <%= image_tag('Удары канатами.jpeg') %>
+            <ul>
+              <li>Для выполнения необходимо слегка наклонить корпус вперед при прямой спине.</li>
+              <li>Ноги на уровне плеч или чуть шире.</li>
+              <li>После этого делайте поочередно махи (правая рука – вверх, левая рука – вниз).</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">100</div>
       <div class="col"><%= current_gain_training.rope_strikes.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Выпрыгивания:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Выпрыгивания:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('выпрыгивания.jpeg') %>
+            <ul>
+              <li>Поставьте ноги на ширину плеч, выпрямите спину.</li>
+              <li>Можно скрестить руки перед собой на уровне груди.</li>
+              <li>Присед делается на вдохе.</li>
+              <li>Опускайтесь до параллели с полом.</li>
+              <li>Можно опуститься чуть ниже, главное — следите за своими ощущениями.</li>
+              <li>На выдохе необходимо сделать мощное выпрыгивание вверх, оттолкнувшись полными ступнями.</li>
+              <li>Постарайтесь прыгнуть как можно выше, ваши бедра должны максимально «спружинить».</li>
+              <li>После того как ваши стопы полностью коснулись пола, снова уйдите в присед.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">15</div>
       <div class="col"><%= current_gain_training.jumping_out.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Тяга штанги к подбородку:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Тяга штанги к подбородку:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Тяга штанги к подбородку.jpeg') %>
+            <ul>
+              <li>Держите штангу верхним хватом (промежуток между ладонями немного меньше ширины плеч) и выровняйтесь.</li>
+              <li>В исходном положении спина прямая и чуть прогнута в пояснице, плечи расправлены, руки в локтях ровные, гриф слегка касается бедер.</li>
+              <li>Вдохните и, задержав дыхание, напрягите дельту и трапецепидную.</li>
+              <li>Разведите локти и потяните их вверх вертикально.</li>
+              <li>Движение «направляют» именно локти, а не предплечья или плечи.</li>
+              <li>Когда вы поднимаете локти вверх, гриф штанги должен двигаться в вертикальной плоскости в длину тела от подбородка до бедер.</li>
+              <li>Не нависайте над грифом, прогибая спину.</li>
+              <li>Держите тело и шею прямо, а подбородок — горизонтально.</li>
+              <li>В верхней точке локти находятся максимально вверху.</li>
+              <li>Дотянувшись до верхней точки, сделайте выдох, остановитесь и еще больше напрягите дельты и трапеции.</li>
+              <li>Медленно опустите гриф в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">8</div>
       <div class="col"><%= current_gain_training.barbell_pull_to_chin.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Русский твист:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6">Русский твист:
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Русский твист.jpeg') %>
+            <ul>
+              <li>Сядьте на коврик и согните ноги в коленях, слегка отклонитесь назад.</li>
+              <li>Ваш корпус должен образовывать букву «V» с бедрами.</li>
+              <li>Спина в пояснице немного скруглена, пресс напряжен.</li>
+              <li>Вытяните руки вперед. Для удобства можете соединить ладони.</li>
+              <li>Поднимите ноги от пола и начинайте выполнять скрутки корпуса и рук вправо-влево.</li>
+              <li>Колени, в свою очередь, остаются на месте или слегка поворачиваются в противовес корпусу.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">30</div>
       <div class="col"><%= current_gain_training.russian_twist.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Планка на локтях:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7">Планка на локтях:
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Планка с перетягиванием гири.jpeg') %>
+            <ul>
+              <li>Упражнение выполняется из начальной позиции отжиманий.</li>
+              <li>Локти должны быть согнуты под прямым углом и находиться на одной линии с плечами.</li>
+              <li>Ваше тело должно представлять собой одну прямую линию.</li>
+              <li>Вес тела необходимо удерживать на локтях и пальцах ног, равномерно распределяя его по точкам опоры.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">60 секунд</div>
       <div class="col"><%= current_gain_training.plank.ceil%> кг.</div>
@@ -64,7 +209,8 @@
 
 <div class="row row-cols-2 my-5">
   <div class="col left">
-    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+    <%= link_to "Не удалось", user_update_gain_path(@user, @gain, complete_training: 'fail'),
+     method: :put, class: 'btn btn-danger btn-lg'%>
   </div>
 
   <div class="col right"><%= link_to "Завершено",

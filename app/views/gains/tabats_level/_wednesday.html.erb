@@ -8,14 +8,46 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Отжимания от пола:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Отжимания от пола:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Планка с перетягиванием гири.jpeg') %>
+            <ul>
+              <li>Упражнение выполняется из начальной позиции отжиманий.</li>
+              <li>Локти должны быть согнуты под прямым углом и находиться на одной линии с плечами.</li>
+              <li>Ваше тело должно представлять собой одну прямую линию.</li>
+              <li>Вес тела необходимо удерживать на локтях и пальцах ног, равномерно распределяя его по точкам опоры.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.wednesday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.wednesday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.pushups.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Обратная планка:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1">Обратная планка:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Обратная планка.jpeg') %>
+            <ul>
+              <li>Сядьте на пол, ноги вытяните перед собой.</li>
+              <li>Положите ладони на пол немного позади себя, широко расставьте пальцы.</li>
+              <li>Опираясь на ладони, поднимите бёдра и туловище.</li>
+              <li>Смотрите в потолок, вытяните носки, держите руки и ноги прямо.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.wednesday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.wednesday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
@@ -29,35 +61,122 @@
       <div class="col"><%= current_gain_training.skating.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Джампинг Джек:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2">Джампинг Джек:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Джампинг Джек.jpeg') %>
+            <ul>
+              <li>Начните со стойки с прямыми ногами и руками по бокам.</li>
+              <li>Подпрыгните вверх и разведите ноги на ширину бёдер.</li>
+              <li>Одновременно поднимайте руки над головой, почти касаясь друг друга.</li>
+              <li>Снова подпрыгните, опуская руки и сводя ноги вместе.</li>
+              <li>Вернитесь в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.wednesday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.wednesday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.jumping_jack.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Прыжки со скакалкой:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3">Прыжки со скакалкой:
+        </button>
+        <div class="collapse my-2" id="collapseText3">
+          <span>
+            <%= image_tag('Скакалка.jpeg') %>
+            <ul>
+              <li>Подбородок поднят, плечи опущены.</li>
+              <li>Голова, шея и позвоночник держатся прямо.</li>
+              <li>Руки расположены у корпуса и чуть согнуты в локтях.</li>
+              <li>Ноги чуть поджаты и расслаблены в коленях.</li>
+              <li>Плечи статичны, вращаются только кисти.</li>
+              <li>Приземление и толчок на носках.</li>
+              <li>Дыхание ровное.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.wednesday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.wednesday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.jump_rope.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Касание плеч стоя в планке:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Касание плеч стоя в планке:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Планка с перетягиванием гири.jpeg') %>
+            <ul>
+              <li>Из положения планки необходимо поочередно поднимать ладони и касаться ими противоположного плеча.</li>
+              <li>При этом нельзя раскачиваться из стороны в сторону.</li>
+              <li>Так как снижаются нагрузка на пресс и эффективность упражнения.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.wednesday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.wednesday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.plank_touch.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Трастеры:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Трастеры:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Трастеры.jpeg') %>
+            <ul>
+              <li>Ставим ноги на ширине плеч. Руки согнуты в локтях, держим штангу перед грудью.</li>
+              <li>Выполняем глубокий присед.</li>
+              <li>Из этого положения резко выталкиваем себя вверх.</li>
+              <li>В момент подъёма выбрасываем штангу над головой.</li>
+              <li>Затем штангу опускаем обратно на грудь и возвращаемся в глубокий присед.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.wednesday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.wednesday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.trusters.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Качели с гирей:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6">Качели с гирей:
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Качели с гирей.jpeg') %>
+            <ul>
+              <li>Поставьте ступни на ширине плеч, носки слегка направлены наружу.</li>
+              <li>Колени держите слегка согнутыми.</li>
+              <li>Удерживайте гирю обеими руками между ног.</li>
+              <li>Качните гирю между ног назад.</li>
+              <li>Поверните гирю вперед, чтобы она оказалась на одной высоте с вашей головой.</li>
+              <li>Во время движения вперед убедитесь, что бедра открыты, а колени одновременно разгибаются.</li>
+              <li>Держите руки прямыми на протяжении всего движения.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.wednesday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.wednesday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
@@ -66,8 +185,8 @@
   </div>
 
 <div class="row row-cols-2 my-5">
-  <div class="col left">
-    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+  <div class="col left"><%= link_to "Не удалось", user_update_gain_path(@user, @gain, complete_training: 'fail'),
+     method: :put, class: 'btn btn-danger btn-lg'%>
   </div>
 
   <div class="col right"><%= link_to "Завершено",

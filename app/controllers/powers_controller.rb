@@ -33,6 +33,8 @@ class PowersController < ApplicationController
 
   def update_power
     case params[:complete_training]
+    when 'fail'
+      flash[:success] = "В следующий раз обязательно получится!"
     when 'monday'
       if current_training.monday_reps <= 9
         pump_reps_monday

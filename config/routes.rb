@@ -28,7 +28,6 @@ Rails.application.routes.draw do
     end
 
     get '/faq', to: 'pages#faq'
-    get '/exercise_technique', to: 'pages#exercise_technique'
 
     namespace :admin do
       resources :users, only: %i[index create edit update destroy]

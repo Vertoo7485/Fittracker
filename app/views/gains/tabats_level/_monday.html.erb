@@ -8,14 +8,50 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Берпи:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Берпи:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Берпи.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, ноги на ширине плеч. Это будет вашей исходной позицией.</li>
+              <li>Согните колени и в положении приседа упритесь руками в пол.</li>
+              <li>Перенесите вес тела на руки.</li>
+              <li>Сделайте выпрыгивание ногами назад так, чтобы оказаться в положении планки на прямых руках.</li>
+              <li>Сделайте одно отжимание и вернитесь в позицию планки.</li>
+              <li>Прыжком подтяните ноги к рукам и окажитесь в положении приседа.</li>
+              <li>Сделайте прыжок вверх и резко поднимите руки, издав хлопок над головой.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.burpee.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Поочередные касания пяток лежа на полу:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1">Поочередные касания пяток лежа на полу:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Поочередные касания пяток лежа на полу.jpeg') %>
+            <ul>
+              <li>Ляг­те на пол и сог­нув но­ги в ко­ленях (угол 45 гра­дусов) рас­по­ложи­те их на не­кото­ром рас­сто­янии друг от дру­га.</li>
+              <li>Ру­ки вы­тяни­те вдоль кор­пу­са.</li>
+              <li>Слег­ка отор­ви­те го­лову от по­ла и ста­тичес­ки нап­ря­гите пресс.</li>
+              <li>Выдох­ни­те и на вы­дохе про­веди­те бо­ковое скру­чива­ние, в хо­де ко­торо­го кос­ни­тесь ле­вой ру­кой ле­вой пят­ки.</li>
+              <li>За­дер­жи­тесь в сок­ра­щен­ной по­зиции на 1-2 сче­та и пов­то­рите то­же са­мое дви­жение для дру­гой сто­роны.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
@@ -29,35 +65,126 @@
       <div class="col"><%= current_gain_training.running_in_place.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Статика в приседе:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2">Статика в приседе:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Статика в приседе.jpeg') %>
+            <ul>
+              <li>Исходное положение: встать спиной к стене, облокотившись на нее.</li>
+              <li>Следующим движением на вдохе опуститься вниз до параллели бедер и пола.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.statics_in_the_squat.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Махи гантелей через стороны:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3">Махи гантелей через стороны:
+        </button>
+        <div class="collapse my-2" id="collapseText3">
+          <span>
+            <%= image_tag('Махи гантелей через сторону.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, ноги на ширине плеч.</li>
+              <li>Возьмите гантели и держите их нейтральным хватом, чтобы руки были ладонями друг к другу.</li>
+              <li>Руки в локтях слегка согнуты - этот угол нужно удерживать на всей амплитуде, это очень важно.</li>
+              <li>Гантелями не касаемся друг друга, кисти строго под плечами, но не ближе.</li>
+              <li>Сделайте чуть заметный наклон корпуса вперед ровно настолько, чтобы гантели расположились перед вами.</li>
+              <li>На выдохе начинайте отводить руки в стороны и поднимайте гантели, но не выше уровня плеч.</li>
+              <li>Гантели должны быть параллельны земле, кисти не поворачиваем.</li>
+              <li>В верхней точке мы стараемся поднять именно локти, как в тяге гантелей к подбородку.</li>
+              <li>На вдохе медленно верните гантели в исходное положение, но в нижней точке не касайтесь гантелями друг друга!</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.dumbbells_through_the_side.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Махи гантелей в наклоне:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Махи гантелей в наклоне:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Махи гантелей в наклоне.jpeg') %>
+            <ul>
+              <li>Возьмите гантели в обе руки.</li>
+              <li>Хват нейтральный, ладони смотрят в направлении туловища.</li>
+              <li>Ноги стоят на ширине плеч, чуть согнутые в коленях.</li>
+              <li>Ступни параллельно друг другу.</li>
+              <li>Отводим таз назад, а туловище наклоняем вперед.</li>
+              <li>Спина прямая, трапеция растянута, плечи опущены вниз.</li>
+              <li>Голова приподнята, взгляд направлен вперед.</li>
+              <li>На выдохе поднимаем локти вверх разводя их в стороны.</li>
+              <li>При этом лопатки остаются неподвижными, работаем только дельтами.</li>
+              <li>Задержитесь в верхней точке на несколько секунд, и на вдохе верните локти в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.incline_dumbbell_mahi.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Ситап:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Ситап:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Ситап.jpeg') %>
+            <ul>
+              <li>Лягте на пол.</li>
+              <li>Согните ноги в коленях и поставьте стопы на пол по ширине таза.</li>
+              <li>Не слишком близко к тазу.</li>
+              <li>Заведите прямые руки назад и коснитесь тыльной стороной кисти пола.</li>
+              <li>С выдохом поднимите корпус, округляя позвоночник, и коснитесь ладонями стоп.</li>
+              <li>Затем плавно без падения опуститесь на пол, заведя руки за голову, касаясь ими пола.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
       <div class="col"><%= current_gain_training.sitap.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Планка:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7">Планка:
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Планка с перетягиванием гири.jpeg') %>
+            <ul>
+              <li>Упражнение выполняется из начальной позиции отжиманий.</li>
+              <li>Локти должны быть согнуты под прямым углом и находиться на одной линии с плечами.</li>
+              <li>Ваше тело должно представлять собой одну прямую линию.</li>
+              <li>Вес тела необходимо удерживать на локтях и пальцах ног, равномерно распределяя его по точкам опоры.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col"><%= current_gain_training.monday_tabat_sets %></div>
       <div class="col"><%= current_gain_training.monday_tabat_reps %> сек.</div>
       <div class="col">20 сек.</div>
@@ -67,7 +194,8 @@
 
 <div class="row row-cols-2 my-5">
   <div class="col left">
-    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+    <%= link_to "Не удалось", user_update_gain_path(@user, @gain, complete_training: 'fail'),
+     method: :put, class: 'btn btn-danger btn-lg'%>
   </div>
 
   <div class="col right"><%= link_to "Завершено",

@@ -4,7 +4,22 @@
   <div class="mb-3 row">
     <%= f.hidden_field(:day, value: "wednesday") %>
     <div class="col-sm-2 col-form-label">
-      <%= f.label :horizontal_pull_block %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText"><%= f.label :horizontal_pull_block %>
+      </button>
+      <div class="collapse my-2" id="collapseText">
+        <span>
+          <%= image_tag('Горизонтальная тяга блока.jpeg') %>
+          <ul>
+            <li>Прицепите V-образную рукоять на нижний блок, сядьте на лавку и прижмите ноги к платформам для стоп.</li>
+            <li>Возьмитесь за рукоять, расправьте и опустите плечи, выпрямите спину.</li>
+            <li>С выдохом согните руки в локтях, сведите лопатки и подтяните рукоятку к животу.</li>
+            <li>Зафиксируйте на одну секунду.</li>
+            <li>Со вдохом плавно и под контролем верните руки в исходное положение.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -15,7 +30,21 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :pull_ups %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1"><%= f.label :pull_ups %>
+      </button>
+      <div class="collapse my-2" id="collapseText1">
+        <span>
+          <%= image_tag('Подтягивания.jpeg') %>
+          <ul>
+            <li>Подпрыгните и ухватитесь за перекладину широким хватом.</li>
+            <li>Повисните на перекладине.</li>
+            <li>Сделайте глубокий вдох и, задержав дыхание, напрягите широчайшие и подтянитесь вверх.</li>
+            <li>Подтягивайте себя вверх до тех пор, пока подбородок не окажется на одном уровне с перекладиной.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -26,7 +55,20 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :barbell_forearm_curls %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2"><%= f.label :barbell_forearm_curls %>
+      </button>
+      <div class="collapse my-2" id="collapseText2">
+        <span>
+          <%= image_tag('Сгибания предплечий со штангой.jpeg') %>
+          <ul>
+            <li>Сделайте глубокий вдох, задержите дыхание и, сгибая руки в локтях, поднимите штангу до уровня верха груди.</li>
+            <li>Во время подъема штанги не двигайте локтями, держите их по бокам туловища и не сгибайте руки в запястьях.</li>
+            <li>Как только кисти окажутся на уровне верха груди, сделайте паузу, выдохните и еще сильнее напрягите бицепсы.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -35,9 +77,24 @@
     </div>
   </div>
 
-<div class="my-3 mb-3 row">
+  <div class="my-3 mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :incline_dumbbell_row %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3"><%= f.label :incline_dumbbell_row %>
+      </button>
+      <div class="collapse my-2" id="collapseText3">
+        <span>
+          <%= image_tag('Тяга гантель в наклоне.jpeg') %>
+          <ul>
+            <li>Возьмите гантель так, чтобы гриф был параллелен вашему телу.</li>
+            <li>За счет силы широчайшей мышцы тянем гантель к поясу.</li>
+            <li>Локоть стараемся вести вверх.</li>
+            <li>Позвоночник остается в прямом положении.</li>
+            <li>Задержавшись в верхней точке на 1 секунду, опускаем гантель вниз.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -48,7 +105,25 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :vertical_pull_block %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4"><%= f.label :vertical_pull_block %>
+      </button>
+      <div class="collapse my-2" id="collapseText4">
+        <span>
+          <%= image_tag('Вертикальная тяга блока.jpeg') %>
+          <ul>
+            <li>Сядьте на тренажер так, чтобы рукоятки тренажера были прямо над вашими плечами.</li>
+            <li>Ноги зафиксируйте упором, чтобы при поднятии рук таз не отрывался.</li>
+            <li>Возьмите рукоятку хватом шире плеч.</li>
+            <li>Втяните живот и напрягите пресс, слегка отклонитесь назад.</li>
+            <li>Сведите лопатки вместе, опустите их вниз и плавно начинайте тянуть вниз локти.</li>
+            <li>При правильной ширине хвата в конечной точке локти практически коснутся корпуса.</li>
+            <li>Если локти очень далеко от вашей талии, значит хват слишком широкий.</li>
+            <li>Задержитесь на секунду в нижней точке, затем на вдохе медленно возвращайтесь в исходное положение.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -59,7 +134,27 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :hyperextension %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5"><%= f.label :hyperextension %>
+      </button>
+      <div class="collapse my-2" id="collapseText5">
+        <span>
+          <%= image_tag('Гиперэкстензия.jpeg') %>
+          <ul>
+            <li>Отрегулируйте тренажер таким образом, чтобы ваш таз плотно лежал на его подушке.</li>
+            <li>Край подушки в том месте, где сгибается ваш корпус.</li>
+            <li>Задней частью ног упираемся в валики.</li>
+            <li>Нужно лечь так, чтобы валики упирались в ахиллово сухожилие, а не в икры.</li>
+            <li>Руки скрещиваем за головой или на груди.</li>
+            <li>Корпус – абсолютно прямая линия.</li>
+            <li>Доходим до угла в 90 градусов.</li>
+            <li>В случае проблем с позвоночником угол может быть меньше.</li>
+            <li>Возвращаемся назад и разгибаемся так чтобы корпус составлял одну линию с ногами.</li>
+            <li>Задерживаемся в верхней точке на 1–2 секунды.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -70,7 +165,25 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :hammers %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6"><%= f.label :hammers %>
+      </button>
+      <div class="collapse my-2" id="collapseText6">
+        <span>
+          <%= image_tag('Молотки.jpeg') %>
+          <ul>
+            <li>Встаньте прямо, а ноги поставьте на ширину плеч.</li>
+            <li>В пояснице должен образоваться небольшой естественный прогиб.</li>
+            <li>Локти зафиксируйте по бокам туловища.</li>
+            <li>Гантели возьмите таким хватом, что ладони с гантелями смотрят друг на друга.</li>
+            <li>На выдохе выполните подъем рук почти до уровня плеч.</li>
+            <li>Добейтесь пикового сокращения мышц.</li>
+            <li>Задержитесь в верхней пиковой точке на несколько секунд.</li>
+            <li>Медленно опустите гантели вниз, вернувшись в начальное положение.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">

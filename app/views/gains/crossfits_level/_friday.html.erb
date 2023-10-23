@@ -11,28 +11,83 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Сгибания предплечий и жим вверх со штангой:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Сгибания предплечий и жим вверх со штангой:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Сгибания предплечий со штангой.jpeg') %>
+            <ul>
+              <li>Первая часть движения аналогична Сгибаниям предплечий со штангой</li>
+              <li>Вторая часть движения аналогична Жиму штанги над головой</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.forearm_curls_and_press_ups_with_a_barbell.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Кросс-овер:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1">Кросс-овер:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Кросс-овер.jpeg') %>
+            <ul>
+              <li>Установите блоки тренажера наверх.</li>
+              <li>Сделайте небольшой шаг вперед, чтобы растянуть грудные.</li>
+              <li>Ноги ставим на одну линию, если тяжело, то одну выводим вперед.</li>
+              <li>Не забываем их чередовать каждый подход.</li>
+              <li>Наклоняем туловище немного вперед.</li>
+              <li>Спину держим ровной, в пояснице небольшой прогиб, грудь немного выставлена вперед.</li>
+              <li>Руки разводим в стороны, пока не почувствуем растяжение грудных мышц.</li>
+              <li>Локти при этом, немного согнуты.</li>
+              <li>На выдохе начинаем сводить руки перед грудью, до касания ими друг друга.</li>
+              <li>Задержитесь ненадолго в этом положении, что бы максимально напрячь грудь.</li>
+              <li>На вдохе начинаем разводить руки в стороны до исходного положения, стараясь как можно сильней растянуть грудные мышцы.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.cross_over.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Отведение в бабочке:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2">Отведение в бабочке:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Отведение в бабочке.jpeg') %>
+            <ul>
+              <li>Выставите высоту сидения так, чтобы рука отводилась назад в горизонтальной плоскости.</li>
+              <li>Спинку тренажера отрегулируйте, чтобы она фиксировала положение корпуса.</li>
+              <li>Садитесь в тренажер и возьмитесь за рукояти.</li>
+              <li>Начинайте медленно разводить руки в стороны до тех пор, пока кисти не окажутся на одном уровне.</li>
+              <li>Сделайте небольшую паузу и в медленном темпе вернитесь в исходную позицию.</li>
+              <li>Не сводите рукояти вместе, чтобы сохранить напряжение в мышцах.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.abduction_in_a_butterfly.ceil%> кг.</div>
     </div>
 
-  <h2 class="my-4 center", style="color:#ffffff">
+  <h2 class="my-4 center">
     <strong>2 Блок</strong>
   </h2>
 
@@ -45,28 +100,83 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Сгибания голени лежа:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3">Сгибания голени лежа:
+        </button>
+        <div class="collapse my-2" id="collapseText3">
+          <span>
+            <%= image_tag('Сгибание голени лежа.jpeg') %>
+            <ul>
+              <li>Лягте на тренажер и заведите ноги под валик.</li>
+              <li>Руками возьмитесь за специальные ручки или за края скамьи.</li>
+              <li>На выдохе согните голени, стараясь максимально приблизить валик к ягодицам.</li>
+              <li>Передняя поверхность бедер при этом прижата к скамье.</li>
+              <li>На вдохе разгибайте голени, аккуратно опуская вес вниз.</li>
+              <li>Полностью выпрямлять колени и расслаблять бицепс бедра в нижней точке не нужно.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.lying_leg_flexion.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Разгибания голени сидя:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Разгибания голени сидя:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Разгибания голени сидя.jpeg') %>
+            <ul>
+              <li>Сядьте в тренажер, прижмитесь спиной к его спинке и заведите ноги за валик.</li>
+              <li>Руками возьмитесь за специальные ручки по бокам от сиденья.</li>
+              <li>Носки стоп поднимите вверх.</li>
+              <li>На выдохе плавно разогните ноги в коленях.</li>
+              <li>Максимально напрягите квадрицепсы в верхней точке, задержитесь в таком положении на 1–2 секунды.</li>
+              <li>На вдохе подконтрольно опустите ноги вниз, но не сгибайте их до конца.</li>
+              <li>То есть даже в нижней точке квадрицепсы должны быть напряжены.</li>
+              <li>Следите за ощущениями в коленях, не бросайте резко ноги вниз.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.seated_leg_extension.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Выпады с выпрыгиванием:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Выпады с выпрыгиванием:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Выпады с выпрыгиванием.jpeg') %>
+            <ul>
+              <li>Встать в исходное положение для сплит-приседа.</li>
+              <li>Выпрямить спину, подтянуть живот, отшагнуть одной ногой назад на расстояние полного шага.</li>
+              <li>Вторую опорную оставить в обычном для приседания положении, носок чуть отведен в сторону.</li>
+              <li>Опуститься в выпад до параллели рабочей ноги с полом.</li>
+              <li>Выпрыгнуть их приседа вверх.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.jumping_lunges.ceil%> кг.</div>
     </div>
 
-  <h2 class="my-4 center", style="color:#ffffff">
+  <h2 class="my-4 center">
     <strong>3 Блок</strong>
   </h2>
 
@@ -79,21 +189,70 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Сумо приседания:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6">Сумо приседания:
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Сумо приседания.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, расставьте ноги шире, чем ширина плеч, а стопы разверните наружу под углом в 45 градусов.</li>
+              <li>Взгляд направьте вперед, спина должна быть прямой, а грудь открытой.</li>
+              <li>Начните опускаться вниз, сгибая колени и отклоняя таз назад, как будто хотите сесть на стул.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.sumo_squats.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Качели с гирей:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7">Качели с гирей:
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Качели с гирей.jpeg') %>
+            <ul>
+              <li>Поставьте ступни на ширине плеч, носки слегка направлены наружу.</li>
+              <li>Колени держите слегка согнутыми.</li>
+              <li>Удерживайте гирю обеими руками между ног.</li>
+              <li>Качните гирю между ног назад.</li>
+              <li>Поверните гирю вперед, чтобы она оказалась на одной высоте с вашей головой.</li>
+              <li>Во время движения вперед убедитесь, что бедра открыты, а колени одновременно разгибаются.</li>
+              <li>Держите руки прямыми на протяжении всего движения.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
       <div class="col"><%= current_gain_training.kettlebell_swing.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Фермерская прогулка:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText8" aria-expanded="false"
+                aria-controls="collapseText8">Фермерская прогулка:
+        </button>
+        <div class="collapse my-2" id="collapseText8">
+          <span>
+            <%= image_tag('Фермерская прогулка.jpeg') %>
+            <ul>
+              <li>Поясница прогнута, зафиксирована.</li>
+              <li>Лопатки сведены.</li>
+              <li>Руки «по швам».</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
@@ -102,7 +261,8 @@
 
 <div class="row row-cols-2 my-5">
   <div class="col left">
-    <%= link_to "Не удалось", user_path(current_user), class: 'btn btn-danger btn-lg'%>
+    <%= link_to "Не удалось", user_update_gain_path(@user, @gain, complete_training: 'fail'),
+     method: :put, class: 'btn btn-danger btn-lg'%>
   </div>
 
   <div class="col right"><%= link_to "Завершено",

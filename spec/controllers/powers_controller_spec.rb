@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe PowersController, type: :controller do
   let(:user) do
     User.create(email: 'Test@example.com', name: 'Test',
@@ -13,33 +14,50 @@ RSpec.describe PowersController, type: :controller do
     context 'with valid attributes' do
       it 'creates a new power' do
         expect do
-          post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10, push_ups_on_bars: 10,
-                                                             stacked_chest_press: 10, extension_with_rope_handle: 10, dumbbell_abduction: 10,
-                                                             horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10, incline_dumbbell_row: 10,
-                                                             vertical_pull_block: 10, hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
-                                                             leg_press: 10, hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
-                                                             lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10 } }
+          post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10,
+                                                             dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                             stacked_chest_press: 10,
+                                                             extension_with_rope_handle: 10, dumbbell_abduction: 10,
+                                                             horizontal_pull_block: 10, pull_ups: 10,
+                                                             barbell_forearm_curls: 10, incline_dumbbell_row: 10,
+                                                             vertical_pull_block: 10, hyperextension: 10,
+                                                             hammers: 10, gack_squats: 10,
+                                                             seated_leg_extension: 10, leg_press: 10,
+                                                             hamer_shoulder_press: 10,
+                                                             dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                                             pancake_swing_in_front_of_you: 10,
+                                                             barbell_pull_to_chin: 10 } }
         end.to change(Power, :count).by(1)
       end
 
       it 'sets a flash message' do
-        post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10, push_ups_on_bars: 10,
-                                                           stacked_chest_press: 10, extension_with_rope_handle: 10, dumbbell_abduction: 10,
-                                                           horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10, incline_dumbbell_row: 10,
-                                                           vertical_pull_block: 10, hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
-                                                           leg_press: 10, hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
-                                                           lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10 } }
+        post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10,
+                                                           dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                           stacked_chest_press: 10, extension_with_rope_handle: 10,
+                                                           dumbbell_abduction: 10, horizontal_pull_block: 10,
+                                                           pull_ups: 10, barbell_forearm_curls: 10,
+                                                           incline_dumbbell_row: 10, vertical_pull_block: 10,
+                                                           hyperextension: 10, hammers: 10, gack_squats: 10,
+                                                           seated_leg_extension: 10, leg_press: 10,
+                                                           hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
+                                                           lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
+                                                           barbell_pull_to_chin: 10 } }
 
         expect(flash[:success]).to eq(I18n.t('powers.create.success'))
       end
 
       it 'redirects to the user page' do
-        post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10, push_ups_on_bars: 10,
-                                                           stacked_chest_press: 10, extension_with_rope_handle: 10, dumbbell_abduction: 10,
-                                                           horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10, incline_dumbbell_row: 10,
-                                                           vertical_pull_block: 10, hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
-                                                           leg_press: 10, hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
-                                                           lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10 } }
+        post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10,
+                                                           dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                           stacked_chest_press: 10, extension_with_rope_handle: 10,
+                                                           dumbbell_abduction: 10, horizontal_pull_block: 10,
+                                                           pull_ups: 10, barbell_forearm_curls: 10,
+                                                           incline_dumbbell_row: 10, vertical_pull_block: 10,
+                                                           hyperextension: 10, hammers: 10, gack_squats: 10,
+                                                           seated_leg_extension: 10, leg_press: 10,
+                                                           hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
+                                                           lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
+                                                           barbell_pull_to_chin: 10 } }
 
         expect(response).to redirect_to(user_path(user))
       end
@@ -48,22 +66,32 @@ RSpec.describe PowersController, type: :controller do
     context 'with invalid attributes' do
       it 'does not create a new power' do
         expect do
-          post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10, push_ups_on_bars: 10,
-                                                             stacked_chest_press: 10, extension_with_rope_handle: 10, dumbbell_abduction: 10,
-                                                             horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10, incline_dumbbell_row: 10,
-                                                             vertical_pull_block: 10, hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
-                                                             leg_press: 10, hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
-                                                             lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10 } }
+          post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10,
+                                                             dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                             stacked_chest_press: 10,
+                                                             extension_with_rope_handle: 10, dumbbell_abduction: 10,
+                                                             horizontal_pull_block: 10, pull_ups: 10,
+                                                             barbell_forearm_curls: 10, incline_dumbbell_row: 10,
+                                                             vertical_pull_block: 10, hyperextension: 10,
+                                                             hammers: 10, gack_squats: 10, seated_leg_extension: 10,
+                                                             leg_press: 10, hamer_shoulder_press: 10,
+                                                             dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                                             pancake_swing_in_front_of_you: 10 } }
         end.not_to change(Power, :count)
       end
 
       it 'renders the new template' do
-        post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10, push_ups_on_bars: 10,
-                                                           stacked_chest_press: 10, extension_with_rope_handle: 10, dumbbell_abduction: 10,
-                                                           horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10, incline_dumbbell_row: 10,
-                                                           vertical_pull_block: 10, hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
-                                                           leg_press: 10, hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
-                                                           lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10 } }
+        post :create, params: { user_id: user.id, power: { barbell_bench_press: 10, reverse_push_ups: 10,
+                                                           dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                           stacked_chest_press: 10, extension_with_rope_handle: 10,
+                                                           dumbbell_abduction: 10, horizontal_pull_block: 10,
+                                                           pull_ups: 10, barbell_forearm_curls: 10,
+                                                           incline_dumbbell_row: 10, vertical_pull_block: 10,
+                                                           hyperextension: 10, hammers: 10, gack_squats: 10,
+                                                           seated_leg_extension: 10, leg_press: 10,
+                                                           hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
+                                                           lying_leg_flexion: 10,
+                                                           pancake_swing_in_front_of_you: 10 } }
 
         expect(response).to render_template(:new)
       end
@@ -303,3 +331,4 @@ RSpec.describe PowersController, type: :controller do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

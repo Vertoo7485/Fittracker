@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe ApplicationHelper, type: :helper do
   describe '#nav_tab' do
     it 'returns link with correct CSS class when current_page matches title' do
@@ -45,3 +46,4 @@ RSpec.describe ApplicationHelper, type: :helper do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

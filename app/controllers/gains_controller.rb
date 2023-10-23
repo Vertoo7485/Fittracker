@@ -34,6 +34,8 @@ class GainsController < ApplicationController
 
   def update_gain
     case params[:complete_training]
+    when 'fail'
+      flash[:success] = 'В следующий раз обязательно получится!'
     when 'monday'
       if current_gain_training.monday_reps <= 9
         pump_gain_reps_monday

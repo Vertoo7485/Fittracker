@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe Power, type: :model do
   let(:user) do
     User.create(name: 'John Doe', email: 'john@example.com', password: 'password123', role: 'basic',
@@ -13,9 +14,9 @@ RSpec.describe Power, type: :model do
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
                                 barbell_forearm_curls: 10, incline_dumbbell_row: 10, vertical_pull_block: 10,
-                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10, leg_press: 10,
-                                hamer_shoulder_press: 10, dumbbells_through_the_side: 10, lying_leg_flexion: 10,
-                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
+                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
+                                leg_press: 10, hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
+                                lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to be_valid
     end
 
@@ -36,8 +37,8 @@ RSpec.describe Power, type: :model do
                                 horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10,
                                 incline_dumbbell_row: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
                                 gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -47,8 +48,8 @@ RSpec.describe Power, type: :model do
                                 horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10,
                                 incline_dumbbell_row: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
                                 gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -58,8 +59,8 @@ RSpec.describe Power, type: :model do
                                 horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10,
                                 incline_dumbbell_row: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
                                 gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -69,8 +70,8 @@ RSpec.describe Power, type: :model do
                                 horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10,
                                 incline_dumbbell_row: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
                                 gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -80,8 +81,8 @@ RSpec.describe Power, type: :model do
                                 horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10,
                                 incline_dumbbell_row: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
                                 gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -91,19 +92,19 @@ RSpec.describe Power, type: :model do
                                 horizontal_pull_block: 10, pull_ups: 10, barbell_forearm_curls: 10,
                                 incline_dumbbell_row: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
                                 gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
     it 'is not valid without a horizontal_pull_block' do
       power = user.powers.build(barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10,
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
-                                dumbbell_abduction: 10, pull_ups: 10, barbell_forearm_curls: 10, incline_dumbbell_row: 10,
-                                vertical_pull_block: 10, hyperextension: 10, hammers: 10, gack_squats: 10,
-                                seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                dumbbell_abduction: 10, pull_ups: 10, barbell_forearm_curls: 10,
+                                incline_dumbbell_row: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
+                                gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
+                                dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -113,19 +114,19 @@ RSpec.describe Power, type: :model do
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, barbell_forearm_curls: 10,
                                 incline_dumbbell_row: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
                                 gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
     it 'is not valid without a barbell_forearm_curls' do
       power = user.powers.build(barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10,
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
-                                dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10, incline_dumbbell_row: 10,
-                                vertical_pull_block: 10, hyperextension: 10, hammers: 10, gack_squats: 10,
-                                seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
+                                incline_dumbbell_row: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
+                                gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
+                                dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -133,10 +134,10 @@ RSpec.describe Power, type: :model do
       power = user.powers.build(barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10,
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
-                                barbell_forearm_curls: 10, vertical_pull_block: 10, hyperextension: 10, hammers: 10,
-                                gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                barbell_forearm_curls: 10, vertical_pull_block: 10, hyperextension: 10,
+                                hammers: 10, gack_squats: 10, seated_leg_extension: 10, leg_press: 10,
+                                hamer_shoulder_press: 10, dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -144,10 +145,10 @@ RSpec.describe Power, type: :model do
       power = user.powers.build(barbell_bench_press: 10, reverse_push_ups: 10, dumbbell_bench_press: 10,
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
-                                barbell_forearm_curls: 10, incline_dumbbell_row: 10, hyperextension: 10, hammers: 10,
-                                gack_squats: 10, seated_leg_extension: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                barbell_forearm_curls: 10, incline_dumbbell_row: 10, hyperextension: 10,
+                                hammers: 10, gack_squats: 10, seated_leg_extension: 10, leg_press: 10,
+                                hamer_shoulder_press: 10, dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -189,9 +190,9 @@ RSpec.describe Power, type: :model do
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
                                 barbell_forearm_curls: 10, incline_dumbbell_row: 10, vertical_pull_block: 10,
-                                hyperextension: 10, hammers: 10, gack_squats: 10, leg_press: 10, hamer_shoulder_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                hyperextension: 10, hammers: 10, gack_squats: 10, leg_press: 10,
+                                hamer_shoulder_press: 10, dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -211,9 +212,9 @@ RSpec.describe Power, type: :model do
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
                                 barbell_forearm_curls: 10, incline_dumbbell_row: 10, vertical_pull_block: 10,
-                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10, leg_press: 10,
-                                dumbbells_through_the_side: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
+                                leg_press: 10, dumbbells_through_the_side: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -222,9 +223,9 @@ RSpec.describe Power, type: :model do
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
                                 barbell_forearm_curls: 10, incline_dumbbell_row: 10, vertical_pull_block: 10,
-                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10, leg_press: 10,
-                                hamer_shoulder_press: 10, lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
+                                leg_press: 10, hamer_shoulder_press: 10, lying_leg_flexion: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -233,9 +234,9 @@ RSpec.describe Power, type: :model do
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
                                 barbell_forearm_curls: 10, incline_dumbbell_row: 10, vertical_pull_block: 10,
-                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10, leg_press: 10,
-                                hamer_shoulder_press: 10, dumbbells_through_the_side: 10, pancake_swing_in_front_of_you: 10,
-                                barbell_pull_to_chin: 10)
+                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
+                                leg_press: 10, hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
+                                pancake_swing_in_front_of_you: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -244,9 +245,9 @@ RSpec.describe Power, type: :model do
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
                                 barbell_forearm_curls: 10, incline_dumbbell_row: 10, vertical_pull_block: 10,
-                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10, leg_press: 10,
-                                hamer_shoulder_press: 10, dumbbells_through_the_side: 10, lying_leg_flexion: 10,
-                                barbell_pull_to_chin: 10)
+                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
+                                leg_press: 10, hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
+                                lying_leg_flexion: 10, barbell_pull_to_chin: 10)
       expect(power).to_not be_valid
     end
 
@@ -255,10 +256,11 @@ RSpec.describe Power, type: :model do
                                 push_ups_on_bars: 10, stacked_chest_press: 10, extension_with_rope_handle: 10,
                                 dumbbell_abduction: 10, horizontal_pull_block: 10, pull_ups: 10,
                                 barbell_forearm_curls: 10, incline_dumbbell_row: 10, vertical_pull_block: 10,
-                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10, leg_press: 10,
-                                hamer_shoulder_press: 10, dumbbells_through_the_side: 10, lying_leg_flexion: 10,
-                                pancake_swing_in_front_of_you: 10)
+                                hyperextension: 10, hammers: 10, gack_squats: 10, seated_leg_extension: 10,
+                                leg_press: 10, hamer_shoulder_press: 10, dumbbells_through_the_side: 10,
+                                lying_leg_flexion: 10, pancake_swing_in_front_of_you: 10)
       expect(power).to_not be_valid
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

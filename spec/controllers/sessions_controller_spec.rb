@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe SessionsController, type: :controller do
   describe 'POST #create' do
     context 'with valid credentials' do
@@ -72,3 +73,4 @@ RSpec.describe SessionsController, type: :controller do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

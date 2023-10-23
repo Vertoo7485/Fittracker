@@ -6,7 +6,23 @@
   <div class="mb-3 row">
     <%= f.hidden_field(:day, value: "cyrcles") %>
     <div class="col-sm-2 col-form-label">
-      <%= f.label :russian_twist %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText"><%= f.label :russian_twist %>
+      </button>
+      <div class="collapse my-2" id="collapseText">
+        <span>
+          <%= image_tag('Русский твист.jpeg') %>
+          <ul>
+            <li>Сядьте на коврик и согните ноги в коленях, слегка отклонитесь назад.</li>
+            <li>Ваш корпус должен образовывать букву «V» с бедрами.</li>
+            <li>Спина в пояснице немного скруглена, пресс напряжен.</li>
+            <li>Вытяните руки вперед. Для удобства можете соединить ладони.</li>
+            <li>Поднимите ноги от пола и начинайте выполнять скрутки корпуса и рук вправо-влево.</li>
+            <li>Колени, в свою очередь, остаются на месте или слегка поворачиваются в противовес корпусу.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -17,7 +33,28 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :bent_over_barbell_pull %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1"><%= f.label :bent_over_barbell_pull %>
+      </button>
+      <div class="collapse my-2" id="collapseText1">
+        <span>
+          <%= image_tag('Тяга штанги к поясу в наклоне.jpeg') %>
+          <ul>
+            <li>Встаем перед штангой.</li>
+            <li>Беремся за нее широким хватом (шире, чем плечи) и снимаем со стоек.</li>
+            <li>Хват – прямой (пальцы к себе, кулаки наружу).</li>
+            <li>В пояснице естественный прогиб, спина прямая, ноги чуть согнуты в коленях.</li>
+            <li>Наклоняем туловище вперед, стараемся достичь положения близкого к параллели с полом.</li>
+            <li>Равновесие держится за счет того, что во время наклона вы сгибаете колени, отводя таз назад.</li>
+            <li>Фиксируем корпус в этом положении.</li>
+            <li>Теперь тянем штангу к животу (к нижней части), максимально сводя лопатки вместе.</li>
+            <li>Тяга грифа осуществляется мышцами спины, а не рук.</li>
+            <li>Удерживаем в верхней точке 1 секунду и плавно опускаем снаряд назад, разводя лопатки в стороны.</li>
+            <li>Стараемся не менять положение спины. Просто опускаем руки максимально вниз за счет разведения лопаток.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -28,7 +65,25 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :trapeze_in_smith %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2"><%= f.label :trapeze_in_smith %>
+      </button>
+      <div class="collapse my-2" id="collapseText2">
+        <span>
+          <%= image_tag('Подьем на трапеции в Смите.jpeg') %>
+          <ul>
+            <li>Установите гриф на уровне бёдер. Подберите корректный вес. </li>
+            <li>Станьте спиной к тренажеру и возьмитесь за перекладину прямым хватом, на ширине плеч.</li>
+            <li>Снимите штангу с замков и удерживайте её на вытянутых руках.</li>
+            <li>Держите спину ровно и подайте грудь вверх.</li>
+            <li>Это стартовая позиция.</li>
+            <li>Делая выдох, поднимайте плечи ровно вверх.</li>
+            <li>Не сгибайте руки и запястья во время движения. </li>
+            <li>Сделайте паузу в верхней точке, затем опускайте штангу в стартовую позицию.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -37,9 +92,25 @@
     </div>
   </div>
 
-<div class="my-3 mb-3 row">
+  <div class="my-3 mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :lifting_dumbbells_in_scott %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3"><%= f.label :lifting_dumbbells_in_scott %>
+      </button>
+      <div class="collapse my-2" id="collapseText3">
+        <span>
+          <%= image_tag('Бицепс в Скотте гантелями.jpeg') %>
+          <ul>
+            <li>Возь­ми­те ган­тель нуж­но­го ве­са и по­дой­ди­те к скамье Скот­та.</li>
+            <li>Рас­по­ложи­те ее на вер­хней час­ти нак­лонной скамьи, рас­пря­мив прак­ти­чес­ки до кон­ца.</li>
+            <li>Это Ва­ша ис­ходная по­зиция.</li>
+            <li>На вы­дохе, за счет сок­ра­щения двуг­ла­вой мыш­цы пле­ча, под­ни­мите ган­тель вверх до уров­ня плеч.</li>
+            <li>За­дер­жи­тесь на 1-2 сче­та в вер­хней точ­ке тра­ек­то­рии и ста­тичес­ки прож­ми­те би­цепс.</li>
+            <li>Мед­ленно и под­кон­троль­но опус­ти­те ру­ку в стартовую позицию.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -50,7 +121,25 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :biceps_sitting %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4"><%= f.label :biceps_sitting %>
+      </button>
+      <div class="collapse my-2" id="collapseText4">
+        <span>
+          <%= image_tag('Бицепс сидя на скамье.jpeg') %>
+          <ul>
+            <li>Возьмите гантели и сядьте на наклонную скамью.</li>
+            <li>Плечи прижаты к корпусу, хват нейтральный.</li>
+            <li>На выдохе поднимайте гантели, напрягая бицепсы.</li>
+            <li>Во время подъема гантелей поверните кисти в супинированное положение - ладонями вверх.</li>
+            <li>Держите плечи неподвижными, двигаются только предплечья.</li>
+            <li>Продолжайте сгибать руку до уровня плеча.</li>
+            <li>Задержитесь на секунду.</li>
+            <li>На вдохе медленно опускайте гантель обратно, возвращая кисть в исходное положение.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -72,7 +161,26 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :standing_dumbbell_french_press %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5"><%= f.label :standing_dumbbell_french_press %>
+      </button>
+      <div class="collapse my-2" id="collapseText5">
+        <span>
+          <%= image_tag('Французский жим с гантелей стоя.jpeg') %>
+          <ul>
+            <li>Встаньте прямо.
+            <li>Возьмите гантель обеими руками, держите гантель на вытянутых руках над головой.
+            <li>Обхватите гантель так, как показано на рисунке: диск находится в ладонях, большие пальцы на рукояти.
+            <li>Ладони обращены вверх.
+            <li>Это будет вашим исходным положением.
+            <li>Часть руки от плеча до локтя находится рядом с головой, перпендикулярно полу.
+            <li>На вдохе опустите гантель назад за голову по полукруглой траектории.
+            <li>Продолжайте движение, пока предплечье не коснется бицепса.
+            <li>На выдохе, напрягая трицепсы, поднимите руки, возвращая гантель в исходное положение.
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">

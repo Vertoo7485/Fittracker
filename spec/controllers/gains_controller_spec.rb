@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe GainsController, type: :controller do
   let(:user) do
     User.create(email: 'Test@example.com', name: 'Test',
@@ -14,23 +15,26 @@ RSpec.describe GainsController, type: :controller do
       it 'creates a new gain' do
         expect do
           post :create, params: { user_id: user.id, gain: { barbell_bench_press: 10, reverse_push_ups: 10,
-                                                            dumbbell_bench_press: 10, push_ups_on_bars: 10, stacked_chest_press: 10,
-                                                            extension_with_rope_handle: 10, dumbbell_abduction: 10 } }
+                                                            dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                            stacked_chest_press: 10, extension_with_rope_handle: 10,
+                                                            dumbbell_abduction: 10 } }
         end.to change(Gain, :count).by(1)
       end
 
       it 'sets a flash message' do
         post :create, params: { user_id: user.id, gain: { barbell_bench_press: 10, reverse_push_ups: 10,
-                                                          dumbbell_bench_press: 10, push_ups_on_bars: 10, stacked_chest_press: 10,
-                                                          extension_with_rope_handle: 10, dumbbell_abduction: 10 } }
+                                                          dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                          stacked_chest_press: 10, extension_with_rope_handle: 10,
+                                                          dumbbell_abduction: 10 } }
 
         expect(flash[:success]).to eq(I18n.t('gains.create.success'))
       end
 
       it 'redirects to the user page' do
         post :create, params: { user_id: user.id, gain: { barbell_bench_press: 10, reverse_push_ups: 10,
-                                                          dumbbell_bench_press: 10, push_ups_on_bars: 10, stacked_chest_press: 10,
-                                                          extension_with_rope_handle: 10, dumbbell_abduction: 10 } }
+                                                          dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                          stacked_chest_press: 10, extension_with_rope_handle: 10,
+                                                          dumbbell_abduction: 10 } }
 
         expect(response).to redirect_to(user_path(user))
       end
@@ -40,14 +44,16 @@ RSpec.describe GainsController, type: :controller do
       it 'does not create a new gain' do
         expect do
           post :create, params: { user_id: user.id, gain: { barbell_bench_press: 10, reverse_push_ups: 10,
-                                                            dumbbell_bench_press: 10, push_ups_on_bars: 10, stacked_chest_press: 10,
+                                                            dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                            stacked_chest_press: 10,
                                                             extension_with_rope_handle: 10 } }
         end.not_to change(Gain, :count)
       end
 
       it 'renders the new template' do
         post :create, params: { user_id: user.id, gain: { barbell_bench_press: 10, reverse_push_ups: 10,
-                                                          dumbbell_bench_press: 10, push_ups_on_bars: 10, stacked_chest_press: 10,
+                                                          dumbbell_bench_press: 10, push_ups_on_bars: 10,
+                                                          stacked_chest_press: 10,
                                                           extension_with_rope_handle: 10 } }
 
         expect(response).to render_template(:new)
@@ -419,3 +425,4 @@ RSpec.describe GainsController, type: :controller do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

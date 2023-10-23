@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe UserBulkImportJob, type: :job do
   describe '#perform' do
     let(:archive_key) { 'example_archive_key' }
@@ -47,3 +48,4 @@ RSpec.describe UserBulkImportJob, type: :job do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

@@ -1,6 +1,6 @@
 <body style="color:#ffffff">
 
-  <h2 class="my-4 center", style="color:#ffffff">
+  <h2 class="my-4 center">
     <strong>1 Блок</strong>
   </h2>
 
@@ -13,28 +13,85 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Трастеры:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Трастеры:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Трастеры.jpeg') %>
+            <ul>
+              <li>Ставим ноги на ширине плеч. Руки согнуты в локтях, держим штангу перед грудью.</li>
+              <li>Выполняем глубокий присед.</li>
+              <li>Из этого положения резко выталкиваем себя вверх.</li>
+              <li>В момент подъёма выбрасываем штангу над головой.</li>
+              <li>Затем штангу опускаем обратно на грудь и возвращаемся в глубокий присед.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.trusters.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.trusters.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Тяга штанги к поясу в наклоне:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1">Тяга штанги к поясу в наклоне:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Тяга штанги к поясу в наклоне.jpeg') %>
+            <ul>
+              <li>Встаем перед штангой.</li>
+              <li>Беремся за нее широким хватом (шире, чем плечи) и снимаем со стоек.</li>
+              <li>Хват – прямой (пальцы к себе, кулаки наружу).</li>
+              <li>В пояснице естественный прогиб, спина прямая, ноги чуть согнуты в коленях.</li>
+              <li>Наклоняем туловище вперед, стараемся достичь положения близкого к параллели с полом.</li>
+              <li>Равновесие держится за счет того, что во время наклона вы сгибаете колени, отводя таз назад.</li>
+              <li>Фиксируем корпус в этом положении.</li>
+              <li>Теперь тянем штангу к животу (к нижней части), максимально сводя лопатки вместе.</li>
+              <li>Тяга грифа осуществляется мышцами спины, а не рук.</li>
+              <li>Удерживаем в верхней точке 1 секунду и плавно опускаем снаряд назад, разводя лопатки в стороны.</li>
+              <li>Стараемся не менять положение спины. Просто опускаем руки максимально вниз за счет разведения лопаток.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.bent_over_barbell_pull.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.bent_over_barbell_pull.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Становая тяга:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2">Становая тяга:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Становая тяга.jpeg') %>
+            <ul>
+              <li>Встаньте перед штангой, ноги на ширине плеч, пятки прижаты к полу.</li>
+              <li>Согните ноги в коленях и разверните бёдра, отведя таз назад и приблизив продольную ось штанги к себе.</li>
+              <li>Возьмите штангу руками на ширине бёдер, ладони должны быть обращены к вам, хват закрытый.</li>
+              <li>Поднимите штангу, выпрямив ноги и одновременно потянув снаряд к верхней части бёдер.</li>
+              <li>Задержитесь в верхней точке на несколько секунд и медленно опустите штангу на пол, также сгибая ноги и отводя таз назад.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.deadlift.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.deadlift.ceil%> кг.</div>
     </div>
 
-  <h2 class="my-4 center", style="color:#ffffff">
+  <h2 class="my-4 center">
     <strong>2 Блок</strong>
   </h2>
 
@@ -47,28 +104,94 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Махи гантелями через стороны:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3">Махи гантелями через стороны:
+        </button>
+        <div class="collapse my-2" id="collapseText3">
+          <span>
+            <%= image_tag('Махи гантелей через сторону.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, ноги на ширине плеч.</li>
+              <li>Возьмите гантели и держите их нейтральным хватом, чтобы руки были ладонями друг к другу.</li>
+              <li>Руки в локтях слегка согнуты - этот угол нужно удерживать на всей амплитуде, это очень важно.</li>
+              <li>Гантелями не касаемся друг друга, кисти строго под плечами, но не ближе.</li>
+              <li>Сделайте чуть заметный наклон корпуса вперед ровно настолько, чтобы гантели расположились перед вами.</li>
+              <li>На выдохе начинайте отводить руки в стороны и поднимайте гантели, но не выше уровня плеч.</li>
+              <li>Гантели должны быть параллельны земле, кисти не поворачиваем.</li>
+              <li>В верхней точке мы стараемся поднять именно локти, как в тяге гантелей к подбородку.</li>
+              <li>На вдохе медленно верните гантели в исходное положение, но в нижней точке не касайтесь гантелями друг друга!</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.mahi_dumbbells_through_the_sides.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.mahi_dumbbells_through_the_sides.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Разводка лежа на горизонтальной скамье:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Разводка лежа на горизонтальной скамье:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Разводка гантелей лежа на горизонтальной скамье.jpeg') %>
+            <ul>
+              <li>Возьмите гантели в руки и сядьте на край скамьи.</li>
+              <li>Лягте на лавку так, чтобы голова не свисала с нее.</li>
+              <li>Ноги расставьте широко, чтобы обеспечить хорошую устойчивость.</li>
+              <li>Поясница находится в естественном положении, без излишних прогибов и скруглений.</li>
+              <li>Гантели поднимите перед собой под углом 90 градусов к полу.</li>
+              <li>Руки развернуты так, чтобы ладони смотрели друг на друга.</li>
+              <li>Чуть согните их в локте и заморозьте в таком положении.</li>
+              <li>На вдохе начните разводить гантели в стороны так, чтобы локти смотрели вниз.</li>
+              <li>Когда вы почувствуете, что мышцы груди уже начинают тянуться, опустите руки еще чуть дальше, но, разумеется, не до болезненных ощущений.</li>
+              <li>На выдохе сведите руки обратно, почти коснувшись гантелями друг друга.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.dumbbell_layout.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.dumbbell_layout.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Тяга штанги к подбородку:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Тяга штанги к подбородку:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Тяга штанги к подбородку.jpeg') %>
+            <ul>
+              <li>Держите штангу верхним хватом (промежуток между ладонями немного меньше ширины плеч) и выровняйтесь.</li>
+              <li>В исходном положении спина прямая и чуть прогнута в пояснице, плечи расправлены, руки в локтях ровные, гриф слегка касается бедер.</li>
+              <li>Вдохните и, задержав дыхание, напрягите дельту и трапецепидную.</li>
+              <li>Разведите локти и потяните их вверх вертикально.</li>
+              <li>Движение «направляют» именно локти, а не предплечья или плечи.</li>
+              <li>Когда вы поднимаете локти вверх, гриф штанги должен двигаться в вертикальной плоскости в длину тела от подбородка до бедер.</li>
+              <li>Не нависайте над грифом, прогибая спину.</li>
+              <li>Держите тело и шею прямо, а подбородок — горизонтально.</li>
+              <li>В верхней точке локти находятся максимально вверху.</li>
+              <li>Дотянувшись до верхней точки, сделайте выдох, остановитесь и еще больше напрягите дельты и трапеции.</li>
+              <li>Медленно опустите гриф в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.barbell_pull_to_chin.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.barbell_pull_to_chin.ceil%> кг.</div>
     </div>
 
-  <h2 class="my-4 center", style="color:#ffffff">
+  <h2 class="my-4 center">
     <strong>3 Блок</strong>
   </h2>
 
@@ -81,31 +204,84 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Запрыгивания на тумбу:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6">Запрыгивания на тумбу:
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Запрыгивания на тумбу.jpeg') %>
+            <ul>
+              <li>Встаньте перед тумбой на расстоянии от 0,5 до 1 м. Ноги на ширине плеч.</li>
+              <li>Это стартовая позиция. Чтобы прыгнуть, сядьте и махните руками назад.</li>
+              <li>При прыжке на ящик поднимите колени и бедра как можно выше.</li>
+              <li>В этом случае руки двигаются вперед и вверх.</li>
+              <li>Вы должны приземлиться на обе ноги.</li>
+              <li>Колени слегка согнуты.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.jumping_on_the_pedestal.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.jumping_on_the_pedestal.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Подъемы ног к перекладине:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7">Подъемы ног к перекладине:
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Подъемы ног к перекладине.jpeg') %>
+            <ul>
+              <li>Исходное положение – вис на перекладине или турнике с прямыми руками и ногами.</li>
+              <li>Высота перекладины должна быть такой, чтоб ногами вы или слегка касались пола.</li>
+              <li>На выдохе поднимите ноги и подкрутите таз вперед.</li>
+              <li>Угол между корпусом и бедрами должен быть меньше 90 градусов.</li>
+              <li>В верхней точке задержитесь на пару секунд.</li>
+              <li>По возможности медленно опуститесь в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.leg_raises_to_the_bar.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.leg_raises_to_the_bar.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Склепка:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText8" aria-expanded="false"
+                aria-controls="collapseText8">Склепка:
+        </button>
+        <div class="collapse my-2" id="collapseText8">
+          <span>
+            <%= image_tag('Склепка.jpeg') %>
+            <ul>
+              <li>Лягте на спину, на пол. Вытяните руки за голову прямыми, ноги прямыми просто сведите вместе.</li>
+              <li>Теперь, плавно выдыхая, медленно поднимайте ноги в ровном виде вверх, как можно выше.</li>
+              <li>При этом приподнимайте корпус, отрывая от поверхности лопатки.</li>
+              <li>Руки прямыми тяните к пальцам ног.</li>
+              <li>На пике, замрите на пару секунд, и опуститесь на пол достаточно медленно.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.riveting.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.riveting.ceil%> кг.</div>
     </div> 
 
   <div class="row row-cols-2 my-5">
     <div class="col left">
-      <%= link_to "Не удалось", user_path(current_user),
-        class: 'btn btn-danger btn-lg'%></div>
+      <%= link_to "Не удалось", user_update_crossfit_path(@user, @crossfit, complete_training: 'fail'),
+      method: :put, class: 'btn btn-danger btn-lg'%></div>
 
     <div class="col right"><%= link_to "Завершено", user_update_crossfit_path(@user, @crossfit, complete_training: 'wednesday'), method: :put,
       class: 'btn btn-success btn-lg'%></div>

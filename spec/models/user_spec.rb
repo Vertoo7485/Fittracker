@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe User, type: :model do
   describe 'validations' do
     it 'is valid with valid attributes' do
@@ -138,3 +139,4 @@ RSpec.describe User, type: :model do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

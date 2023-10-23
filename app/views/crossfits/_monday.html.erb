@@ -1,6 +1,6 @@
 <body style="color:#ffffff">
 
-  <h2 class="my-4 center", style="color:#ffffff">
+  <h2 class="my-4 center">
     <strong>1 Блок</strong>
   </h2>
 
@@ -13,28 +13,91 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Фронтальный присед:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Фронтальный присед:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Фронтальный присед.jpeg') %>
+            <ul>
+              <li>Расположите снаряд на стойках на высоте чуть ниже плеч.
+              <li>Присядьте под грифом, слегка согнув ноги в коленках, и возьмитесь за него руками так, чтобы локти смотрели строго вперед.</li>
+              <li>Штанга должна лечь на передние дельты.</li>
+              <li>Расстояние между кистями – больше ширины плеч.</li>
+              <li>На протяжении всех этапов выполнения фронтального приседания, следите, чтобы в пояснице был прогиб.</li>
+              <li>Аккуратно отойдите от рамы и примите исходное положение: ноги на ширине плеч, носки слегка развернуты, локти приподняты вверх.</li>
+              <li>Делайте вдох и одновременно приседайте, пока бедра и икроножные мышцы не соприкоснутся.</li>
+              <li>Спину при этом держите прямо, таз назад не отводите, колени не сводите, пятки не отрывайте от пола.</li>
+              <li>В нижнем положении не тормозите, сразу начинайте подниматься вверх, одновременно делайте выдох.</li>
+              <li>Выталкивайте вес за счет ног, пятки сильно вдавливайте в поверхность.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.front_squat.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.front_squat.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Взятие с виса:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1">Взятие с виса:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Взятие с виса.jpeg') %>
+            <ul>
+              <li>Поставьте ноги на ширине плеч.</li>
+              <li>Возьмитесь за штангу прямым  хватом, держите ее на уровне середины бедра.</li>
+              <li>Ваш корпус должен быть прямой и чуть наклонен вперед.</li>
+              <li>Резким движением поднимите штангу вверх, выпрямляя ноги.</li>
+              <li>Когда вы полностью выпрямитесь, сделайте рывок, согните и поднимите локти, чтобы они смотрели вперед.</li>
+              <li>Слегка присядьте.</li>
+              <li>Штанга должна лежать на линии плечей и касаться шеи, руки расслаблены.</li>
+              <li>Продолжайте приседать, чтобы легче было вернуться в исходное положение.</li>
+              <li>Сделайте упор на пятки и начните выпрямляться, корпус держите прямо, локти смотрят вперед.</li>
+              <li>Вернитесь в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.hang_grab.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.hang_grab.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Жим штанги над головой:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2">Жим штанги над головой:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Жим штанги над головой.jpeg') %>
+            <ul>
+              <li>Возьмите штангу хватом на ширине плеч.</li>
+              <li>Локти направлены немного вперёд.</li>
+              <li>Сведите лопатки вместе и опустите их вниз, чтобы придать жёсткости спине.</li>
+              <li>Поясница с лёгким прогибом.</li>
+              <li>На выдохе выпрямляйте руки, поднимая штангу над головой.</li>
+              <li>На вдохе плавно опускайте штангу вниз и сгибайте руки в локтях.</li>
+              <li>Поднимайте штангу только за счёт рук, без толчка ногами и раскачки корпуса.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.overhead_press.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.overhead_press.ceil%> кг.</div>
     </div>
 
-  <h2 class="my-4 center", style="color:#ffffff">
+  <h2 class="my-4 center">
     <strong>2 Блок</strong>
   </h2>
 
@@ -47,28 +110,85 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Качели:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3">Качели с гирей:
+        </button>
+        <div class="collapse my-2" id="collapseText3">
+          <span>
+            <%= image_tag('Качели с гирей.jpeg') %>
+            <ul>
+              <li>Поставьте ступни на ширине плеч, носки слегка направлены наружу.</li>
+              <li>Колени держите слегка согнутыми.</li>
+              <li>Удерживайте гирю обеими руками между ног.</li>
+              <li>Качните гирю между ног назад.</li>
+              <li>Поверните гирю вперед, чтобы она оказалась на одной высоте с вашей головой.</li>
+              <li>Во время движения вперед убедитесь, что бедра открыты, а колени одновременно разгибаются.</li>
+              <li>Держите руки прямыми на протяжении всего движения.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.kettlebell_swing.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.kettlebell_swing.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Тяга гири к подбородку:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Тяга гири к подбородку:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Тяга гири к подбородку.jpeg') %>
+            <ul>
+              <li>Гирю нужно взять хватом сверху.</li>
+              <li>После этого нужно выпрямиться, слегка прогнув спину в пояснице.</li>
+              <li>Плечи должны быть расправлены, а руки выпрямлены в локтевых суставах.</li>
+              <li>Во время тяги гири к подбородку спортсмен делает выдох, концентрированно поднимает гирю к подбородку, напрягая дельтовидные мышцы.</li>
+              <li>Локти должны тянутся вертикально вверх.</li>
+              <li>В верхней точке амплитуды локтевой сустав должен образовывать тридцати градусный угол.</li>
+              <li>Делайте короткую паузу на пике восходящего движения, после чего медленно опускайте гирю вниз по той же траектории.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.kettlebell_pull_to_the_chin.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.kettlebell_pull_to_the_chin.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Берпи:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Берпи:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Берпи.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, ноги на ширине плеч. Это будет вашей исходной позицией.</li>
+              <li>Согните колени и в положении приседа упритесь руками в пол.</li>
+              <li>Перенесите вес тела на руки.</li>
+              <li>Сделайте выпрыгивание ногами назад так, чтобы оказаться в положении планки на прямых руках.</li>
+              <li>Сделайте одно отжимание и вернитесь в позицию планки.</li>
+              <li>Прыжком подтяните ноги к рукам и окажитесь в положении приседа.</li>
+              <li>Сделайте прыжок вверх и резко поднимите руки, издав хлопок над головой.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.burpee.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.burpee.ceil%> кг.</div>
     </div>
 
-  <h2 class="my-4 center", style="color:#ffffff">
+  <h2 class="my-4 center">
     <strong>3 Блок</strong>
   </h2>
 
@@ -81,31 +201,83 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Ситап:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6">Ситап:
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Ситап.jpeg') %>
+            <ul>
+              <li>Лягте на пол.</li>
+              <li>Согните ноги в коленях и поставьте стопы на пол по ширине таза.</li>
+              <li>Не слишком близко к тазу.</li>
+              <li>Заведите прямые руки назад и коснитесь тыльной стороной кисти пола.</li>
+              <li>С выдохом поднимите корпус, округляя позвоночник, и коснитесь ладонями стоп.</li>
+              <li>Затем плавно без падения опуститесь на пол, заведя руки за голову, касаясь ими пола.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.sitap.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.sitap.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Русский твист:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7">Русский твист:
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Русский твист.jpeg') %>
+            <ul>
+              <li>Сядьте на коврик и согните ноги в коленях, слегка отклонитесь назад.</li>
+              <li>Ваш корпус должен образовывать букву «V» с бедрами.</li>
+              <li>Спина в пояснице немного скруглена, пресс напряжен.</li>
+              <li>Вытяните руки вперед. Для удобства можете соединить ладони.</li>
+              <li>Поднимите ноги от пола и начинайте выполнять скрутки корпуса и рук вправо-влево.</li>
+              <li>Колени, в свою очередь, остаются на месте или слегка поворачиваются в противовес корпусу.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.russian_twist.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.russian_twist.ceil%> кг.</div>
     </div>
     <div class="row row-cols-5 my-3 center">
-      <div class="col">Планка с перетягиванием гири:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText8" aria-expanded="false"
+                aria-controls="collapseText8">Планка с перетягиванием гири:
+        </button>
+        <div class="collapse my-2" id="collapseText8">
+          <span>
+            <%= image_tag('Планка с перетягиванием гири.jpeg') %>
+            <ul>
+              <li>Примите позу планки на руках, предварительно поставив гирю по левую сторону от себя.</li>
+              <li>Снаряд должен находится недалеко, поскольку теперь его необходимо ухватить правой рукой через низ и отвести в правую сторону.</li>
+              <li>Следующее движение выполните уже левой рукой по аналогичной амплитуде.</li>
+              <li>Стороны меняются на каждое новое повторение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">21</div>
       <div class="col">15</div>
       <div class="col">10</div>
-      <div class="col"><%= current_crossfit_training.plank_with_kettlebell_pull.round(2)%> кг.</div>
+      <div class="col"><%= current_crossfit_training.plank_with_kettlebell_pull.ceil%> кг.</div>
     </div> 
 
   <div class="row row-cols-2 my-5">
     <div class="col left">
-      <%= link_to "Не удалось", user_path(current_user),
-        class: 'btn btn-danger btn-lg'%></div>
+      <%= link_to "Не удалось", user_update_crossfit_path(@user, @crossfit, complete_training: 'fail'),
+      method: :put, class: 'btn btn-danger btn-lg'%></div>
 
     <div class="col right"><%= link_to "Завершено", user_update_crossfit_path(@user, @crossfit, complete_training: 'monday'), method: :put,
       class: 'btn btn-success btn-lg'%></div>

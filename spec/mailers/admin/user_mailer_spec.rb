@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe Admin::UserMailer, type: :mailer do
   let(:user) do
     User.create(email: 'Test@example.com', name: 'Test',
@@ -60,3 +61,4 @@ RSpec.describe Admin::UserMailer, type: :mailer do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

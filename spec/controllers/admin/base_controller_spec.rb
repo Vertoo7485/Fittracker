@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe Admin::BaseController, type: :controller do
   controller(Admin::BaseController) do
     def index
@@ -38,3 +39,4 @@ RSpec.describe Admin::BaseController, type: :controller do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

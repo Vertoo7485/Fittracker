@@ -2,6 +2,7 @@
 
 require 'rails_helper'
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe UsersController, type: :controller do
   describe 'GET #new' do
     it 'assigns a new User to @user' do
@@ -264,3 +265,4 @@ RSpec.describe UsersController, type: :controller do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

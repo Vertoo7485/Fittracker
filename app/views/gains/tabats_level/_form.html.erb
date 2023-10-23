@@ -1,12 +1,34 @@
 <%= render 'shared/errors', object: @gain %>
 <%= form_with model: [@user, @gain] do |f| %>
 
+<h4 class="mb-4 center">Для просмотра техники выполнения упражнения, нажмите на его название</h4>
+
 <h1 class="mb-4 row">Самое время изменить тренировки! Введите новые параметры</h1> 
 
   <div class="mb-3 row">
   <%= f.hidden_field(:day, value: "tabat") %>
     <div class="col-sm-2 col-form-label">
-      <%= f.label :incline_dumbbell_mahi %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText"><%= f.label :incline_dumbbell_mahi %>
+      </button>
+      <div class="collapse my-2" id="collapseText">
+        <span>
+          <%= image_tag('Махи гантелей в наклоне.jpeg') %>
+          <ul>
+            <li>Возьмите гантели в обе руки.</li>
+            <li>Хват нейтральный, ладони смотрят в направлении туловища.</li>
+            <li>Ноги стоят на ширине плеч, чуть согнутые в коленях.</li>
+            <li>Ступни параллельно друг другу.</li>
+            <li>Отводим таз назад, а туловище наклоняем вперед.</li>
+            <li>Спина прямая, трапеция растянута, плечи опущены вниз.</li>
+            <li>Голова приподнята, взгляд направлен вперед.</li>
+            <li>На выдохе поднимаем локти вверх разводя их в стороны.</li>
+            <li>При этом лопатки остаются неподвижными, работаем только дельтами.</li>
+            <li>Задержитесь в верхней точке на несколько секунд, и на вдохе верните локти в исходное положение.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -17,7 +39,22 @@
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :trusters %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1"><%= f.label :trusters %>
+      </button>
+      <div class="collapse my-2" id="collapseText1">
+        <span>
+          <%= image_tag('Трастеры.jpeg') %>
+          <ul>
+            <li>Ставим ноги на ширине плеч. Руки согнуты в локтях, держим штангу перед грудью.</li>
+            <li>Выполняем глубокий присед.</li>
+            <li>Из этого положения резко выталкиваем себя вверх.</li>
+            <li>В момент подъёма выбрасываем штангу над головой.</li>
+            <li>Затем штангу опускаем обратно на грудь и возвращаемся в глубокий присед.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">
@@ -26,9 +63,26 @@
     </div>
   </div>
 
-<div class="my-3 mb-3 row">
+  <div class="my-3 mb-3 row">
     <div class="col-sm-2 col-form-label">
-      <%= f.label :kettlebell_swing %>
+      <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2"><%= f.label :kettlebell_swing %>
+      </button>
+      <div class="collapse my-2" id="collapseText2">
+        <span>
+          <%= image_tag('Качели с гирей.jpeg') %>
+          <ul>
+            <li>Поставьте ступни на ширине плеч, носки слегка направлены наружу.</li>
+            <li>Колени держите слегка согнутыми.</li>
+            <li>Удерживайте гирю обеими руками между ног.</li>
+            <li>Качните гирю между ног назад.</li>
+            <li>Поверните гирю вперед, чтобы она оказалась на одной высоте с вашей головой.</li>
+            <li>Во время движения вперед убедитесь, что бедра открыты, а колени одновременно разгибаются.</li>
+            <li>Держите руки прямыми на протяжении всего движения.</li>
+          </ul>
+        </span>
+      </div>
     </div>
 
     <div class="col-sm-10">

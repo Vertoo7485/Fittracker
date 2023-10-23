@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-include ActiveJob::TestHelper
 
+# rubocop:disable Rails/Metrics/BlockLength
 RSpec.describe Admin::UsersController, type: :controller do
   let(:user) do
     User.create(email: 'Test@example.com', name: 'Test',
@@ -33,9 +33,6 @@ RSpec.describe Admin::UsersController, type: :controller do
 
     context 'when format is zip' do
       it 'enqueues UserBulkExportJob and redirects to index with success message' do
-        user = User.create(email: 'Test@example.com', name: 'Test',
-                           password: 'Passw0rd!', password_confirmation: 'Passw0rd!', old_password: 'Passw0rd!',
-                           weight: 85, growth: 183, years: 27, gender: 'male')
         expect do
           get :index, format: :zip
         end.to have_enqueued_job(UserBulkExportJob)
@@ -152,3 +149,4 @@ RSpec.describe Admin::UsersController, type: :controller do
     end
   end
 end
+# rubocop:enable Rails/Metrics/BlockLength

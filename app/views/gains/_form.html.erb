@@ -1,6 +1,7 @@
 <%= render 'shared/errors', object: @gain %>
 <%= form_with model: [@user, @gain] do |f| %>
 
+<h4 class="mb-4 center">Для просмотра техники выполнения упражнения, нажмите на его название</h4>
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
@@ -35,7 +36,7 @@
     </div>
   </div>
 
-<div class="my-3 mb-3 row">
+  <div class="my-3 mb-3 row">
     <div class="col-sm-2 col-form-label">
       <%= f.label :push_ups_on_bars %>
     </div>

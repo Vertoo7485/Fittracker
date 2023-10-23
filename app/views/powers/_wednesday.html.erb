@@ -11,64 +11,225 @@
       <div class="col"><strong>Вес</strong></div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Австрийские подтягивания:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText">Австрийские подтягивания:
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Австрийские подтягивания.jpeg') %>
+            <ul>
+              <li>Выполняют вис на перекладине с прямым хватом чуть шире плеч.</li>
+              <li>Делают шаг или два вперед и расслабляют корпус.</li>
+              <li>На вдохе подтягивают корпус вверх к перекладине за счет напряжения мышц спины.</li>
+              <li>Не дойдя 3–5 см до грифа штанги, сводят лопатки и задерживают дыхание на пару секунд.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">20</div>
-      <div class="col"><%= current_training.austrian_pull_ups.round(2)%> кг.</div>
+      <div class="col"><%= current_training.austrian_pull_ups.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Горизонтальная тяга блока:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1">Горизонтальная тяга блока:
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Горизонтальная тяга блока.jpeg') %>
+            <ul>
+              <li>Прицепите V-образную рукоять на нижний блок, сядьте на лавку и прижмите ноги к платформам для стоп.</li>
+              <li>Возьмитесь за рукоять, расправьте и опустите плечи, выпрямите спину.</li>
+              <li>С выдохом согните руки в локтях, сведите лопатки и подтяните рукоятку к животу.</li>
+              <li>Зафиксируйте на одну секунду.</li>
+              <li>Со вдохом плавно и под контролем верните руки в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.wednesday_reps %></div>
-      <div class="col"><%= current_training.horizontal_pull_block.round(2)%> кг.</div>
+      <div class="col"><%= current_training.horizontal_pull_block.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Подтягивания с весом:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2">Подтягивания с весом:
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Подтягивания.jpeg') %>
+            <ul>
+              <li>Подпрыгните и ухватитесь за перекладину широким хватом.</li>
+              <li>Повисните на перекладине.</li>
+              <li>Сделайте глубокий вдох и, задержав дыхание, напрягите широчайшие и подтянитесь вверх.</li>
+              <li>Подтягивайте себя вверх до тех пор, пока подбородок не окажется на одном уровне с перекладиной.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.wednesday_reps %></div>
-      <div class="col"><%= current_training.pull_ups.round(2)%> кг.</div>
+      <div class="col"><%= current_training.pull_ups.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Сгибания предплечий со штангой:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3">Сгибания предплечий со штангой:
+        </button>
+        <div class="collapse my-2" id="collapseText3">
+          <span>
+            <%= image_tag('Сгибания предплечий со штангой.jpeg') %>
+            <ul>
+              <li>Сделайте глубокий вдох, задержите дыхание и, сгибая руки в локтях, поднимите штангу до уровня верха груди.</li>
+              <li>Во время подъема штанги не двигайте локтями, держите их по бокам туловища и не сгибайте руки в запястьях.</li>
+              <li>Как только кисти окажутся на уровне верха груди, сделайте паузу, выдохните и еще сильнее напрягите бицепсы.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.wednesday_reps %></div>
-      <div class="col"><%= current_training.barbell_forearm_curls.round(2)%> кг.</div>
+      <div class="col"><%= current_training.barbell_forearm_curls.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Тяга гантели в наклоне:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4">Тяга гантели в наклоне:
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Тяга гантель в наклоне.jpeg') %>
+            <ul>
+              <li>Возьмите гантель так, чтобы гриф был параллелен вашему телу.</li>
+              <li>За счет силы широчайшей мышцы тянем гантель к поясу.</li>
+              <li>Локоть стараемся вести вверх.</li>
+              <li>Позвоночник остается в прямом положении.</li>
+              <li>Задержавшись в верхней точке на 1 секунду, опускаем гантель вниз.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.wednesday_reps %></div>
-      <div class="col"><%= current_training.incline_dumbbell_row.round(2)%> кг.</div>
+      <div class="col"><%= current_training.incline_dumbbell_row.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Вертикальная тяга блока:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5">Вертикальная тяга блока:
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Вертикальная тяга блока.jpeg') %>
+            <ul>
+              <li>Сядьте на тренажер так, чтобы рукоятки тренажера были прямо над вашими плечами.</li>
+              <li>Ноги зафиксируйте упором, чтобы при поднятии рук таз не отрывался.</li>
+              <li>Возьмите рукоятку хватом шире плеч.</li>
+              <li>Втяните живот и напрягите пресс, слегка отклонитесь назад.</li>
+              <li>Сведите лопатки вместе, опустите их вниз и плавно начинайте тянуть вниз локти.</li>
+              <li>При правильной ширине хвата в конечной точке локти практически коснутся корпуса.</li>
+              <li>Если локти очень далеко от вашей талии, значит хват слишком широкий.</li>
+              <li>Задержитесь на секунду в нижней точке, затем на вдохе медленно возвращайтесь в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.wednesday_reps %></div>
-      <div class="col"><%= current_training.vertical_pull_block.round(2)%> кг.</div>
+      <div class="col"><%= current_training.vertical_pull_block.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Гиперэкстензия:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6">Гиперэкстензия:
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Гиперэкстензия.jpeg') %>
+            <ul>
+              <li>Отрегулируйте тренажер таким образом, чтобы ваш таз плотно лежал на его подушке.</li>
+              <li>Край подушки в том месте, где сгибается ваш корпус.</li>
+              <li>Задней частью ног упираемся в валики.</li>
+              <li>Нужно лечь так, чтобы валики упирались в ахиллово сухожилие, а не в икры.</li>
+              <li>Руки скрещиваем за головой или на груди.</li>
+              <li>Корпус – абсолютно прямая линия.</li>
+              <li>Доходим до угла в 90 градусов.</li>
+              <li>В случае проблем с позвоночником угол может быть меньше.</li>
+              <li>Возвращаемся назад и разгибаемся так чтобы корпус составлял одну линию с ногами.</li>
+              <li>Задерживаемся в верхней точке на 1–2 секунды.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.wednesday_reps %></div>
-      <div class="col"><%= current_training.hyperextension.round(2)%> кг.</div>
+      <div class="col"><%= current_training.hyperextension.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Молотки:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7">Молотки:
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Молотки.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, а ноги поставьте на ширину плеч.</li>
+              <li>В пояснице должен образоваться небольшой естественный прогиб.</li>
+              <li>Локти зафиксируйте по бокам туловища.</li>
+              <li>Гантели возьмите таким хватом, что ладони с гантелями смотрят друг на друга.</li>
+              <li>На выдохе выполните подъем рук почти до уровня плеч.</li>
+              <li>Добейтесь пикового сокращения мышц.</li>
+              <li>Задержитесь в верхней пиковой точке на несколько секунд.</li>
+              <li>Медленно опустите гантели вниз, вернувшись в начальное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col"><%= current_training.wednesday_reps %></div>
-      <div class="col"><%= current_training.hammers.round(2)%> кг.</div>
+      <div class="col"><%= current_training.hammers.ceil%> кг.</div>
     </div>
     <div class="row row-cols-4 my-3 center">
-      <div class="col">Книжка:</div>
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText8" aria-expanded="false"
+                aria-controls="collapseText8">Книжка:
+        </button>
+        <div class="collapse my-2" id="collapseText8">
+          <span>
+            <%= image_tag('Книжка.jpeg') %>
+            <ul>
+              <li>Садитесь на край лавки.</li>
+              <li>Сведите ноги вместе и выставите вперед со слегка согнутыми коленями.</li>
+              <li>Руками упритесь в край скамьи и отклоните корпус назад.</li>
+              <li>Поднимайте ноги, сгибайте их в коленях и подтягивайте к себе.</li>
+              <li>Одновременно подавайте корпус вперед (грудь движется на встречу коленям).</li>
+              <li>Сделайте паузу на 1 секунду на выдохе, после чего вернитесь в исходную позицию.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
       <div class="col">4</div>
       <div class="col">30</div>
-      <div class="col"><%= current_training.book.round(2)%> кг.</div>
+      <div class="col"><%= current_training.book.ceil%> кг.</div>
     </div>
   </div>
 
   <div class="row row-cols-2 my-5">
     <div class="col left">
-      <%= link_to "Не удалось", user_path(current_user),
+      <%= link_to "Не удалось", user_update_power_path(@user, @power, complete_training: 'fail'), method: :put,
         class: 'btn btn-danger btn-lg'%></div>
 
     <div class="col right"><%= link_to "Завершено", user_update_power_path(@user, @power, complete_training: 'wednesday'), method: :put,
