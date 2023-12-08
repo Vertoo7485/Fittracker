@@ -1,6 +1,19 @@
 <%= render 'shared/errors', object: @user %>
 
 <%= form_with model: @user do |f| %>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <%= f.label :avatar, t('activerecord.attributes.user.avatar')%>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.file_field :avatar, 
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+ 
+
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
       <%= f.label :email %>

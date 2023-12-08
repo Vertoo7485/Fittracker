@@ -8,6 +8,8 @@ class User < ApplicationRecord
 
   attr_accessor :old_password, :admin_edit, :day
 
+  has_one_attached :avatar
+
   has_many :powers, dependent: :destroy
   has_many :crossfits, dependent: :destroy
   has_many :gains, dependent: :destroy

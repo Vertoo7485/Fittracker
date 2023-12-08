@@ -131,6 +131,7 @@ en:
         seated_leg_extension: Seated leg extension
         vertical_pull_block: Vertical pull block
       user:
+        avatar: Avatar
         created_at: Created at
         email: Email
         growth: Growth

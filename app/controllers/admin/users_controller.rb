@@ -43,6 +43,7 @@ module Admin
 
     def destroy
       @user.destroy
+      @user.avatar.purge_later
       flash[:success] = t('.success')
       redirect_to admin_users_path
     end
