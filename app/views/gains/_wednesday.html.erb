@@ -1,6 +1,6 @@
 <%= render 'shared/errors', object: @gain %>
 <%= form_with model: [@user, @gain] do |f| %>
-
+<h4 class="mb-4 center"><% t('views.help')%></h4>
   <div class="mb-3 row">
     <%= f.hidden_field(:day, value: "wednesday") %>
     <div class="col-sm-2 col-form-label">
@@ -23,7 +23,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :horizontal_pull_block, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :horizontal_pull_block, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -48,7 +48,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :pull_ups, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :pull_ups, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -72,7 +72,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :barbell_forearm_curls, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :barbell_forearm_curls, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -98,7 +98,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :incline_dumbbell_row, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :incline_dumbbell_row, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -127,7 +127,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :vertical_pull_block, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :vertical_pull_block, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -158,7 +158,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :hyperextension, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :hyperextension, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -187,7 +187,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :hammers, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :hammers, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>

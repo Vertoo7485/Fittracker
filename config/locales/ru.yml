@@ -1,173 +1,163 @@
 ru:
-  en: Английский
-  ru: Русский
   activerecord:
     attributes:
-      gain:
-        barbell_bench_press: Жим штанги
-        reverse_push_ups: Обратные отжимания
-        dumbbell_bench_press: Жим гантелей лежа
-        push_ups_on_bars: Отжимания на брусьях
-        stacked_chest_press: Жим на грудь в стеке
-        extension_with_rope_handle: Разгибание с канатной рукояткой
-        dumbbell_abduction: Отведение гантели
-        hanging_leg_raise: Подъем ног в висе
-        austrian_pull_ups: Австрийские подтягивания
-        horizontal_pull_block: Горизонтальная тяга блока
-        pull_ups: Подтягивания
-        barbell_forearm_curls: Сгибания предплечий со штангой
-        incline_dumbbell_row: Тяга гантель в наклоне
-        vertical_pull_block: Вертикальная тяга блока
-        hyperextension: Гиперэкстензия
-        hammers: Молотки
-        book: Книжка
-        gack_squats: Гакк приседания
-        seated_leg_extension: Разгибания голени сидя
-        leg_press: Жим ногами
-        hamer_shoulder_press: Жим в хамере на плечи
-        dumbbells_through_the_side: Махи гантелей через сторону
-        lying_leg_flexion: Сгибание голени лежа
-        pancake_swing_in_front_of_you: Мах блина перед собой
-        barbell_pull_to_chin: Тяга штанги к подбородку
-        front_squat: Фронтальный присед
-        hang_grab: Взятие с виса
-        overhead_press: Жим штанги над головой
-        kettlebell_swing: Качели с гирей
-        kettlebell_pull_to_the_chin: Тяга гири к подбородку
+      crossfit:
+        abduction_in_a_butterfly: Отведение в бабочке
         burpee: Берпи
-        sitap: Ситап
-        russian_twist: Русский твист
-        plank_with_kettlebell_pull: Планка с перетягиванием гири
-        trusters: Трастеры
         bent_over_barbell_pull: Тяга штанги к поясу в наклоне
+        barbell_pull_to_chin: Тяга штанги к подбородку
+        cross_over: Кросс-овер
         deadlift: Становая тяга
         dumbbell_layout: Разводка гантелей лежа на горизонтальной скамье
-        jumping_on_the_pedestal: Запрыгивания на тумбу
-        leg_raises_to_the_bar: Подъемы ног к перекладине
-        riveting: Склепка
+        front_squat: Фронтальныей приседания со штангой
         forearm_curls_and_press_ups_with_a_barbell: Сгибания предплечий и жим вверх со штангой
-        cross_over: Кросс-овер
-        abduction_in_a_butterfly: Отведение в бабочке
-        jumping_lunges: Выпады с выпрыгиванием
-        sumo_squats: Сумо приседания
         farm_walk: Фермерская прогулка
-        touching_the_heels: Поочередные касания пяток лежа на полу
-        running_in_place: Бег на месте
-        statics_in_the_squat: Статика в приседе
+        hang_grab: Взятие штанги с виса
+        jumping_on_the_pedestal: Запрыгивания на тумбу
+        jumping_lunges: Выпады с выпрыгиванием
+        kettlebell_swing: Качели с гирей
+        kettlebell_pull_to_the_chin: Тяга гири к подбородку
+        leg_raises_to_the_bar: Подъемы ног к перекладине
+        lying_leg_flexion: Сгибания голени лежа
+        mahi_dumbbells_through_the_sides: Махи гантелями через стороны
+        overhead_press: Жим штанги над головой
+        plank_with_kettlebell_pull: Планка с перетягиванием гири
+        riveting: Склепка
+        russian_twist: Русский твист
+        sitap: Ситап
+        seated_leg_extension: Разгибания голени сидя
+        sumo_squats: Сумо приседания
+        trusters: Трастеры
+      gain:
+        austrian_pull_ups: Австрийские подтягивания
+        abduction_in_a_butterfly: Отведение в бабочке
+        barbell_bench_press: Жим штанги
+        barbell_forearm_curls: Сгибания предплечий со штангой
+        book: Книжка
+        barbell_pull_to_chin: Тяга штанги к подбородку
+        burpee: Берпи
+        bent_over_barbell_pull: Тяга штанги к поясу в наклоне
+        biceps_sitting: Подъем гантелей на бицепс сидя на скамье
+        cross_over: Кросс-овер
+        dumbbell_bench_press: Жим гантелей лежа
+        dumbbell_abduction: Отведение гантели
+        dumbbells_through_the_side: Махи гантелей через сторону
+        deadlift: Становая тяга
+        dumbbell_layout: Разводка гантелей лежа на горизонтальной скамье
+        extension_with_rope_handle: Разгибание с канатной рукояткой
+        front_squat: Фронтальный присед
+        forearm_curls_and_press_ups_with_a_barbell: Сгибания предплечий и жим вверх со штангой
+        farm_walk: Фермерская прогулка
+        gack_squats: Гакк приседания
+        hanging_leg_raise: Подъем ног в висе
+        horizontal_pull_block: Горизонтальная тяга блока
+        hyperextension: Гиперэкстензия
+        hammers: Молотки
+        hamer_shoulder_press: Жим в хамере на плечи
+        hang_grab: Взятие с виса
+        hull_reversals: Развороты корпуса
+        incline_dumbbell_row: Тяга гантель в наклоне
         incline_dumbbell_mahi: Махи гантелей в наклоне
-        plank: Планка
-        pushups: Отжимания от пола
-        reverse_plank: Обратная планка
-        skating: Коньковый бег
+        jumping_on_the_pedestal: Запрыгивания на тумбу
+        jumping_lunges: Выпады с выпрыгиванием
         jumping_jack: Джампинг Джек
         jump_rope: Скакалка
-        plank_touch: Касание плеч стоя в планке
-        side_climber: Боковой скалолаз
-        push_ups_with_narrow_arms: Отжимания с узкой постановкой рук
-        squats: Приседания
-        plank_reversals: Развороты в планке
-        rope_strikes: Удары канатами
         jumping_out: Выпрыгивания
-        track: Дорожка
-        trapeze_in_smith: Подьем на трапеции в Смите
-        lifting_dumbbells_in_scott: Бицепс в Скотте гантелями
-        biceps_sitting: Подъем гантелей на бицепс сидя на скамье
-        hull_reversals: Развороты корпуса
-        standing_dumbbell_french_press: Французский жим с гантелей стоя
-      tabat:
-        mahi_dumbbells_through_the_sides: Махи гантелями через стороны
-        incline_dumbbell_mahi: Махи гантелей в наклоне
-        trusters: Трастеры
-        kettlebell_swing: Качели с гирей
-        barbell_forearm_curl: Сгибание предплечий со штангой
-        squats: Приседания
-      crossfit:
-        front_squat: Фронтальныей приседания со штангой
-        hang_grab: Взятие штанги с виса
-        overhead_press: Жим штанги над головой
         kettlebell_swing: Качели с гирей
         kettlebell_pull_to_the_chin: Тяга гири к подбородку
-        burpee: Берпи
-        sitap: Ситап
-        russian_twist: Русский твист
-        plank_with_kettlebell_pull: Планка с перетягиванием гири
-        trusters: Трастеры
-        bent_over_barbell_pull: Тяга штанги к поясу в наклоне
-        deadlift: Становая тяга
-        mahi_dumbbells_through_the_sides: Махи гантелями через стороны
-        dumbbell_layout: Разводка гантелей лежа на горизонтальной скамье
-        barbell_pull_to_chin: Тяга штанги к подбородку
-        jumping_on_the_pedestal: Запрыгивания на тумбу
+        leg_press: Жим ногами        
+        lying_leg_flexion: Сгибание голени лежа
         leg_raises_to_the_bar: Подъемы ног к перекладине
-        riveting: Склепка
-        forearm_curls_and_press_ups_with_a_barbell: Сгибания предплечий и жим вверх со штангой
-        cross_over: Кросс-овер
-        abduction_in_a_butterfly: Отведение в бабочке
-        lying_leg_flexion: Сгибания голени лежа
-        seated_leg_extension: Разгибания голени сидя
-        jumping_lunges: Выпады с выпрыгиванием
-        sumo_squats: Сумо приседания
-        farm_walk: Фермерская прогулка
-      power:
-        barbell_bench_press: Жим штанги
-        reverse_push_ups: Обратные отжимания
-        dumbbell_bench_press: Жим гантелей лежа
+        lifting_dumbbells_in_scott: Бицепс в Скотте гантелями
+        overhead_press: Жим штанги над головой
         push_ups_on_bars: Отжимания на брусьях
-        stacked_chest_press: Жим на грудь в стеке
-        extension_with_rope_handle: Разгибание с канатной рукояткой
-        dumbbell_abduction: Отведение гантели
-        hanging_leg_raise: Подъем ног в висе
-        austrian_pull_ups: Австрийские подтягивания
-        horizontal_pull_block: Горизонтальная тяга блока
         pull_ups: Подтягивания
-        barbell_forearm_curls: Сгибания предплечий со штангой
-        incline_dumbbell_row: Тяга гантель в наклоне
+        pancake_swing_in_front_of_you: Мах блина перед собой
+        plank_with_kettlebell_pull: Планка с перетягиванием гири
+        plank: Планка
+        pushups: Отжимания от пола
+        plank_touch: Касание плеч стоя в планке
+        push_ups_with_narrow_arms: Отжимания с узкой постановкой рук
+        plank_reversals: Развороты в планке
+        reverse_push_ups: Обратные отжимания
+        russian_twist: Русский твист
+        riveting: Склепка
+        running_in_place: Бег на месте
+        reverse_plank: Обратная планка
+        rope_strikes: Удары канатами
+        stacked_chest_press: Жим на грудь в стеке
+        seated_leg_extension: Разгибания голени сидя
+        sitap: Ситап
+        sumo_squats: Сумо приседания
+        statics_in_the_squat: Статика в приседе
+        skating: Коньковый бег
+        side_climber: Боковой скалолаз
+        squats: Приседания
+        standing_dumbbell_french_press: Французский жим с гантелей стоя
+        trusters: Трастеры
+        touching_the_heels: Поочередные касания пяток лежа на полу
+        track: Дорожка
+        trapeze_in_smith: Подьем на трапеции в Смите
         vertical_pull_block: Вертикальная тяга блока
+      models:
+        crossfit: Кроссфит Тренировка
+        gain: Комплексная Тренировка
+        power: Силовая Тренировка
+      power:
+        austrian_pull_ups: Австрийские подтягивания
+        barbell_forearm_curls: Сгибания предплечий со штангой
+        barbell_bench_press: Жим штанги
+        book: Книжка
+        barbell_pull_to_chin: Тяга штанги к подбородку
+        dumbbell_bench_press: Жим гантелей лежа
+        dumbbell_abduction: Отведение гантели
+        dumbbells_through_the_side: Махи гантелей через сторону
+        extension_with_rope_handle: Разгибание с канатной рукояткой
+        gack_squats: Гакк приседания
+        hanging_leg_raise: Подъем ног в висе
+        horizontal_pull_block: Горизонтальная тяга блока
         hyperextension: Гиперэкстензия
         hammers: Молотки
-        book: Книжка
-        gack_squats: Гакк приседания
-        seated_leg_extension: Разгибания голени сидя
-        leg_press: Жим ногами
         hamer_shoulder_press: Жим в хамере на плечи
-        dumbbells_through_the_side: Махи гантелей через сторону
+        incline_dumbbell_row: Тяга гантель в наклоне
+        leg_press: Жим ногами
         lying_leg_flexion: Сгибание голени лежа
+        push_ups_on_bars: Отжимания на брусьях
+        pull_ups: Подтягивания
         pancake_swing_in_front_of_you: Мах блина перед собой
-        barbell_pull_to_chin: Тяга штанги к подбородку
-      powers:
         placeholder: Введите максимальный вес на 8 повторений
+        reverse_push_ups: Обратные отжимания
+        seated_leg_extension: Разгибания голени сидя
+        stacked_chest_press: Жим на грудь в стеке
+        vertical_pull_block: Вертикальная тяга блока 
       user:
         created_at: Создан
         email: Email
+        growth: Рост
+        gender: Пол
         name: Имя
         old_password: Старый пароль
         password: Пароль
         password_confirmation: Подтверждение пароля
-        updated_at: Обновлен
-        weight: Вес
-        growth: Рост
-        years: Возраст
-        gender: Пол
-        role: Роль
         placeholder:
           email: Email
+          growth: Рост в см
+          gender: Мужской/Женский
           name: Имя
           weight: Вес в кг
-          growth: Рост в см
           years: Возраст
-          gender: Мужской/Женский
-      models:
-        power: Силовая Тренировка
+        role: Роль
+        updated_at: Обновлен
+        weight: Вес
+        years: Возраст
   admin:
     users:
-      edit:
-        title: Редактирование Пользователя
-      update:
-        success: Пользователь обновлен!
-      destroy:
-        success: Пользователь удален!
       create:
         success: Пользователи загружены!
+      destroy:
+        success: Пользователь удален!
+      edit:
+        title: Редактирование Пользователя
       index:
         success: Вы получите письмо, когда операция завершится
         download_zipped: Загрузить архив с XLSX
@@ -176,38 +166,96 @@ ru:
           archive: Выберите архив
           submit: Загрузить!
         upload_zipped: Загрузить пользователей в XLSX
+      update:
+        success: Пользователь обновлен!
+  crossfits:
+    create:
+      success: Кроссфит Тренировка создана!
+    destroy:
+      success: Тренировка удалена!
+    edit:
+      title: Редактирование Кроссфит Тренировки
+    new:
+      title: Новая Кроссфит Тренировка
+    show:
+      title: Кроссфит Тренировка
+    update:
+      success: Ваша Кроссфит Тренировка обновлена!
+    update_crossfit:
+      success: Тренировка завершена!
+      fail: В следующий раз обязательно получится!
+  en: Английский
+  gains:
+    create:
+      success: Тренировка создана!
+    destroy:
+      success: Тренировка удалена!
+    edit:
+      title: Редактирования тренировки
+    new:
+      title: Новая Комплексная тренировка
+    show:
+      title: Комплексная Тренировка
+    update:
+      success: Ваша тренировка обновлена!
+      danger: Заполните все параметры!
+    update_gain:
+      success: Тренировка завершена!
+      fail: В следующий раз обязательно получится!
   global:
-    user:
-      roles:
-        basic: Базовый
-        moderator: Модератор
-        admin: Администратор
     button:
       delete: Удалить
       edit: Изменить
+      new_power_training: Новая силовая тренировка
+      new_gain_training: Новая комплексная тренировка
+      new_crossfit_training: Новая кроссфит тренировка
       show: Показать
       submit: Отправить
-      new_power_training: Новая силовая тренировка
+      fail: Не удалось
+      complete: Завершено
     dialog:
       you_sure: Вы уверены?
+    dropdown:
+      change_training: Выбор тренировки
+      monday: Понедельник
+      wednesday: Среда
+      friday: Пятница
     flash:
       already_signed_in: Вы уже вошли в систему!
       not_signed_in: Вы не вошли в систему!
       not_authorized: У вас нет прав на выполнение этого действия
+    user:
+      roles:
+        admin: Администратор
+        basic: Базовый
+        moderator: Модератор  
+  menu:
+    create_traning: Создать тренировку
+    edit_profile: Профиль
+    faq: Вопросы
+    home: Главная
+    log_in: Войти
+    log_out: Выйти
+    my_profile: Мой профиль
+    powers: Силовая Тренировка
+    gains: Комплексная Тренировка
+    crossfits: Кроссфит Тренировка
+    sign_up: Регистрация
+    users: Пользователи  
   password_resets:
     create:
       success: Инструкции были отправленны на ваш email
+    edit:
+      form:
+        submit: Сбросить пароль!
+      title: Введите новый пароль
+    fail: Не удалось сбросить ваш пароль...
     new:
       title: Сборсить пароль
       form:
+        back: Назад ко входу в систему
         email: Email
         submit: Отправить инструкции для сброса пароля
-        back: Назад ко входу в систему
-    fail: Не удалось сбросить ваш пароль...
-    edit:
-      title: Введите новый пароль
-      form:
-        submit: Сбросить пароль!
     update:
       success: Ваш пароль был сброшен!
   password_reset_mailer:
@@ -216,77 +264,23 @@ ru:
   pages:
     index:
       title: Добро пожаловать в Fit tracker!
-  menu:
-    edit_profile: Профиль
-    my_profile: Мой профиль
-    home: Главная
-    log_in: Войти
-    log_out: Выйти
-    powers: Силовая Тренировка
-    sign_up: Регистрация
-    users: Пользователи
-    faq: Вопросы
-  gains:
-    new:
-      title: Новая Комплексная тренировка
-    edit:
-      title: Редактирования тренировки
-    show:
-      title: Комплексная Тренировка
+  powers:
     create:
       success: Тренировка создана!
-    update:
-      success: Ваша тренировка обновлена!
-      danger: Заполните все параметры!
-    update_gain:
-      success: Тренировка завершена!
     destroy:
       success: Тренировка удалена!
-  powers:
-    new:
-      title: Новая тренировка
     edit:
       title: Редактирования тренировки
+    new:
+      title: Новая тренировка
     show:
       title: Силовая Тренировка
-    create:
-      success: Тренировка создана!
     update:
       success: Ваша тренировка обновлена!
     update_power:
       success: Тренировка завершена!
-    destroy:
-      success: Тренировка удалена!
-  crossfits:
-    new:
-      title: Новая Кроссфит Тренировка
-    edit:
-      title: Редактирование Кроссфит Тренировки
-    show:
-      title: Кроссфит Тренировка
-    create:
-      success: Кроссфит Тренировка создана!
-    update:
-      success: Ваша Кроссфит Тренировка обновлена!
-    update_crossfit:
-      success: Тренировка завершена!
-    destroy:
-      success: Тренировка удалена!
-  tabats:
-    new:
-      title: Новая Тренировка Табата
-    edit:
-      title: Редактирование Табата Тренировки
-    show:
-      title: Тренировка Табата
-    create:
-      success: Тренировка создана!
-    update:
-      success: Ваша тренировка обновлена
-    update_crossfit:
-      success: Тренировка завершена!
-    destroy:
-      success: Тренировка удалена!
+      fail: В следующий раз обязательно получится!
+  ru: Русский
   sessions:
     create:
       invalid_creds: Неверный email и/или пароль!
@@ -296,13 +290,12 @@ ru:
     new:
       form:
         email: Email
+        forgot_password: Забыл пароль
         password: Пароль
         remember_me: Запомнить меня
         submit: Войти!
-        forgot_password: Забыл пароль
       title: Войти
   users:
-    title: Пользователь
     create:
       success: Добро пожаловать, %{name}!
     edit:
@@ -314,7 +307,31 @@ ru:
       forms:
         register: Регистрация
         save: Сохранить
+    title: Пользователь
     new:
       title: Регистрация
     update:
       success: Ваш профиль был обновлён!
+  views:
+    my_trainings: Мои тренировки
+    gain_diet: Для набора массы необходимо употреблять
+    lose_diet: Для похудения необходимо употреблять
+    my_profile: Мой Профиль
+    help: Для просмотра техники выполнения упражнения, нажмите на его название
+    update_parameters: Самое время изменить тренировку! Введите новые параметры
+    before_save: Перед сохранением, обязательно заполните все поля
+    circuit_training: Круговая Тренировка
+    exercise: Упражнение
+    count_first_cycle: Кол-во повторений на 1 цикле
+    count_second_cycle: Кол-во повторений на 2 цикле
+    count_third_cycle: Кол-во повторений на 3 цикле
+    weight: Вес
+    first_block: 1 Блок
+    second_block: 2 Блок
+    third_block: 3 Блок
+    count_cyrcle: Кол-во кругов
+    count_reps: Кол-во повторений
+    count_sets: Кол-во подходов
+    tabbat: Протокол Табатта
+    time_work: Время работы
+    time_relax: Время отдыха

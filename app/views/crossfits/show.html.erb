@@ -1,8 +1,8 @@
-<% provide :page_title, "Кроссфит Тренировка" %>
-<% currently_at "Кроссфит Тренировка" %>
+<% provide :page_title, t('crossfits.show.title') %>
+<% currently_at t('crossfits.show.title') %>
 
 <body class="my-blue-fon">
 
-  <h1 class="center", style="color:#ffffff">Кроссфит Тренировка</h1>
+  <h1 class="center", style="color:#ffffff"><%= t('crossfits.show.title')%></h1>
   <%= render 'train'%>
 </body>

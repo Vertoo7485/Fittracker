@@ -1,173 +1,163 @@
 en:
-  en: "English"
-  ru: "Russian"
   activerecord:
     attributes:
+      crossfit:
+        abduction_in_a_butterfly: Abduction in a butterfly
+        burpee: Burpee
+        bent_over_barbell_pull: Bent over barbell pull
+        barbell_pull_to_chin: Barbell pull to chin
+        cross_over: Cross-over
+        deadlift: Deadlift
+        dumbbell_layout: Dumbbell layout
+        front_squat: Front squat
+        forearm_curls_and_press_ups_with_a_barbell: Forearm curls and press ups with a barbell
+        farm_walk: Farm walk
+        hang_grab: Hang grab
+        jumping_on_the_pedestal: Jumping on the pedestal
+        jumping_lunges: Jumping lunges
+        kettlebell_swing: Kettlebell swing
+        kettlebell_pull_to_the_chin: Kettlebell pull to the chin
+        leg_raises_to_the_bar: Leg raises to the bar
+        lying_leg_flexion: Lying leg flexion
+        mahi_dumbbells_through_the_sides: Mahi dumbbells through the sides
+        overhead_press: Overhead press
+        plank_with_kettlebell_pull: Plank with kettlebell pull
+        russian_twist: Russian twist
+        riveting: Riveting
+        sitap: Sitap
+        seated_leg_extension: Seated leg extension
+        sumo_squats: Sumo squats
+        trusters: Trusters 
       gain:
-        barbell_bench_press: Barbell bench press
-        reverse_push_ups: Reverse push-ups
-        dumbbell_bench_press: Dumbbell bench press
-        push_ups_on_bars: Push-ups on bars
-        stacked_chest_press: Stacked chest press
-        extension_with_rope_handle: Extension with rope handle
-        dumbbell_abduction: Dumbbell abduction
-        hanging_leg_raise: Hanging leg raise
         austrian_pull_ups: Austrian pull-ups
-        horizontal_pull_block: Horizontal pull block
-        pull_ups: Pull-ups
+        abduction_in_a_butterfly: Abduction in a butterfly
+        barbell_bench_press: Barbell bench press
         barbell_forearm_curls: Barbell forearm curls
-        incline_dumbbell_row: Incline dumbbell row
-        vertical_pull_block: Vertical pull block
+        book: Book
+        barbell_pull_to_chin: Barbell pull to chin
+        burpee: Burpee
+        bent_over_barbell_pull: Bent over barbell pull
+        biceps_sitting: Biceps sitting
+        cross_over: Cross-over
+        dumbbell_bench_press: Dumbbell bench press
+        dumbbell_abduction: Dumbbell abduction
+        dumbbells_through_the_side: Dumbbells through the side
+        deadlift: Deadlift
+        dumbbell_layout: Dumbbell layout
+        extension_with_rope_handle: Extension with rope handle
+        front_squat: Front squat
+        forearm_curls_and_press_ups_with_a_barbell: Forearm curls and press ups with a barbell
+        farm_walk: Farm walk
+        gack_squats: Gack squats
+        hanging_leg_raise: Hanging leg raise
+        horizontal_pull_block: Horizontal pull block
         hyperextension: Hyperextension
         hammers: Hammers
-        book: Book
-        gack_squats: Gack squats
-        seated_leg_extension: Seated leg extension
-        leg_press: Leg press
         hamer_shoulder_press: Hamer shoulder press
-        dumbbells_through_the_side: Dumbbells through the side
-        lying_leg_flexion: Lying leg flexion
-        pancake_swing_in_front_of_you: Pancake swing in front of you
-        barbell_pull_to_chin: Barbell pull to chin
-        front_squat: Front squat
         hang_grab: Hang grab
-        overhead_press: Overhead press
-        kettlebell_swing: Kettlebell swing
-        kettlebell_pull_to_the_chin: Kettlebell pull to the chin
-        burpee: Burpee
-        sitap: Sitap
-        russian_twist: Russian twist
-        plank_with_kettlebell_pull: Plank with kettlebell pull
-        trusters: Trusters
-        bent_over_barbell_pull: Bent over barbell pull
-        deadlift: Deadlift
-        dumbbell_layout: Dumbbell layout
-        jumping_on_the_pedestal: Jumping on the pedestal
-        leg_raises_to_the_bar: Leg raises to the bar
-        riveting: Riveting
-        forearm_curls_and_press_ups_with_a_barbell: Forearm curls and press ups with a barbell
-        cross_over: Cross-over
-        abduction_in_a_butterfly: Abduction in a butterfly
-        jumping_lunges: Jumping lunges
-        sumo_squats: Sumo squats
-        farm_walk: Farm walk
-        touching_the_heels: Touching the heels
-        running_in_place: Running in place
-        statics_in_the_squat: Statics in the squat
+        hull_reversals: Hull reversals
+        incline_dumbbell_row: Incline dumbbell row
         incline_dumbbell_mahi: Incline dumbbell mahi
-        plank: Plank
-        pushups: push-ups
-        reverse_plank: Reverse plank
-        skating: Skating
+        jumping_on_the_pedestal: Jumping on the pedestal
+        jumping_lunges: Jumping lunges
         jumping_jack: Jumping jack
         jump_rope: Jump rope
-        plank_touch: Plank touch
-        side_climber: Side climber
-        push_ups_with_narrow_arms: push-ups with narrow arms
-        squats: Squats
-        plank_reversals: Plank reversals
-        rope_strikes: Rope strikes
         jumping_out: Jumping out
-        track: Track
-        trapeze_in_smith: Trapeze in smith
-        lifting_dumbbells_in_scott: Lifting dumbbells in scott
-        biceps_sitting: Biceps sitting
-        hull_reversals: Hull reversals
-        standing_dumbbell_french_press: Standing dumbbell french press
-      tabat:
-        mahi_dumbbells_through_the_sides: Mahi dumbbells through the sides
-        incline_dumbbell_mahi: Incline dumbbell mahi
-        trusters: Trusters
-        kettlebell_swing: Kettlebell swing
-        barbell_forearm_curl: Barbell forearm curl
-        squats: Squats
-      crossfit:
-        front_squat: Front squat
-        hang_grab: Hang grab
-        overhead_press: Overhead press
         kettlebell_swing: Kettlebell swing
         kettlebell_pull_to_the_chin: Kettlebell pull to the chin
-        burpee: Burpee
-        sitap: Sitap
-        russian_twist: Russian twist
-        plank_with_kettlebell_pull: Plank with kettlebell pull
-        trusters: Trusters
-        bent_over_barbell_pull: Bent over barbell pull
-        deadlift: Deadlift
-        mahi_dumbbells_through_the_sides: Mahi dumbbells through the sides
-        dumbbell_layout: Dumbbell layout
-        barbell_pull_to_chin: Barbell pull to chin
-        jumping_on_the_pedestal: Jumping on the pedestal
-        leg_raises_to_the_bar: Leg raises to the bar
-        riveting: Riveting
-        forearm_curls_and_press_ups_with_a_barbell: Forearm curls and press ups with a barbell
-        cross_over: Cross-over
-        abduction_in_a_butterfly: Abduction in a butterfly
+        leg_press: Leg press
         lying_leg_flexion: Lying leg flexion
+        leg_raises_to_the_bar: Leg raises to the bar
+        lifting_dumbbells_in_scott: Lifting dumbbells in scott
+        overhead_press: Overhead press
+        push_ups_on_bars: Push-ups on bars
+        pull_ups: Pull-ups
+        pancake_swing_in_front_of_you: Pancake swing in front of you
+        plank_with_kettlebell_pull: Plank with kettlebell pull
+        plank: Plank
+        pushups: push-ups
+        plank_touch: Plank touch
+        push_ups_with_narrow_arms: push-ups with narrow arms
+        plank_reversals: Plank reversals
+        reverse_push_ups: Reverse push-ups
+        russian_twist: Russian twist
+        riveting: Riveting
+        running_in_place: Running in place
+        reverse_plank: Reverse plank
+        rope_strikes: Rope strikes
+        stacked_chest_press: Stacked chest press
         seated_leg_extension: Seated leg extension
-        jumping_lunges: Jumping lunges
+        sitap: Sitap
         sumo_squats: Sumo squats
-        farm_walk: Farm walk
+        statics_in_the_squat: Statics in the squat
+        skating: Skating
+        side_climber: Side climber
+        squats: Squats
+        standing_dumbbell_french_press: Standing dumbbell french press
+        trusters: Trusters
+        touching_the_heels: Touching the heels
+        track: Track
+        trapeze_in_smith: Trapeze in smith
+        vertical_pull_block: Vertical pull block
+      models:
+        crossfit: Crossfit Training
+        gain: Gain Training
+        power: Power Training   
       power:
-        barbell_bench_press: "Barbell bench press"
-        reverse_push_ups: "Reverse push-ups"
-        dumbbell_bench_press: "Dumbbell bench press"
-        push_ups_on_bars: "Push-ups on bars"
-        stacked_chest_press: "Stacked chest press"
-        extension_with_rope_handle: "Extension with rope handle"
-        dumbbell_abduction: "Dumbbell abduction"
-        hanging_leg_raise: "Hanging leg raise"
-        austrian_pull_ups: "Austrian pull ups"
-        horizontal_pull_block: "Horizontal pull block"
-        pull_ups: "Pull-ups"
-        barbell_forearm_curls: "Barbell forearm curls"
-        incline_dumbbell_row: "Incline dumbbell row"
-        vertical_pull_block: "Vertical pull block"
-        hyperextension: "Hyperextension"
-        hammers: "Hammers"
-        book: "Book"
-        gack_squats: "Gack squats"
-        seated_leg_extension: "Seated leg extension"
-        leg_press: "Leg press"
-        hamer_shoulder_press: "Hamer shoulder press"
-        dumbbells_through_the_side: "Dumbbells through the side"
-        lying_leg_flexion: "Lying leg flexion"
-        pancake_swing_in_front_of_you: "Pancake swing in front of you"
-        barbell_pull_to_chin: "Barbell pull to chin"
-      powers:
-        placeholder: "Max weight for 8 reps"
+        austrian_pull_ups: Austrian pull ups
+        barbell_bench_press: Barbell bench press
+        barbell_forearm_curls: Barbell forearm curls
+        book: Book
+        barbell_pull_to_chin: Barbell pull to chin
+        dumbbell_bench_press: Dumbbell bench press
+        dumbbell_abduction: Dumbbell abduction
+        dumbbells_through_the_side: Dumbbells through the side
+        extension_with_rope_handle: Extension with rope handle
+        gack_squats: Gack squats
+        hanging_leg_raise: Hanging leg raise
+        horizontal_pull_block: Horizontal pull block
+        hyperextension: Hyperextension
+        hammers: Hammers
+        hamer_shoulder_press: Hamer shoulder press
+        incline_dumbbell_row: Incline dumbbell row
+        leg_press: Leg press
+        lying_leg_flexion: Lying leg flexion
+        push_ups_on_bars: Push-ups on bars
+        pull_ups: Pull-ups
+        pancake_swing_in_front_of_you: Pancake swing in front of you
+        placeholder: Max weight for 8 reps
+        reverse_push_ups: Reverse push-ups
+        stacked_chest_press: Stacked chest press
+        seated_leg_extension: Seated leg extension
+        vertical_pull_block: Vertical pull block
       user:
         created_at: Created at
         email: Email
+        growth: Growth
+        gender: Gender
         name: Name
         old_password: Old password
         password: Password
         password_confirmation: Password confirmation
-        updated_at: Updated at
-        weight: Weight
-        growth: Growth
-        years: Years
-        gender: Gender
-        role: Role
         placeholder:
           email: Email
+          growth: Growth in cm
+          gender: Male/Female
           name: Name
           weight: Weight in kg
-          growth: Growth in cm
           years: Years
-          gender: Male/Female
-      models:
-        power: Power Training
+        role: Role
+        updated_at: Updated at
+        weight: Weight
+        years: Years
   admin:
     users:
-      edit:
-        title: Edit User
-      update:
-        success: User updated!
-      destroy:
-        success: User deleted!
       create:
         success: Users imported!
+      destroy:
+        success: User deleted!
+      edit:
+        title: Edit User
       index:
         success: You'll get an email once this operation is done
         download_zipped: Download zipped XLSX
@@ -176,38 +166,96 @@ en:
           archive: Select archive
           submit: Upload!
         upload_zipped: Upload users from XLSX
+      update:
+        success: User updated!
+  crossfits:
+    create:
+      success: Crossfit Training create!
+    destroy:
+      success: Training delete!
+    edit:
+      title: Edit Crossfit Training
+    new:
+      title: New Crossfit Training
+    show:
+      title: Crossfit Training
+    update:
+      success: Your Crossfit training updated!
+    update_crossfit:
+      success: Training complete!
+      fail: Next time it will definitely work!
+  en: English
+  gains:
+    create:
+      success: Training create!
+    destroy:
+      success: Training delete!
+    edit:
+      title: Edit Complex Training
+    new:
+      title: New Complex Training
+    show:
+      title: Complex Training
+    update:
+      success: Your training updated!
+      danger: Fill in all parameters!
+    update_gain:
+      success: Training complete!
+      fail: Next time it will definitely work!
   global:
-    user:
-      roles:
-        basic: Basic
-        moderator: Moderator
-        admin: Admin
     button:
       delete: Delete
       edit: Edit
       show: Show
       submit: Submit
       new_power_training: New power training
+      new_gain_training: New gain training
+      new_crossfit_training: New crossfit training
+      fail: Fail
+      complete: Сomplete
     dialog:
       you_sure: Are you sure?
+    dropdown:
+      monday: Monday
+      wednesday: Wednesday
+      friday: Friday
+      change_training: Change training
     flash:
       already_signed_in: You are already signed in!
       not_signed_in: You are not signed in!
       not_authorized: You are not authorized to perfom this action!
+    user:
+      roles:
+        admin: Admin
+        basic: Basic
+        moderator: Moderator
+  menu:
+    create_traning: Create traning
+    edit_profile: Profile
+    faq: FAQ
+    home: Home    
+    log_in: Log In
+    log_out: Log out
+    my_profile: My profile
+    powers: Power Training
+    gains: Gain Training
+    crossfits: Crossfit Training
+    sign_up: Sign Up
+    users: Users
   password_resets:
     create:
       success: Password reset instructions were sent to your email address
+    edit:
+      title: Enter new password
+      form:
+        submit: Reset my password!
+    fail: Could not reset your password...
     new:
       title: Reset password
       form:
         email: Email
         submit: Send reset instructions
         back: Back to sign in
-    fail: Could not reset your password...
-    edit:
-      title: Enter new password
-      form:
-        submit: Reset my password!
     update:
       success: Your password was reset!
   password_reset_mailer:
@@ -215,78 +263,24 @@ en:
       subject: Password reset | FitTracker
   pages:
     index:
-      title: "Welcome to Fit tracker!"
-  menu:
-    edit_profile: Profile
-    my_profile: My profile
-    home: Home
-    log_in: Log In
-    log_out: Log out
-    powers: Power Training
-    sign_up: Sign Up
-    users: Users
-    faq: FAQ
-  gains:
-    new:
-      title: "New Complex Training"
-    edit:
-      title: "Edit Complex Training"
-    show:
-      title: "Complex Training"
-    create:
-      success: "Training create!"
-    update:
-      success: "Your training updated!"
-      danger: "Fill in all parameters!"
-    update_gain:
-      success: "Training complete!"
-    destroy:
-      success: "Training delete!"
+      title: Welcome to Fit tracker!
   powers:
-    new:
-      title: "New Training"
-    edit:
-      title: "Edit Training"
-    show:
-      title: "Power Training"
     create:
-      success: "Training create!"
+      success: Training create!
+    destroy:
+      success: Training delete!
+    new:
+      title: New Training
+    edit:
+      title: Edit Training
+    show:
+      title: Power Training
     update:
-      success: "Your training updated!"
+      success: Your training updated!
     update_power:
-      success: "Training complete!"
-    destroy:
-      success: "Training delete!"
-  crossfits:
-    new:
-      title: "New Crossfit Training"
-    edit:
-      title: "Edit Crossfit Training"
-    show:
-      title: "Crossfit Training"
-    create:
-      success: "Crossfit Training create!"
-    update:
-      success: "Your Crossfit training updated!"
-    update_crossfit:
-      success: "Training complete!"
-    destroy:
-      success: "Training delete!"
-  tabats:
-    new:
-      title: "New Tabat Training"
-    edit:
-      title: "Edit Tabat Training"
-    show:
-      title: "Tabat Training"
-    create:
-      success: "Tabat Training create!"
-    update:
-      success: "Your Tabat training updated!"
-    update_crossfit:
-      success: "Training complete!"
-    destroy:
-      success: "Training delete!"
+      success: Training complete!
+      fail: Next time it will definitely work!
+  ru: Russian
   sessions:
     create:
       invalid_creds: Incorrect email and/or password!
@@ -302,7 +296,6 @@ en:
         forgot_password: I forgot my password
       title: Log In
   users:
-    title: User
     create:
       success: Welcome to the app, %{name}!
     edit:
@@ -314,8 +307,31 @@ en:
       forms:
         register: Register
         save: Save
+    title: User
     new:
       title: Registration
     update:
       success: Your profile was successfully updated!
-      
+  views:
+    my_trainings: My Trainings
+    gain_diet: To gain weight you need to consume
+    lose_diet: To lose weight you need to consume
+    my_profile: My Profile
+    help: To view the technique of performing an exercise, click on its name
+    update_parameters: It's time to change up your workout! Enter new parameters
+    before_save: Before saving, be sure to fill out all fields
+    circuit_training: Circuit Training
+    exercise: Exercise
+    count_first_cycle: First cycle
+    count_second_cycle: Second cycle
+    count_third_cycle: Third cycle
+    weight: Weight
+    first_block: 1 Block
+    second_block: 2 Block
+    third_block: 3 Block
+    count_cyrcle: Cyrcles
+    count_reps: Reps
+    count_sets: Sets
+    tabbat: Protocol tabbat
+    time_work: Work
+    time_relax: Relax

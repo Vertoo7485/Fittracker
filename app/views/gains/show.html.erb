@@ -1,5 +1,5 @@
-<% provide :page_title, 'Комплексная тренировка' %>
-<% currently_at 'Комплексная тренировка' %>
+<% provide :page_title, t('gains.show.title') %>
+<% currently_at t('gains.show.title') %>
 
 <body class="my-black-fon", style="color:#ffffff">
 <div class="progress">
@@ -9,23 +9,23 @@
        <%= current_gain_training.count_update_training * 2%>%
   </div>
 </div>
-  <h1 class="center">Комплексная тренировка</h1>
+  <h1 class="center"><%= t('gains.show.title') %></h1>
 
   <div class="dropdown center my-3">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      Выбор тренировки
+      <%= t('global.dropdown.change_training')%>
     </button>
     <ul class="dropdown-menu">
       <li>
-        <%= link_to 'Понедельник', user_gain_path(@user, @gain, day: 'monday'),
+        <%= link_to t('global.dropdown.monday'), user_gain_path(@user, @gain, day: 'monday'),
           class: 'dropdown-item'%>
       </li>
       <li>
-        <%= link_to 'Среда', user_gain_path(@user, @gain, day: 'wednesday'),
+        <%= link_to t('global.dropdown.wednesday'), user_gain_path(@user, @gain, day: 'wednesday'),
           class: 'dropdown-item'%>
       </li>
       <li>
-        <%= link_to 'Пятница', user_gain_path(@user, @gain, day: 'friday'),
+        <%= link_to t('global.dropdown.friday'), user_gain_path(@user, @gain, day: 'friday'),
           class: 'dropdown-item'%>
       </li>
     </ul>

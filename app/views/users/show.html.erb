@@ -4,12 +4,12 @@
 <body class="my-profile" style="color:#ffffff">
   <div class="container overflow-hidden">
 
-    <h1 class="center">Мой профиль</h1>
+    <h1 class="center"><%= t('views.my_profile')%></h1>
 
 
     <div class="row gx-5">
       <div class="col">
-        <div class="p-3">Для похудения необходимо употреблять: 
+        <div class="p-3"> <%= t('views.lose_diet')%>
           <strong>
             <%= if current_user.gender.downcase == "male" || current_user.gender.downcase == "мужской"
                   men_weight_loss_diet
@@ -22,7 +22,7 @@
       </div>
 
       <div class="col">
-        <div class="p-3"> Для набора массы необходимо употреблять:
+        <div class="p-3"> <%= t('views.gain_diet')%>
           <strong>
             <%= if current_user.gender.downcase == "male"
                   men_weight_gain_diet
@@ -36,13 +36,13 @@
     </div>
   <div>
 
-  <h2 class="my-3">Мои тренировки</h2>
+  <h2 class="my-3"><%= t('views.my_trainings')%></h2>
 
   <div>
     <% @powers.each do |power| %>
       <article>
         <p class="mt-2">
-          <strong>Силовая тренировка</strong>
+          <strong><%= t('activerecord.attributes.models.power')%></strong>
         </p>
         <p>
           <%= link_to t('global.button.show'), user_power_path(@user, power), 
@@ -60,7 +60,7 @@
     <% @crossfits.each do |crossfit| %>
       <article>
         <p class="mt-2">
-          <strong>Кроссфит тренировка</strong>
+          <strong><%= t('activerecord.attributes.models.crossfit')%></strong>
         </p>
         <p>
           <%= link_to t('global.button.show'), user_crossfit_path(@user, crossfit), 
@@ -78,7 +78,7 @@
     <% @gains.each do |gain| %>
       <article>
         <p class="mt-2">
-          <strong>Комплексная тренировка</strong>
+          <strong><%= t('activerecord.attributes.models.gain')%></strong>
         </p>
         <p>
           <%= link_to t('global.button.show'), user_gain_path(@user, gain), 

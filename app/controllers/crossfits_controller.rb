@@ -34,7 +34,7 @@ class CrossfitsController < ApplicationController
   def update_crossfit
     case params[:complete_training]
     when 'fail'
-      flash[:success] = 'В следующий раз обязательно получится!'
+      flash[:success] = t('.fail')
     when 'monday'
       pump_crossfit_monday
       flash[:success] = t('.success')

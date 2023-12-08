@@ -8,25 +8,25 @@
 
 <div class="dropdown center my-3">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Выбор тренировки
+    <%= t('global.dropdown.change_training')%>
   </button>
   <ul class="dropdown-menu">
     <li>
-      <%= link_to 'Понедельник', user_crossfit_path(@user, @crossfit, day: 'monday'),
+      <%= link_to t('global.dropdown.monday'), user_crossfit_path(@user, @crossfit, day: 'monday'),
         class: 'dropdown-item'%>
     </li>
 
     <li><hr class="dropdown-divider"></li>
 
     <li>
-      <%= link_to 'Среда', user_crossfit_path(@user, @crossfit, day: 'wednesday'),
+      <%= link_to t('global.dropdown.wednesday'), user_crossfit_path(@user, @crossfit, day: 'wednesday'),
         class: 'dropdown-item'%>
     </li>
 
     <li><hr class="dropdown-divider"></li>
 
     <li>
-      <%= link_to 'Пятница', user_crossfit_path(@user, @crossfit, day: 'friday'),
+      <%= link_to t('global.dropdown.friday'), user_crossfit_path(@user, @crossfit, day: 'friday'),
         class: 'dropdown-item'%>
     </li>
   </ul>

@@ -1,17 +1,17 @@
-<h3 class="my-4 center"><strong>Протокол Табатта</strong></h3>
+<h3 class="my-4 center"><strong><%= t('views.tabbat')%></strong></h3>
   <div class="container my-4">
     <div class="row row-cols-5 center">
-      <div class="col"><strong>Упражнение</strong></div>
-      <div class="col"><strong>Кол-во подходов</strong></div>
-      <div class="col"><strong>Время работы</strong></div>
-      <div class="col"><strong>Время отдыха</strong></div>
-      <div class="col"><strong>Вес</strong></div>
+      <div class="col"><strong><%= t('views.exercise')%></strong></div>
+      <div class="col"><strong><%= t('views.count_sets')%></strong></div>
+      <div class="col"><strong><%= t('views.time_work')%></strong></div>
+      <div class="col"><strong><%= t('views.time_relax')%></strong></div>
+      <div class="col"><strong><%= t('views.weight')%></strong></div>
     </div>
     <div class="row row-cols-5 my-3 center">
       <div class="col">
         <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseText" aria-expanded="false"
-                aria-controls="collapseText">Боковой скалолаз:
+                aria-controls="collapseText"><%= t('activerecord.attributes.gain.side_climber') %>
         </button>
         <div class="collapse my-2" id="collapseText">
           <span>
@@ -33,7 +33,7 @@
       <div class="col">
         <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseText1" aria-expanded="false"
-                aria-controls="collapseText1">Берпи:
+                aria-controls="collapseText1"><%= t('activerecord.attributes.gain.burpee') %>
         </button>
         <div class="collapse my-2" id="collapseText1">
           <span>
@@ -59,7 +59,7 @@
       <div class="col">
         <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseText2" aria-expanded="false"
-                aria-controls="collapseText2">Сгибание предплечий со штангой:
+                aria-controls="collapseText2"><%= t('activerecord.attributes.gain.barbell_forearm_curls') %>
         </button>
         <div class="collapse my-2" id="collapseText2">
           <span>
@@ -81,7 +81,7 @@
       <div class="col">
         <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseText3" aria-expanded="false"
-                aria-controls="collapseText3">Отжимания с узкой постановкой рук:
+                aria-controls="collapseText3"><%= t('activerecord.attributes.gain.push_ups_with_narrow_arms') %>
         </button>
         <div class="collapse my-2" id="collapseText3">
           <span>
@@ -111,7 +111,7 @@
       <div class="col">
         <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseText4" aria-expanded="false"
-                aria-controls="collapseText4">Приседания:
+                aria-controls="collapseText4"><%= t('activerecord.attributes.gain.squats') %>
         </button>
         <div class="collapse my-2" id="collapseText4">
           <span>
@@ -134,7 +134,7 @@
       <div class="col">
         <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseText5" aria-expanded="false"
-                aria-controls="collapseText5">Статика в приседе:
+                aria-controls="collapseText5"><%= t('activerecord.attributes.gain.statics_in_the_squat') %>
         </button>
         <div class="collapse my-2" id="collapseText5">
           <span>
@@ -155,7 +155,7 @@
       <div class="col">
         <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseText6" aria-expanded="false"
-                aria-controls="collapseText6">Развороты корпуса в планке:
+                aria-controls="collapseText6"><%= t('activerecord.attributes.gain.plank_reversals') %>
         </button>
         <div class="collapse my-2" id="collapseText6">
           <span>
@@ -180,7 +180,7 @@
       <div class="col">
         <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseText7" aria-expanded="false"
-                aria-controls="collapseText7">Планка:
+                aria-controls="collapseText7"><%= t('activerecord.attributes.gain.plank') %>
         </button>
         <div class="collapse my-2" id="collapseText7">
           <span>
@@ -203,11 +203,11 @@
 
 <div class="row row-cols-2 my-5">
   <div class="col left">
-    <%= link_to "Не удалось", user_update_gain_path(@user, @gain, complete_training: 'fail'),
+    <%= link_to t('global.button.fail'), user_update_gain_path(@user, @gain, complete_training: 'fail'),
      method: :put, class: 'btn btn-danger btn-lg'%>
   </div>
 
-  <div class="col right"><%= link_to "Завершено",
+  <div class="col right"><%= link_to t('global.button.complete'),
      user_update_gain_path(@user, @gain, complete_training: 'tabat_friday'),
      method: :put, class: 'btn btn-success btn-lg'%></div>
 </div>

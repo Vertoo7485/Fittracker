@@ -1,7 +1,7 @@
 <%= render 'shared/errors', object: @power %>
 <%= form_with model: [@user, @power] do |f| %>
 
-<h4 class="mb-4 center">Для просмотра техники выполнения упражнения, нажмите на его название</h4>
+<h4 class="mb-4 center"><%= t('views.help') %></h4>
 
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
@@ -25,7 +25,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :barbell_bench_press, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :barbell_bench_press, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -51,7 +51,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :reverse_push_ups, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :reverse_push_ups, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -76,7 +76,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :dumbbell_bench_press, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :dumbbell_bench_press, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -102,7 +102,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :push_ups_on_bars, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :push_ups_on_bars, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -129,7 +129,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :stacked_chest_press, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :stacked_chest_press, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -156,7 +156,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :extension_with_rope_handle, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :extension_with_rope_handle, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -184,7 +184,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :dumbbell_abduction, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :dumbbell_abduction, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -210,7 +210,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :horizontal_pull_block, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :horizontal_pull_block, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -235,7 +235,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :pull_ups, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :pull_ups, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -259,7 +259,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :barbell_forearm_curls, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :barbell_forearm_curls, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -285,7 +285,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :incline_dumbbell_row, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :incline_dumbbell_row, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -314,7 +314,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :vertical_pull_block, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :vertical_pull_block, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -345,7 +345,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :hyperextension, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :hyperextension, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -374,7 +374,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :hammers, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :hammers, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -400,7 +400,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :gack_squats, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :gack_squats, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -429,7 +429,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :seated_leg_extension, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :seated_leg_extension, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -455,7 +455,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :leg_press, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :leg_press, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -483,7 +483,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :hamer_shoulder_press, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :hamer_shoulder_press, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -513,7 +513,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :dumbbells_through_the_side, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :dumbbells_through_the_side, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -540,7 +540,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :lying_leg_flexion, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :lying_leg_flexion, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -569,7 +569,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :pancake_swing_in_front_of_you, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :pancake_swing_in_front_of_you, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
@@ -601,7 +601,7 @@
     </div>
 
     <div class="col-sm-10">
-      <%= f.text_field :barbell_pull_to_chin, placeholder: t('activerecord.attributes.powers.placeholder'),
+      <%= f.text_field :barbell_pull_to_chin, placeholder: t('activerecord.attributes.power.placeholder'),
        class: 'form-control form-control-lg' %>
     </div>
   </div>
