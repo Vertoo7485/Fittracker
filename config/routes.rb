@@ -25,6 +25,7 @@ Rails.application.routes.draw do
       put '/crossfits/:id/update_crossfit', to: 'crossfits#update_crossfit', as: 'update_crossfit'
       resources :gains, except: %i[index]
       put '/gains/:id/update_gain', to: 'gains#update_gain', as: 'update_gain'
+      resources :photos, only: %i[index new create]
     end
 
     get '/faq', to: 'pages#faq'

@@ -44,7 +44,7 @@
     <% @powers.each do |power| %>
       <article>
         <p class="mt-2">
-          <strong><%= t('activerecord.attributes.models.power')%></strong>
+          <strong><%= t('activerecord.attributes.models.power') + " от #{power.created_at.strftime('%d-%m-%Y')}"%></strong>
         </p>
         <p>
           <%= link_to t('global.button.show'), user_power_path(@user, power), 
@@ -62,7 +62,7 @@
     <% @crossfits.each do |crossfit| %>
       <article>
         <p class="mt-2">
-          <strong><%= t('activerecord.attributes.models.crossfit')%></strong>
+          <strong><%= t('activerecord.attributes.models.crossfit') + " от #{crossfit.created_at.strftime('%d-%m-%Y')}"%></strong>
         </p>
         <p>
           <%= link_to t('global.button.show'), user_crossfit_path(@user, crossfit), 
@@ -80,7 +80,7 @@
     <% @gains.each do |gain| %>
       <article>
         <p class="mt-2">
-          <strong><%= t('activerecord.attributes.models.gain')%></strong>
+          <strong><%= t('activerecord.attributes.models.gain') + " от #{gain.created_at.strftime('%d-%m-%Y')}"%></strong>
         </p>
         <p>
           <%= link_to t('global.button.show'), user_gain_path(@user, gain), 

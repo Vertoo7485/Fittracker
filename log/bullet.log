@@ -1,0 +1,240 @@
+2023-12-12 21:56:37[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:image_attachment]
+  Add to your query: .includes([:image_attachment])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `block in _app_views_photos_index_html_erb__67850263504453632_27220'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:3:in `_app_views_photos_index_html_erb__67850263504453632_27220'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-12 22:02:43[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:image_attachment]
+  Add to your query: .includes([:image_attachment])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `block in _app_views_photos_index_html_erb__67850263504453632_32600'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:3:in `_app_views_photos_index_html_erb__67850263504453632_32600'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-12 22:03:08[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:image_attachment]
+  Add to your query: .includes([:image_attachment])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__67850263504453632_33000'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__67850263504453632_33000'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:26:59[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:image_attachment]
+  Add to your query: .includes([:image_attachment])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_20060'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_20060'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:28:45[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:image_attachment]
+  Add to your query: .includes([:image_attachment])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_20380'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_20380'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:29:19[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:image_attachment]
+  Add to your query: .includes([:image_attachment])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_21040'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_21040'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:29:35[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:image_attachment]
+  Add to your query: .includes([:image_attachment])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_21040'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_21040'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:32:57[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_21500'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_21500'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:34:04[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:image_attachment]
+  Add to your query: .includes([:image_attachment])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_21880'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_21880'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:36:26[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_23220'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_23220'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:41:48[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:image_attachment]
+  Add to your query: .includes([:image_attachment])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:42:42[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:43:26[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:43:26[WARN] user: alexandr
+GET /ru/users/1/photos
+AVOID eager loading detected
+  Photo => [:image_blob]
+  Remove from your query: .includes([:image_blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:43:31[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:43:31[WARN] user: alexandr
+GET /ru/users/1/photos
+AVOID eager loading detected
+  Photo => [:image_blob]
+  Remove from your query: .includes([:image_blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_27300'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-13 16:45:36[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:9:in `block in _app_views_photos_index_html_erb__301472962429746935_40760'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:6:in `_app_views_photos_index_html_erb__301472962429746935_40760'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-14 21:13:17[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:14:in `block in _app_views_photos_index_html_erb___2237718974465938090_200780'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:8:in `_app_views_photos_index_html_erb___2237718974465938090_200780'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-14 21:13:17[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:15:in `block (2 levels) in _app_views_photos_index_html_erb___2237718974465938090_200780'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:14:in `block in _app_views_photos_index_html_erb___2237718974465938090_200780'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:8:in `_app_views_photos_index_html_erb___2237718974465938090_200780'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-14 21:13:37[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:14:in `block in _app_views_photos_index_html_erb___2237718974465938090_201540'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:8:in `_app_views_photos_index_html_erb___2237718974465938090_201540'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-14 21:13:37[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:15:in `block (2 levels) in _app_views_photos_index_html_erb___2237718974465938090_201540'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:14:in `block in _app_views_photos_index_html_erb___2237718974465938090_201540'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:8:in `_app_views_photos_index_html_erb___2237718974465938090_201540'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-14 21:48:24[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:12:in `block in _app_views_photos_index_html_erb___2237718974465938090_258580'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:8:in `_app_views_photos_index_html_erb___2237718974465938090_258580'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-14 22:14:09[WARN] user: alexandr
+GET /ru/users/1/photos
+USE eager loading detected
+  Photo => [:images_attachments]
+  Add to your query: .includes([:images_attachments])
+Call stack
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:12:in `block in _app_views_photos_index_html_erb___2237718974465938090_272640'
+  /home/alexandr/FitTracker/app/views/photos/index.html.erb:8:in `_app_views_photos_index_html_erb___2237718974465938090_272640'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+
+2023-12-14 23:05:34[WARN] user: alexandr
+GET /ru/users/1
+USE eager loading detected
+  ActiveStorage::Attachment => [:blob]
+  Add to your query: .includes([:blob])
+Call stack
+  /home/alexandr/FitTracker/app/views/users/show.html.erb:111:in `block in _app_views_users_show_html_erb___4381842237986810681_22040'
+  /home/alexandr/FitTracker/app/views/users/show.html.erb:110:in `_app_views_users_show_html_erb___4381842237986810681_22040'
+  /home/alexandr/FitTracker/app/controllers/concerns/internationalization.rb:15:in `switch_locale'
+

@@ -9,4 +9,5 @@ class ApplicationController < ActionController::Base
   include CountCrossfitTraining
   include CountGainTraining
   include Authorization
+  include Pagy::Backend
 end

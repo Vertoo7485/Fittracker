@@ -1,6 +1,8 @@
 ru:
   activerecord:
     attributes:
+      photo:
+        images: Загрузите 4 фотографии!
       crossfit:
         abduction_in_a_butterfly: Отведение в бабочке
         burpee: Берпи
@@ -186,6 +188,9 @@ ru:
       success: Тренировка завершена!
       fail: В следующий раз обязательно получится!
   en: Английский
+  errors:
+    messages:
+      invalid_image_type: Должны быть в формате JPEG или PNG или JPG
   gains:
     create:
       success: Тренировка создана!
@@ -214,6 +219,7 @@ ru:
       submit: Отправить
       fail: Не удалось
       complete: Завершено
+      upload: Загрузить!
     dialog:
       you_sure: Вы уверены?
     dropdown:
@@ -238,11 +244,22 @@ ru:
     log_in: Войти
     log_out: Выйти
     my_profile: Мой профиль
+    my_photo_diary: Мой фото дневник
     powers: Силовая Тренировка
     gains: Комплексная Тренировка
     crossfits: Кроссфит Тренировка
     sign_up: Регистрация
-    users: Пользователи  
+    users: Пользователи
+  photos:
+    create:
+      success: Фото успешно добавлены!
+    index:
+      button:
+        new_photo: Добавить новые фото
+    new:
+      form:
+        placeholder: Лицом к камере/Спиной к камере/Левым боком к камере/Правым боком к камере
+        title: фото название
   password_resets:
     create:
       success: Инструкции были отправленны на ваш email
@@ -336,3 +353,5 @@ ru:
     tabbat: Протокол Табатта
     time_work: Время работы
     time_relax: Время отдыха
+    new_photo_title: Загрузите 4 фотографии
+    photo_diary: Фото дневник пользователя

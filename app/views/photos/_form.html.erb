@@ -1,0 +1,15 @@
+<%= render 'shared/errors', object: @photo %>
+<%= form_with(model: [@user, @photo], local: true) do |form| %>
+  <article class="list-group list-group">
+    <div class="list-group mb-3">
+      <%= form.text_field :title, placeholder: t('photos.new.form.placeholder'), class: 'form-control center' %>
+    </div>
+    <div>
+      <%= form.file_field :images, multiple: true, class: 'form-control'%>
+    </div>
+  </article>
+
+  <div class="text-end mt-3">
+    <%= form.submit t('global.button.upload'), class: "btn btn-success" %>
+  </div>
+<% end %>

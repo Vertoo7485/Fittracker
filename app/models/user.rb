@@ -10,6 +10,8 @@ class User < ApplicationRecord
 
   has_one_attached :avatar
 
+  has_many :photos
+
   has_many :powers, dependent: :destroy
   has_many :crossfits, dependent: :destroy
   has_many :gains, dependent: :destroy

@@ -1,6 +1,8 @@
 en:
   activerecord:
     attributes:
+      photo:
+        images: Upload 4 photos!
       crossfit:
         abduction_in_a_butterfly: Abduction in a butterfly
         burpee: Burpee
@@ -186,6 +188,9 @@ en:
       success: Training complete!
       fail: Next time it will definitely work!
   en: English
+  errors:
+    messages:
+      invalid_image_type: Must be a JPEG or PNG or JPG
   gains:
     create:
       success: Training create!
@@ -214,6 +219,7 @@ en:
       new_crossfit_training: New crossfit training
       fail: Fail
       complete: Сomplete
+      upload: Upload!
     dialog:
       you_sure: Are you sure?
     dropdown:
@@ -238,11 +244,22 @@ en:
     log_in: Log In
     log_out: Log out
     my_profile: My profile
+    my_photo_diary: My photo diary
     powers: Power Training
     gains: Gain Training
     crossfits: Crossfit Training
     sign_up: Sign Up
     users: Users
+  photos:
+    create:
+      success: Photos successfully added!
+    index:
+      button:
+        new_photo: Add new photos
+    new:
+      form:
+        placeholder: Facing the camera/Back to camera/Left side to camera/Right side to camera
+        title: photo title
   password_resets:
     create:
       success: Password reset instructions were sent to your email address
@@ -336,3 +353,5 @@ en:
     tabbat: Protocol tabbat
     time_work: Work
     time_relax: Relax
+    new_photo_title: Upload 4 photos
+    photo_diary: User's photo diary

@@ -1,0 +1,32 @@
+<% provide :page_title, current_user.name_or_email %>
+<% currently_at t('user.title') %>
+
+<div class="container">
+  <h1 class="text-center"><%= t('views.photo_diary') %> <%= current_user.name_or_email %></h1>
+
+  <%= link_to t('photos.index.button.new_photo'), new_user_photo_path(current_user),
+    class: 'btn btn-primary btn-lg mb-3' %>
+
+  <%== pagy_bootstrap_nav @pagy%>
+
+  <div class="row">
+    <% @photos.each do |photo| %>
+      <div class="md-4">
+      <h5 class="text-center"><%= photo.date.strftime('%d-%m-%Y') %></h5>
+        <div class="card mb-4">
+          <div class="card-body">
+            <% photo.images.each do |image| %>
+              <%= image_tag image.variant(resize_to_fill: [300, 300]), class: 'img-fluid' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%== pagy_bootstrap_nav @pagy%>
+
+
+
+

@@ -86,6 +86,13 @@
                 <li><hr class="dropdown-divider"></li>
 
                 <li>
+                  <%= link_to t('menu.my_photo_diary'), user_photos_path(current_user),
+                    class: 'dropdown-item' %>
+                </li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li>
                   <%= link_to t('users.edit.title'), edit_user_path(current_user),
                     class: 'dropdown-item' %>
                 </li>

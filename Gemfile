@@ -34,6 +34,7 @@ gem 'rubyzip', '~> 2'
 gem 'sidekiq', '~> 6'
 gem 'valid_email2', '~> 4.0'
 gem 'mini_magick'
+gem 'pagy', '~> 4.1'
 
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_09_20_131229) do
+ActiveRecord::Schema.define(version: 2023_12_12_143713) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -164,6 +164,15 @@ ActiveRecord::Schema.define(version: 2023_09_20_131229) do
     t.index ["user_id"], name: "index_gains_on_user_id"
   end
 
+  create_table "photos", force: :cascade do |t|
+    t.string "title"
+    t.date "date", default: "2023-12-15"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_photos_on_user_id"
+  end
+
   create_table "powers", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.float "barbell_bench_press"
@@ -258,6 +267,7 @@ ActiveRecord::Schema.define(version: 2023_09_20_131229) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "crossfits", "users"
   add_foreign_key "gains", "users"
+  add_foreign_key "photos", "users"
   add_foreign_key "powers", "users"
   add_foreign_key "tabats", "users"
 end
