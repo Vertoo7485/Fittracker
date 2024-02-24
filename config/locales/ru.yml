@@ -1,6 +1,30 @@
 ru:
   activerecord:
     attributes:
+      batman:
+        barbell_bench_press: Жим штанги
+        incline_dumbbell_press: Жим гантелей лежа на наклонной скамье
+        push_ups_on_bars: Отжимания на брусьях
+        overhead_press: Жим штанги над головой
+        barbell_pull_to_chin: Тяга штанги к подбородку
+        dumbbells_through_the_side: Махи гантелей через сторону
+        french_bench_press: Французский жим лежа
+        deadlift: Становая тяга
+        pull_ups: Подтягивания
+        bent_over_barbell_pull: Тяга штанги к поясу в наклоне 
+        vertical_pull_block: Вертикальная тяга блока
+        horizontal_pull_block: Горизонтальная тяга блока
+        barbell_forearm_curls: Сгибания предплечий со штангой
+        lifting_dumbbells_in_scott: Бицепс в Скотте гантелями
+        incline_dumbbell_mahi: Махи гантелей в наклоне
+        seated_leg_extension: Разгибания голени сидя
+        squats: Приседания
+        leg_press: Жим ногами
+        lunges: Выпады
+        lying_leg_flexion: Сгибание голени лежа
+        standing_calf_raises: Подъемы на носки стоя
+        sitap: Ситап
+        book: Книжка
       photo:
         images: Загрузите 4 фотографии!
       crossfit:

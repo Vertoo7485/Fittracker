@@ -1,0 +1,202 @@
+<h3 class="my-4 center"><strong><%= t('activerecord.attributes.models.batman')%></strong></h3>
+  <div class="container my-4">
+    <div class="row row-cols-4 center">
+      <div class="col"><strong><%= t('views.exercise')%></strong></div>
+      <div class="col"><strong><%= t('views.count_sets')%></strong></div>
+      <div class="col"><strong><%= t('views.count_reps')%></strong></div>
+      <div class="col"><strong><%= t('views.weight')%></strong></div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText"><%= t('activerecord.attributes.batman.barbell_bench_press') %>
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Жим лежа.jpeg') %>
+            <ul>
+              <li>Лягте на скамью, поставив ступни на пол и согнув колени.</li>
+              <li>Держите спину прямо, голову вверх.</li>
+              <li>Держите штангу перед грудью.</li>
+              <li>Сожмите лопатки вместе.</li>
+              <li>Опускайте штангу вниз, пока она не коснется верхней части груди.</li>
+              <li>Сделайте паузу, затем снова поднимите штангу.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_batman_training.monday_reps %></div>
+      <div class="col"><%= current_batman_training.barbell_bench_press.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText1" aria-expanded="false"
+              aria-controls="collapseText1"><%= t('activerecord.attributes.batman.incline_dumbbell_press') %>
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('жим гантелей лежа на наклонной скамье.jpg') %>
+            <ul>
+              <li>Берём гантели в руки.</li>
+              <li>Ложимся на скамью под углом 30° и прижимаемся к ней лопатками.</li>
+              <li>Грудь выводим немного вперёд, а плечи фиксируем.</li>
+              <li>Ставим ноги на пол и плотно упираемся всей подошвой.</li>
+              <li>Располагаем гантели чуть шире плеч, снаряды находятся над ключицами.</li>
+              <li>Лопатки, голова и таз прижаты к скамье.</li>
+              <li>На вдохе медленно опускаем гантели к середине груди до угла 90° в локтях, сводя лопатки вместе.</li>
+              <li>Не нужно опускать гантели слишком низко.</li>
+              <li>На выдохе мощно поднимаем гантели в верхнюю точку.</li>
+              <li>Одна рука не должна опережать другую.</li>
+              <li>Движение гантелей идёт до полного выпрямления рук.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_batman_training.monday_reps %></div>
+      <div class="col"><%= current_batman_training.incline_dumbbell_press.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText2" aria-expanded="false"
+              aria-controls="collapseText2"><%= t('activerecord.attributes.batman.push_ups_on_bars') %>
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Отжимания на брусьях.jpeg') %>
+            <ul>
+              <li>Запрыгните на брусья и опустите плечи.</li>
+              <li>Следите, чтобы плечи не поднимались на протяжении всего упражнения.</li>
+              <li>Выпрямите руки, но не блокируйте локтевой сустав.</li>
+              <li>Опуститесь вниз до параллели плеч с полом.</li>
+              <li>Следите, чтобы локти уходили назад, а не в стороны.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_batman_training.monday_reps %></div>
+      <div class="col"><%= current_batman_training.push_ups_on_bars.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText3" aria-expanded="false"
+              aria-controls="collapseText3"><%= t('activerecord.attributes.batman.overhead_press') %>
+        </button>
+          <div class="collapse my-2" id="collapseText3">
+            <span>
+              <%= image_tag('Жим штанги над головой.jpeg') %>
+              <ul>
+                <li>Возьмите штангу хватом на ширине плеч.</li>
+                <li>Локти направлены немного вперёд.</li>
+                <li>Сведите лопатки вместе и опустите их вниз, чтобы придать жёсткости спине.</li>
+                <li>Поясница с лёгким прогибом.</li>
+                <li>На выдохе выпрямляйте руки, поднимая штангу над головой.</li>
+                <li>На вдохе плавно опускайте штангу вниз и сгибайте руки в локтях.</li>
+                <li>Поднимайте штангу только за счёт рук, без толчка ногами и раскачки корпуса.</li>
+              </ul>
+            </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_batman_training.monday_reps %></div>
+      <div class="col"><%= current_batman_training.overhead_press.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4"><%= t('activerecord.attributes.batman.barbell_pull_to_chin') %>
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+          <%= image_tag('Тяга штанги к подбородку.jpeg') %>
+            <ul>
+              <li>Держите штангу верхним хватом (промежуток между ладонями немного меньше ширины плеч) и выровняйтесь.</li>
+              <li>В исходном положении спина прямая и чуть прогнута в пояснице, плечи расправлены, руки в локтях ровные, гриф слегка касается бедер.</li>
+              <li>Вдохните и, задержав дыхание, напрягите дельту и трапецепидную.</li>
+              <li>Разведите локти и потяните их вверх вертикально.</li>
+              <li>Движение «направляют» именно локти, а не предплечья или плечи.</li>
+              <li>Когда вы поднимаете локти вверх, гриф штанги должен двигаться в вертикальной плоскости в длину тела от подбородка до бедер.</li>
+              <li>Не нависайте над грифом, прогибая спину.</li>
+              <li>Держите тело и шею прямо, а подбородок — горизонтально.</li>
+              <li>В верхней точке локти находятся максимально вверху.</li>
+              <li>Дотянувшись до верхней точки, сделайте выдох, остановитесь и еще больше напрягите дельты и трапеции.</li>
+              <li>Медленно опустите гриф в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_batman_training.monday_reps %></div>
+      <div class="col"><%= current_batman_training.barbell_pull_to_chin.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5"><%= t('activerecord.attributes.batman.dumbbells_through_the_side') %>
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Махи гантелей через сторону.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, ноги на ширине плеч.</li>
+              <li>Возьмите гантели и держите их нейтральным хватом, чтобы руки были ладонями друг к другу.</li>
+              <li>Руки в локтях слегка согнуты - этот угол нужно удерживать на всей амплитуде, это очень важно.</li>
+              <li>Гантелями не касаемся друг друга, кисти строго под плечами, но не ближе.</li>
+              <li>Сделайте чуть заметный наклон корпуса вперед ровно настолько, чтобы гантели расположились перед вами.</li>
+              <li>На выдохе начинайте отводить руки в стороны и поднимайте гантели, но не выше уровня плеч.</li>
+              <li>Гантели должны быть параллельны земле, кисти не поворачиваем.</li>
+              <li>В верхней точке мы стараемся поднять именно локти, как в тяге гантелей к подбородку.</li>
+              <li>На вдохе медленно верните гантели в исходное положение, но в нижней точке не касайтесь гантелями друг друга!</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_batman_training.monday_reps %></div>
+      <div class="col"><%= current_batman_training.dumbbells_through_the_side.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6"><%= t('activerecord.attributes.batman.french_bench_press') %>
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Французский жим лежа.jpeg') %>
+            <ul>
+              <li>Лягте на скамью, удерживая штангу у вашей груди.</li>
+              <li>Ступни плотно прижаты к полу.</li>
+              <li>Поднимите штангу над собой, выпрямив руки так, чтобы верхние части рук (плечи) были перпендикулярны корпусу.</li>
+              <li>Затем, согнув локти, опустите штангу ко лбу или слегка за голову.</li>
+              <li>Это исходное положение.</li>
+              <li>Теперь, разгибая локти поднимите штангу вверх к потолку.</li>
+              <li>В конце повторения оставьте локти слегка согнутыми, чтобы сохранить напряжение на ваших трицепсах.</li>
+              <li>После короткой паузы опустите штангу в исходное положение. </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_batman_training.monday_reps %></div>
+      <div class="col"><%= current_batman_training.french_bench_press.ceil%> кг.</div>
+    </div>
+
+    <div class="row row-cols-2 my-5">
+      <div class="col left">
+        <%= link_to t('global.button.fail'), user_update_batman_path(@user, @batman, complete_training: 'fail'), method: :put,
+          class: 'btn btn-danger btn-lg'%></div>
+
+      <div class="col right"><%= link_to t('global.button.complete'), user_update_batman_path(@user, @batman, complete_training: 'monday'), method: :put,
+        class: 'btn btn-success btn-lg'%></div>
+    </div>
+    
+

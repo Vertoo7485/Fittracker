@@ -26,9 +26,16 @@ Rails.application.routes.draw do
       resources :gains, except: %i[index]
       put '/gains/:id/update_gain', to: 'gains#update_gain', as: 'update_gain'
       resources :photos, only: %i[index new create]
+      resources :batmen, except: %i[index]
+      put '/batmen/:id/update_batman', to: 'batmen#update_batman', as: 'update_batman'
+      resources :wolverines, except: %i[index]
+      put '/wolverines/:id/update_wolverine', to: 'wolverines#update_wolverine', as: 'update_wolverine'
+      resources :spiders, except: %i[index]
+      put '/spiders/:id/update_spider', to: 'spiders#update_spider', as: 'update_spider'
     end
 
     get '/faq', to: 'pages#faq'
+    get '/training', to: 'pages#training'
 
     namespace :admin do
       resources :users, only: %i[index create edit update destroy]

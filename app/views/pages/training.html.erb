@@ -1,0 +1,67 @@
+<% currently_at t('menu.create_traning') %>
+<% provide :page_title %>
+
+
+
+<h3 class="center">Классические тренировки</h3>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-sm">
+      <div style="text-align: center;">
+        <%= link_to new_user_crossfit_path(current_user), class: 'dropdown-item' do %>
+          <%= image_tag('crossfit.jpeg', size: '250x150', class: 'img-responsive mt-2') %>
+        <% end %>
+        <p><%= t('global.button.new_crossfit_training') %></p>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div style="text-align: center;">
+        <%= link_to new_user_power_path(current_user), class: 'dropdown-item' do %>
+          <%= image_tag('power.jpeg', size: '250x150', class: 'img-responsive mt-2') %>
+        <% end %>
+        <p><%=t('global.button.new_power_training')%></p>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div style="text-align: center;">
+        <%= link_to new_user_gain_path(current_user), class: 'dropdown-item' do %>
+          <%= image_tag('gain.jpeg', size: '250x150', class: 'img-responsive mt-2') %>
+        <% end %>
+        <p><%= t('global.button.new_gain_training') %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 class="center mt-3">Тренировки супергероев</h3>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-sm">
+      <div style="text-align: center;">
+        <%= link_to new_user_batman_path(current_user), class: 'dropdown-item' do %>
+          <%= image_tag('batman.jpeg', size: '250x150', class: 'img-responsive mt-2') %>
+        <% end %>
+        <p>"Тренировка Бэтмена"</p>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div style="text-align: center;">
+        <%= link_to new_user_wolverine_path(current_user), class: 'dropdown-item' do %>
+          <%= image_tag('wolverine.jpeg', size: '250x150', class: 'img-responsive mt-2') %>
+        <% end %>
+        <p>"Тренировка Росомахи"</p>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div style="text-align: center;">
+        <%= link_to new_user_spider_path(current_user), class: 'dropdown-item' do %>
+          <%= image_tag('spider_man.jpeg', size: '250x150', class: 'img-responsive mt-2') %>
+        <% end %>
+        <p>Тренировка Человека Паука</p>
+      </div>
+    </div>
+  </div>
+</div>
+

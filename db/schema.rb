@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_12_12_143713) do
+ActiveRecord::Schema.define(version: 2024_02_16_115645) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,40 @@ ActiveRecord::Schema.define(version: 2023_12_12_143713) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "batmen", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.float "barbell_bench_press"
+    t.float "incline_dumbbell_press"
+    t.float "push_ups_on_bars"
+    t.float "overhead_press"
+    t.float "barbell_pull_to_chin"
+    t.float "dumbbells_through_the_side"
+    t.float "french_bench_press"
+    t.float "deadlift"
+    t.float "pull_ups"
+    t.float "bent_over_barbell_pull"
+    t.float "vertical_pull_block"
+    t.float "horizontal_pull_block"
+    t.float "barbell_forearm_curls"
+    t.float "lifting_dumbbells_in_scott"
+    t.float "incline_dumbbell_mahi"
+    t.float "seated_leg_extension"
+    t.float "squats"
+    t.float "leg_press"
+    t.float "lunges"
+    t.float "lying_leg_flexion"
+    t.float "standing_calf_raises"
+    t.float "sitap", default: 0.0
+    t.float "book", default: 0.0
+    t.integer "monday_reps", default: 8
+    t.integer "wednesday_reps", default: 8
+    t.integer "friday_reps", default: 8
+    t.integer "count_update_training", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_batmen_on_user_id"
   end
 
   create_table "crossfits", force: :cascade do |t|
@@ -209,6 +243,35 @@ ActiveRecord::Schema.define(version: 2023_12_12_143713) do
     t.index ["user_id"], name: "index_powers_on_user_id"
   end
 
+  create_table "spiders", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.float "barbell_bench_press"
+    t.float "incline_press"
+    t.float "push_ups_on_bars"
+    t.float "close_grip_bench_press"
+    t.float "seated_dumbbell_press"
+    t.float "barbell_pull_to_chin"
+    t.float "deadlift"
+    t.float "pull_ups"
+    t.float "incline_dumbbell_row"
+    t.float "horizontal_pull_block"
+    t.float "barbell_forearm_curls"
+    t.float "squats"
+    t.float "leg_press"
+    t.float "romanian_deadlift"
+    t.float "lunges"
+    t.float "standing_calf_raises"
+    t.float "sitap", default: 0.0
+    t.float "book", default: 0.0
+    t.integer "monday_reps", default: 8
+    t.integer "wednesday_reps", default: 8
+    t.integer "friday_reps", default: 8
+    t.integer "count_update_training", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_spiders_on_user_id"
+  end
+
   create_table "tabats", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.float "burpee", default: 0.0
@@ -263,11 +326,46 @@ ActiveRecord::Schema.define(version: 2023_12_12_143713) do
     t.index ["role"], name: "index_users_on_role"
   end
 
+  create_table "wolverines", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.float "barbell_bench_press"
+    t.float "dumbbell_bench_press"
+    t.float "push_ups_on_bars"
+    t.float "seated_dumbbell_press"
+    t.float "barbell_pull_to_chin"
+    t.float "french_bench_press"
+    t.float "pull_ups"
+    t.float "incline_dumbbell_row"
+    t.float "vertical_pull_block"
+    t.float "bent_over_barbell_pull"
+    t.float "hyperextension"
+    t.float "barbell_forearm_curls"
+    t.float "incline_dumbbell_mahi"
+    t.float "seated_leg_extension"
+    t.float "squats"
+    t.float "deadlift"
+    t.float "leg_press"
+    t.float "lying_leg_flexion"
+    t.float "standing_calf_raises"
+    t.float "sitap", default: 0.0
+    t.float "hanging_leg_raise", default: 0.0
+    t.integer "monday_reps", default: 8
+    t.integer "wednesday_reps", default: 8
+    t.integer "friday_reps", default: 8
+    t.integer "count_update_training", default: 0
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_wolverines_on_user_id"
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "batmen", "users"
   add_foreign_key "crossfits", "users"
   add_foreign_key "gains", "users"
   add_foreign_key "photos", "users"
   add_foreign_key "powers", "users"
+  add_foreign_key "spiders", "users"
   add_foreign_key "tabats", "users"
+  add_foreign_key "wolverines", "users"
 end

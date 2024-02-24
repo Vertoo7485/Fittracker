@@ -1,0 +1,168 @@
+<h3 class="my-4 center"><strong><%= t('activerecord.attributes.models.wolverine')%></strong></h3>
+  <div class="container my-4">
+    <div class="row row-cols-4 center">
+      <div class="col"><strong><%= t('views.exercise')%></strong></div>
+      <div class="col"><strong><%= t('views.count_sets')%></strong></div>
+      <div class="col"><strong><%= t('views.count_reps')%></strong></div>
+      <div class="col"><strong><%= t('views.weight')%></strong></div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText"><%= t('activerecord.attributes.wolverine.barbell_bench_press') %>
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Жим лежа.jpeg') %>
+            <ul>
+              <li>Лягте на скамью, поставив ступни на пол и согнув колени.</li>
+              <li>Держите спину прямо, голову вверх.</li>
+              <li>Держите штангу перед грудью.</li>
+              <li>Сожмите лопатки вместе.</li>
+              <li>Опускайте штангу вниз, пока она не коснется верхней части груди.</li>
+              <li>Сделайте паузу, затем снова поднимите штангу.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.monday_reps %></div>
+      <div class="col"><%= current_wolverine_training.barbell_bench_press.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText1" aria-expanded="false"
+              aria-controls="collapseText1"><%= t('activerecord.attributes.wolverine.dumbbell_bench_press') %>
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Жим гантелей лежа.jpeg') %>
+            <ul>
+              <li>Возьмите гантели в руки, сядьте и облокотите их на колени.</li>
+              <li>Лягте на скамью, прижмите снаряды к груди.</li>
+              <li>Обязательно согните ноги и начинайте делать жим - опускайте на вдохе гантели до уровня грудной клетки.</li>
+              <li>На выдохе поднимайте руки со снарядом вверх.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.monday_reps %></div>
+      <div class="col"><%= current_wolverine_training.dumbbell_bench_press.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText2" aria-expanded="false"
+              aria-controls="collapseText2"><%= t('activerecord.attributes.wolverine.push_ups_on_bars') %>
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Отжимания на брусьях.jpeg') %>
+            <ul>
+              <li>Запрыгните на брусья и опустите плечи.</li>
+              <li>Следите, чтобы плечи не поднимались на протяжении всего упражнения.</li>
+              <li>Выпрямите руки, но не блокируйте локтевой сустав.</li>
+              <li>Опуститесь вниз до параллели плеч с полом.</li>
+              <li>Следите, чтобы локти уходили назад, а не в стороны.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.monday_reps %></div>
+      <div class="col"><%= current_wolverine_training.push_ups_on_bars.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText3" aria-expanded="false"
+              aria-controls="collapseText3"><%= t('activerecord.attributes.wolverine.seated_dumbbell_press') %>
+        </button>
+          <div class="collapse my-2" id="collapseText3">
+            <span>
+              <%= image_tag('жим гантелей сидя.jpeg') %>
+              <ul>
+                <li>Установите спинку скамьи вертикально.</li>
+                <li>Сядьте на скамью, возьмите в обе руки гантели и поднимите их над плечами.</li>
+                <li>Чуть-чуть подайте гантели вперед и разверните так, чтобы ладони были направлены вперед.</li>
+                <li>Отведите плечи назад и расправьте грудь.</li>
+                <li>Сделайте вдох и, задержав дыхание, напрягите дельты и выжмите гантели по широкой дуге вверх.</li>
+                <li>В верхней точке гантели почти касаются друг друга, руки полностью выпрямлены, а плечи приподняты.</li>
+                <li>Плавно опустите гантели по той же траектории к плечам и приступайте к следующему повторению.</li>
+              </ul>
+            </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.monday_reps %></div>
+      <div class="col"><%= current_wolverine_training.seated_dumbbell_press.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4"><%= t('activerecord.attributes.wolverine.barbell_pull_to_chin') %>
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+          <%= image_tag('Тяга штанги к подбородку.jpeg') %>
+            <ul>
+              <li>Держите штангу верхним хватом (промежуток между ладонями немного меньше ширины плеч) и выровняйтесь.</li>
+              <li>В исходном положении спина прямая и чуть прогнута в пояснице, плечи расправлены, руки в локтях ровные, гриф слегка касается бедер.</li>
+              <li>Вдохните и, задержав дыхание, напрягите дельту и трапецепидную.</li>
+              <li>Разведите локти и потяните их вверх вертикально.</li>
+              <li>Движение «направляют» именно локти, а не предплечья или плечи.</li>
+              <li>Когда вы поднимаете локти вверх, гриф штанги должен двигаться в вертикальной плоскости в длину тела от подбородка до бедер.</li>
+              <li>Не нависайте над грифом, прогибая спину.</li>
+              <li>Держите тело и шею прямо, а подбородок — горизонтально.</li>
+              <li>В верхней точке локти находятся максимально вверху.</li>
+              <li>Дотянувшись до верхней точки, сделайте выдох, остановитесь и еще больше напрягите дельты и трапеции.</li>
+              <li>Медленно опустите гриф в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.monday_reps %></div>
+      <div class="col"><%= current_wolverine_training.barbell_pull_to_chin.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5"><%= t('activerecord.attributes.wolverine.french_bench_press') %>
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Французский жим лежа.jpeg') %>
+            <ul>
+              <li>Лягте на скамью, удерживая штангу у вашей груди.</li>
+              <li>Ступни плотно прижаты к полу.</li>
+              <li>Поднимите штангу над собой, выпрямив руки так, чтобы верхние части рук (плечи) были перпендикулярны корпусу.</li>
+              <li>Затем, согнув локти, опустите штангу ко лбу или слегка за голову.</li>
+              <li>Это исходное положение.</li>
+              <li>Теперь, разгибая локти поднимите штангу вверх к потолку.</li>
+              <li>В конце повторения оставьте локти слегка согнутыми, чтобы сохранить напряжение на ваших трицепсах.</li>
+              <li>После короткой паузы опустите штангу в исходное положение. </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.monday_reps %></div>
+      <div class="col"><%= current_wolverine_training.french_bench_press.ceil%> кг.</div>
+    </div>
+
+    <div class="row row-cols-2 my-5">
+      <div class="col left">
+        <%= link_to t('global.button.fail'), user_update_wolverine_path(@user, @wolverine, complete_training: 'fail'), method: :put,
+          class: 'btn btn-danger btn-lg'%></div>
+
+      <div class="col right"><%= link_to t('global.button.complete'), user_update_wolverine_path(@user, @wolverine, complete_training: 'monday'), method: :put,
+        class: 'btn btn-success btn-lg'%></div>
+    </div>
+    
+

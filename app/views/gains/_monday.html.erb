@@ -1,6 +1,6 @@
 <%= render 'shared/errors', object: @gain %>
 <%= form_with model: [@user, @gain] do |f| %>
-<h4 class="mb-4 center"><% t('views.help')%></h4>
+<h4 class="mb-4 center"><%= t('views.help')%></h4>
   <div class="mb-3 row">
     <div class="col-sm-2 col-form-label">
       <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"

@@ -7,12 +7,18 @@ class UsersController < ApplicationController
   before_action :authorize_user!
 
   def show
+    @batman = @user.batmen.build
+    @batmen = @user.batmen.order created_at: :desc
     @power = @user.powers.build
     @powers = @user.powers.order created_at: :desc
     @crossfit = @user.crossfits.build
     @crossfits = @user.crossfits.order created_at: :desc
     @gain = @user.gains.build
     @gains = @user.gains.order created_at: :desc
+    @wolverine = @user.wolverines.build
+    @wolverines = @user.wolverines.order created_at: :desc
+    @spider = @user.spiders.build
+    @spiders = @user.spiders.order created_at: :desc
   end
 
   def new

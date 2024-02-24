@@ -1,0 +1,192 @@
+<h3 class="my-4 center"><strong><%= t('activerecord.attributes.models.spider')%></strong></h3>
+  <div class="container my-4">
+    <div class="row row-cols-4 center">
+      <div class="col"><strong><%= t('views.exercise')%></strong></div>
+      <div class="col"><strong><%= t('views.count_sets')%></strong></div>
+      <div class="col"><strong><%= t('views.count_reps')%></strong></div>
+      <div class="col"><strong><%= t('views.weight')%></strong></div>
+    </div>
+        
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText1" aria-expanded="false"
+              aria-controls="collapseText1"><%= t('activerecord.attributes.spider.squats') %>
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Приседания со штангой.jpeg') %>
+            <ul>
+              <li>Возьмите гриф прямым закрытым хватом за плечами</li>
+              <li>Спину держите прямо, лопатки сведите.</li>
+              <li>После снятия штанги со стойки и перед приседом нужно максимально сконцентрироваться, сохраняя равновесие.</li>
+              <li>Поставьте стопы шире плеч и слегка разведите носки в стороны.</li>
+              <li>На вдохе отводите таз назад и разводите колени в стороны.</li>
+              <li>Спина сохраняет естественное положение.</li>
+              <li>Со стороны это выглядит так, будто вы садитесь на невидимый стул.</li>
+              <li>На выдохе поднимайтесь из максимальной точки приседа вверх.</li>
+              <li>Сохраняйте спину ровной, поднимая тело за счет выпрямления ног.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_spider_training.friday_reps %></div>
+      <div class="col"><%= current_spider_training.squats.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText3" aria-expanded="false"
+              aria-controls="collapseText3"><%= t('activerecord.attributes.spider.leg_press') %>
+        </button>
+          <div class="collapse my-2" id="collapseText3">
+            <span>
+              <%= image_tag('Жим ногами.jpeg') %>
+              <ul>
+                <li>Займите исходную позицию: стопы ставят на платформу, поясницу прижимают к скамье.</li>
+                <li>Убрерите фиксаторы отягощения с помощью рычагов.</li>
+                <li>На вдохе опустите платформу, согнув ноги в коленях.</li>
+                <li>В нижней точке ноги образуют угол 90 градусов.</li>
+                <li>На выдохе вытолкните ногами платформу вверх.</li>
+              </ul>
+            </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_spider_training.friday_reps %></div>
+      <div class="col"><%= current_spider_training.leg_press.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4"><%= t('activerecord.attributes.spider.romanian_deadlift') %>
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Румынская тяга.jpeg') %>
+            <ul>
+              <li>Исходное положение — встаньте прямо, ноги на ширине бедер.</li>
+              <li>Сделайте глубокий вдох и наклоняйся вперед, пока штанга не окажется на уровне середины голени.</li>
+              <li>Гриф штанги должен двигаться вниз очень близко к передней поверхности ног, почти гладить их.</li>
+              <li>Помните, что опускать штангу необходимо не наклоном вперед кора, а отведением таза назад.</li>
+              <li>Сделайте внизу паузу на секунду, и на выдохе вытолкните себя в исходное положение бицепсами бедра и ягодичными мышцами.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_spider_training.friday_reps %></div>
+      <div class="col"><%= current_spider_training.romanian_deadlift.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5"><%= t('activerecord.attributes.spider.lunges') %>
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Выпады.jpeg') %>
+            <ul>
+              <li>Возьмите пару гантелей, встаньте прямо, слегка согнув ноги в коленях.</li>
+              <li>Опустите руки с гантелями вниз по бокам.</li>
+              <li>Теперь Вы в исходном положении.</li>
+              <li>Сделайте шаг вперед левой ногой сохраняя равновесие, и присядьте вниз с помощью мышц бедра.</li>
+              <li>Держите торс прямо, сохраняя напряжение.</li>
+              <li>Не позволяйте колену левой ноги заходить за линию пальцев левой ноги.</li>
+              <li>Вернитесь в исходное положение, оттолкнувшись левой ногой.</li>
+              <li>Повторите движение с правой ноги.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_spider_training.friday_reps %></div>
+      <div class="col"><%= current_spider_training.lunges.ceil%> кг.</div>
+    </div>
+
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6"><%= t('activerecord.attributes.spider.standing_calf_raises') %>
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Подъемы на носки стоя.jpeg') %>
+            <ul>
+              <li>Возьмите гантели в руки.</li>
+              <li>Полностью выпрямите ноги и торс.</li>
+              <li>Пятки, таз и плечи находятся в одной вертикальной плоскости.</li>
+              <li>Разгибая голеностопный сустав, плавно опуститесь на пятках до тех пор, пока не почувствуете, что ахиллесовы икроножные мышцы максимально растянуты.</li>
+              <li>Вернитесь в исходное положение</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_spider_training.friday_reps %></div>
+      <div class="col"><%= current_spider_training.standing_calf_raises.ceil%> кг.</div>
+    </div>
+
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7"><%= t('activerecord.attributes.batman.sitap') %>
+        </button>
+        <div class="collapse my-2" id="collapseText7">
+          <span>
+            <%= image_tag('Ситап.jpeg') %>
+            <ul>
+              <li>Лягте на пол.</li>
+              <li>Согните ноги в коленях и поставьте стопы на пол по ширине таза.</li>
+              <li>Не слишком близко к тазу.</li>
+              <li>Заведите прямые руки назад и коснитесь тыльной стороной кисти пола.</li>
+              <li>С выдохом поднимите корпус, округляя позвоночник, и коснитесь ладонями стоп.</li>
+              <li>Затем плавно без падения опуститесь на пол, заведя руки за голову, касаясь ими пола.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col">25</div>
+      <div class="col">0 кг.</div>
+    </div>
+
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText8" aria-expanded="false"
+                aria-controls="collapseText8"><%= t('activerecord.attributes.batman.book') %>
+        </button>
+        <div class="collapse my-2" id="collapseText8">
+          <span>
+            <%= image_tag('Книжка.jpeg') %>
+            <ul>
+              <li>Садитесь на край лавки.</li>
+              <li>Сведите ноги вместе и выставите вперед со слегка согнутыми коленями.</li>
+              <li>Руками упритесь в край скамьи и отклоните корпус назад.</li>
+              <li>Поднимайте ноги, сгибайте их в коленях и подтягивайте к себе.</li>
+              <li>Одновременно подавайте корпус вперед (грудь движется на встречу коленям).</li>
+              <li>Сделайте паузу на 1 секунду на выдохе, после чего вернитесь в исходную позицию.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col">25</div>
+      <div class="col">0 кг.</div>
+    </div>
+
+    <div class="row row-cols-2 my-5">
+      <div class="col left">
+        <%= link_to t('global.button.fail'), user_update_spider_path(@user, @spider, complete_training: 'fail'), method: :put,
+          class: 'btn btn-danger btn-lg'%></div>
+
+      <div class="col right"><%= link_to t('global.button.complete'), user_update_spider_path(@user, @spider, complete_training: 'friday'), method: :put,
+        class: 'btn btn-success btn-lg'%></div>
+    </div>
+  </div>

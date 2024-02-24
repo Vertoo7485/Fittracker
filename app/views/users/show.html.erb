@@ -93,4 +93,58 @@
       </article>
     <% end %>
   </div>
+
+  <div>
+    <% @batmen.each do |batman| %>
+      <article>
+        <p class="mt-2">
+          <strong><%= t('activerecord.attributes.models.batman') + " от #{batman.created_at.strftime('%d-%m-%Y')}"%></strong>
+        </p>
+        <p>
+          <%= link_to t('global.button.show'), user_batman_path(@user, batman), 
+            class: 'btn btn-primary btn-sm' %>
+          <%= link_to t('global.button.edit'), edit_user_batman_path(@user, batman), 
+            class: 'btn btn-warning btn-sm' %>
+          <%= link_to t('global.button.delete'), user_batman_path(@user, batman), 
+            class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
+        </p>
+      </article>
+    <% end %>
+  </div>
+
+  <div>
+    <% @wolverines.each do |wolverine| %>
+      <article>
+        <p class="mt-2">
+          <strong><%= t('activerecord.attributes.models.wolverine') + " от #{wolverine.created_at.strftime('%d-%m-%Y')}"%></strong>
+        </p>
+        <p>
+          <%= link_to t('global.button.show'), user_wolverine_path(@user, wolverine), 
+            class: 'btn btn-primary btn-sm' %>
+          <%= link_to t('global.button.edit'), edit_user_wolverine_path(@user, wolverine), 
+            class: 'btn btn-warning btn-sm' %>
+          <%= link_to t('global.button.delete'), user_wolverine_path(@user, wolverine), 
+            class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
+        </p>
+      </article>
+    <% end %>
+  </div>
+
+  <div>
+    <% @spiders.each do |spider| %>
+      <article>
+        <p class="mt-2">
+          <strong><%= t('activerecord.attributes.models.spider') + " от #{spider.created_at.strftime('%d-%m-%Y')}"%></strong>
+        </p>
+        <p>
+          <%= link_to t('global.button.show'), user_spider_path(@user, spider), 
+            class: 'btn btn-primary btn-sm' %>
+          <%= link_to t('global.button.edit'), edit_user_spider_path(@user, spider), 
+            class: 'btn btn-warning btn-sm' %>
+          <%= link_to t('global.button.delete'), user_spider_path(@user, spider), 
+            class: 'btn btn-danger btn-sm', data: {method: :delete, confirm: "Are you sure?"} %>
+        </p>
+      </article>
+    <% end %>
+  </div>
 </body>

@@ -1,6 +1,30 @@
 en:
   activerecord:
     attributes:
+      batman:
+        barbell_bench_press: Barbell bench press
+        incline_dumbbell_press: Incline dumbbell press
+        push_ups_on_bars: Push-ups on bars
+        overhead_press: Overhead press
+        barbell_pull_to_chin: Barbell pull to chin
+        dumbbells_through_the_side: Dumbbells through the side
+        french_bench_press: French bench press
+        deadlift: Deadlift
+        pull_ups: Pull-ups
+        bent_over_barbell_pull: Bent over barbell pull
+        vertical_pull_block: Vertical pull block
+        horizontal_pull_block: Horizontal pull block
+        barbell_forearm_curls: Barbell forearm curls
+        lifting_dumbbells_in_scott: Lifting dumbbells in scott
+        incline_dumbbell_mahi: Incline dumbbell mahi
+        seated_leg_extension: Seated leg extension
+        squats: Squats
+        leg_press: Leg press
+        lunges: Lunges
+        lying_leg_flexion: Lying leg flexion
+        standing_calf_raises: Standing calf raises
+        sitap: Sitap
+        book: Book
       photo:
         images: Upload 4 photos!
       crossfit:

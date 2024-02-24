@@ -1,0 +1,601 @@
+<%= render 'shared/errors', object: @batman %>
+<%= form_with model: [@user, @batman] do |f| %>
+
+<h4 class="mb-4 center"><%= t('views.help') %></h4> 
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText"><%= f.label :barbell_bench_press %>
+      </button>
+      <div class="collapse my-2" id="collapseText">
+        <span>
+          <%= image_tag('Жим лежа.jpeg') %>
+          <ul>
+            <li>Лягте на скамью, поставив ступни на пол и согнув колени.</li>
+            <li>Держите спину прямо, голову вверх.</li>
+            <li>Держите штангу перед грудью.</li>
+            <li>Сожмите лопатки вместе.</li>
+            <li>Опускайте штангу вниз, пока она не коснется верхней части груди.</li>
+            <li>Сделайте паузу, затем снова поднимите штангу.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :barbell_bench_press, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText1" aria-expanded="false"
+                aria-controls="collapseText1"><%= f.label :incline_dumbbell_press %>
+      </button>
+      <div class="collapse my-2" id="collapseText1">
+        <span>
+          <%= image_tag('жим гантелей лежа на наклонной скамье.jpg') %>
+          <ul>
+            <li>Берём гантели в руки.</li>
+            <li>Ложимся на скамью под углом 30° и прижимаемся к ней лопатками.</li>
+            <li>Грудь выводим немного вперёд, а плечи фиксируем.</li>
+            <li>Ставим ноги на пол и плотно упираемся всей подошвой.</li>
+            <li>Располагаем гантели чуть шире плеч, снаряды находятся над ключицами.</li>
+            <li>Лопатки, голова и таз прижаты к скамье.</li>
+            <li>На вдохе медленно опускаем гантели к середине груди до угла 90° в локтях, сводя лопатки вместе.</li>
+            <li>Не нужно опускать гантели слишком низко.</li>
+            <li>На выдохе мощно поднимаем гантели в верхнюю точку.</li>
+            <li>Одна рука не должна опережать другую.</li>
+            <li>Движение гантелей идёт до полного выпрямления рук.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :incline_dumbbell_press, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText2" aria-expanded="false"
+                aria-controls="collapseText2"><%= f.label :push_ups_on_bars %>
+      </button>
+      <div class="collapse my-2" id="collapseText2">
+        <span>
+          <%= image_tag('Отжимания на брусьях.jpeg') %>
+          <ul>
+            <li>Запрыгните на брусья и опустите плечи.</li>
+            <li>Следите, чтобы плечи не поднимались на протяжении всего упражнения.</li>
+            <li>Выпрямите руки, но не блокируйте локтевой сустав.</li>
+            <li>Опуститесь вниз до параллели плеч с полом.</li>
+            <li>Следите, чтобы локти уходили назад, а не в стороны.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :push_ups_on_bars, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+<div class="my-3 mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText3" aria-expanded="false"
+                aria-controls="collapseText3"><%= f.label :overhead_press %>
+      </button>
+      <div class="collapse my-2" id="collapseText3">
+        <span>
+          <%= image_tag('Жим штанги над головой.jpeg') %>
+          <ul>
+            <li>Возьмите штангу хватом на ширине плеч.</li>
+            <li>Локти направлены немного вперёд.</li>
+            <li>Сведите лопатки вместе и опустите их вниз, чтобы придать жёсткости спине.</li>
+            <li>Поясница с лёгким прогибом.</li>
+            <li>На выдохе выпрямляйте руки, поднимая штангу над головой.</li>
+            <li>На вдохе плавно опускайте штангу вниз и сгибайте руки в локтях.</li>
+            <li>Поднимайте штангу только за счёт рук, без толчка ногами и раскачки корпуса.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :overhead_press, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4"><%= f.label :barbell_pull_to_chin %>
+      </button>
+      <div class="collapse my-2" id="collapseText4">
+        <span>
+         <%= image_tag('Тяга штанги к подбородку.jpeg') %>
+        <ul>
+          <li>Держите штангу верхним хватом (промежуток между ладонями немного меньше ширины плеч) и выровняйтесь.</li>
+          <li>В исходном положении спина прямая и чуть прогнута в пояснице, плечи расправлены, руки в локтях ровные, гриф слегка касается бедер.</li>
+          <li>Вдохните и, задержав дыхание, напрягите дельту и трапецепидную.</li>
+          <li>Разведите локти и потяните их вверх вертикально.</li>
+          <li>Движение «направляют» именно локти, а не предплечья или плечи.</li>
+          <li>Когда вы поднимаете локти вверх, гриф штанги должен двигаться в вертикальной плоскости в длину тела от подбородка до бедер.</li>
+          <li>Не нависайте над грифом, прогибая спину.</li>
+          <li>Держите тело и шею прямо, а подбородок — горизонтально.</li>
+          <li>В верхней точке локти находятся максимально вверху.</li>
+          <li>Дотянувшись до верхней точки, сделайте выдох, остановитесь и еще больше напрягите дельты и трапеции.</li>
+          <li>Медленно опустите гриф в исходное положение.</li>
+        </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :barbell_pull_to_chin, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5"><%= f.label :dumbbells_through_the_side %>
+      </button>
+      <div class="collapse my-2" id="collapseText5">
+        <span>
+            <%= image_tag('Махи гантелей через сторону.jpeg') %>
+            <ul>
+              <li>Встаньте прямо, ноги на ширине плеч.</li>
+              <li>Возьмите гантели и держите их нейтральным хватом, чтобы руки были ладонями друг к другу.</li>
+              <li>Руки в локтях слегка согнуты - этот угол нужно удерживать на всей амплитуде, это очень важно.</li>
+              <li>Гантелями не касаемся друг друга, кисти строго под плечами, но не ближе.</li>
+              <li>Сделайте чуть заметный наклон корпуса вперед ровно настолько, чтобы гантели расположились перед вами.</li>
+              <li>На выдохе начинайте отводить руки в стороны и поднимайте гантели, но не выше уровня плеч.</li>
+              <li>Гантели должны быть параллельны земле, кисти не поворачиваем.</li>
+              <li>В верхней точке мы стараемся поднять именно локти, как в тяге гантелей к подбородку.</li>
+              <li>На вдохе медленно верните гантели в исходное положение, но в нижней точке не касайтесь гантелями друг друга!</li>
+            </ul>
+          </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :dumbbells_through_the_side, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6"><%= f.label :french_bench_press %>
+      </button>
+      <div class="collapse my-2" id="collapseText6">
+        <span>
+          <%= image_tag('Французский жим лежа.jpeg') %>
+          <ul>
+            <li>Лягте на скамью, удерживая штангу у вашей груди.</li>
+            <li>Ступни плотно прижаты к полу.</li>
+            <li>Поднимите штангу над собой, выпрямив руки так, чтобы верхние части рук (плечи) были перпендикулярны корпусу.</li>
+            <li>Затем, согнув локти, опустите штангу ко лбу или слегка за голову.</li>
+            <li>Это исходное положение.</li>
+            <li>Теперь, разгибая локти поднимите штангу вверх к потолку.</li>
+            <li>В конце повторения оставьте локти слегка согнутыми, чтобы сохранить напряжение на ваших трицепсах.</li>
+            <li>После короткой паузы опустите штангу в исходное положение. </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :french_bench_press, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText7" aria-expanded="false"
+                aria-controls="collapseText7"><%= f.label :deadlift %>
+      </button>
+      <div class="collapse my-2" id="collapseText7">
+        <span>
+            <%= image_tag('Становая тяга.jpeg') %>
+            <ul>
+              <li>Встаньте перед штангой, ноги на ширине плеч, пятки прижаты к полу.</li>
+              <li>Согните ноги в коленях и разверните бёдра, отведя таз назад и приблизив продольную ось штанги к себе.</li>
+              <li>Возьмите штангу руками на ширине бёдер, ладони должны быть обращены к вам, хват закрытый.</li>
+              <li>Поднимите штангу, выпрямив ноги и одновременно потянув снаряд к верхней части бёдер.</li>
+              <li>Задержитесь в верхней точке на несколько секунд и медленно опустите штангу на пол, также сгибая ноги и отводя таз назад.</li>
+            </ul>
+          </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :deadlift, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText8" aria-expanded="false"
+                aria-controls="collapseText8"><%= f.label :pull_ups %>
+      </button>
+      <div class="collapse my-2" id="collapseText8">
+        <span>
+          <%= image_tag('Подтягивания.jpeg') %>
+          <ul>
+            <li>Подпрыгните и ухватитесь за перекладину широким хватом.</li>
+            <li>Повисните на перекладине.</li>
+            <li>Сделайте глубокий вдох и, задержав дыхание, напрягите широчайшие и подтянитесь вверх.</li>
+            <li>Подтягивайте себя вверх до тех пор, пока подбородок не окажется на одном уровне с перекладиной.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :pull_ups, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText9" aria-expanded="false"
+                aria-controls="collapseText9"><%= f.label :bent_over_barbell_pull %>
+      </button>
+      <div class="collapse my-2" id="collapseText9">
+        <span>
+          <%= image_tag('Тяга штанги к поясу в наклоне.jpeg') %>
+          <ul>
+            <li>Встаем перед штангой.</li>
+            <li>Беремся за нее широким хватом (шире, чем плечи) и снимаем со стоек.</li>
+            <li>Хват – прямой (пальцы к себе, кулаки наружу).</li>
+            <li>В пояснице естественный прогиб, спина прямая, ноги чуть согнуты в коленях.</li>
+            <li>Наклоняем туловище вперед, стараемся достичь положения близкого к параллели с полом.</li>
+            <li>Равновесие держится за счет того, что во время наклона вы сгибаете колени, отводя таз назад.</li>
+            <li>Фиксируем корпус в этом положении.</li>
+            <li>Теперь тянем штангу к животу (к нижней части), максимально сводя лопатки вместе.</li>
+            <li>Тяга грифа осуществляется мышцами спины, а не рук.</li>
+            <li>Удерживаем в верхней точке 1 секунду и плавно опускаем снаряд назад, разводя лопатки в стороны.</li>
+            <li>Стараемся не менять положение спины. Просто опускаем руки максимально вниз за счет разведения лопаток.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :bent_over_barbell_pull, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="my-3 mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText10" aria-expanded="false"
+              aria-controls="collapseText10"><%= f.label :vertical_pull_block %>
+      </button>
+      <div class="collapse my-2" id="collapseText10">
+        <span>
+          <%= image_tag('Вертикальная тяга блока.jpeg') %>
+          <ul>
+            <li>Сядьте на тренажер так, чтобы рукоятки тренажера были прямо над вашими плечами.</li>
+            <li>Ноги зафиксируйте упором, чтобы при поднятии рук таз не отрывался.</li>
+            <li>Возьмите рукоятку хватом шире плеч.</li>
+            <li>Втяните живот и напрягите пресс, слегка отклонитесь назад.</li>
+            <li>Сведите лопатки вместе, опустите их вниз и плавно начинайте тянуть вниз локти.</li>
+            <li>При правильной ширине хвата в конечной точке локти практически коснутся корпуса.</li>
+            <li>Если локти очень далеко от вашей талии, значит хват слишком широкий.</li>
+            <li>Задержитесь на секунду в нижней точке, затем на вдохе медленно возвращайтесь в исходное положение.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :vertical_pull_block, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-dark">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText11" aria-expanded="false"
+                aria-controls="collapseText11"><%= f.label :horizontal_pull_block %>
+      </button>
+      <div class="collapse my-2" id="collapseText11"></div>
+    </div>
+
+    <div class="collapse my-2" id="collapseText11">
+        <span>
+          <%= image_tag('Горизонтальная тяга блока.jpeg') %>
+          <ul>
+            <li>Прицепите V-образную рукоять на нижний блок, сядьте на лавку и прижмите ноги к платформам для стоп.</li>
+            <li>Возьмитесь за рукоять, расправьте и опустите плечи, выпрямите спину.</li>
+            <li>С выдохом согните руки в локтях, сведите лопатки и подтяните рукоятку к животу.</li>
+            <li>Зафиксируйте на одну секунду.</li>
+            <li>Со вдохом плавно и под контролем верните руки в исходное положение.</li>
+          </ul>
+        </span>
+      </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :horizontal_pull_block, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText12" aria-expanded="false"
+                aria-controls="collapseText12"><%= f.label :barbell_forearm_curls %>
+      </button>
+      <div class="collapse my-2" id="collapseText12">
+        <span>
+          <%= image_tag('Сгибания предплечий со штангой.jpeg') %>
+          <ul>
+            <li>Сделайте глубокий вдох, задержите дыхание и, сгибая руки в локтях, поднимите штангу до уровня верха груди.</li>
+            <li>Во время подъема штанги не двигайте локтями, держите их по бокам туловища и не сгибайте руки в запястьях.</li>
+            <li>Как только кисти окажутся на уровне верха груди, сделайте паузу, выдохните и еще сильнее напрягите бицепсы.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :barbell_forearm_curls, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText13" aria-expanded="false"
+                aria-controls="collapseText13"><%= f.label :lifting_dumbbells_in_scott %>
+        </button>
+        <div class="collapse my-2" id="collapseText13">
+          <span>
+          <%= image_tag('Бицепс в Скотте гантелями.jpeg') %>
+          <ul>
+            <li>Возь­ми­те ган­тель нуж­но­го ве­са и по­дой­ди­те к скамье Скот­та.</li>
+            <li>Рас­по­ложи­те ее на вер­хней час­ти нак­лонной скамьи, рас­пря­мив прак­ти­чес­ки до кон­ца.</li>
+            <li>Это Ва­ша ис­ходная по­зиция.</li>
+            <li>На вы­дохе, за счет сок­ра­щения двуг­ла­вой мыш­цы пле­ча, под­ни­мите ган­тель вверх до уров­ня плеч.</li>
+            <li>За­дер­жи­тесь на 1-2 сче­та в вер­хней точ­ке тра­ек­то­рии и ста­тичес­ки прож­ми­те би­цепс.</li>
+            <li>Мед­ленно и под­кон­троль­но опус­ти­те ру­ку в стартовую позицию.</li>
+          </ul>
+        </span>
+        </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :lifting_dumbbells_in_scott, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText14" aria-expanded="false"
+                aria-controls="collapseText14"><%= f.label :incline_dumbbell_mahi %>
+      </button>
+      <div class="collapse my-2" id="collapseText14">
+        <span>
+          <%= image_tag('Махи гантелей в наклоне.jpeg') %>
+          <ul>
+            <li>Возьмите гантели в обе руки.</li>
+            <li>Хват нейтральный, ладони смотрят в направлении туловища.</li>
+            <li>Ноги стоят на ширине плеч, чуть согнутые в коленях.</li>
+            <li>Ступни параллельно друг другу.</li>
+            <li>Отводим таз назад, а туловище наклоняем вперед.</li>
+            <li>Спина прямая, трапеция растянута, плечи опущены вниз.</li>
+            <li>Голова приподнята, взгляд направлен вперед.</li>
+            <li>На выдохе поднимаем локти вверх разводя их в стороны.</li>
+            <li>При этом лопатки остаются неподвижными, работаем только дельтами.</li>
+            <li>Задержитесь в верхней точке на несколько секунд, и на вдохе верните локти в исходное положение.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :incline_dumbbell_mahi, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText15" aria-expanded="false"
+                aria-controls="collapseText15"><%= f.label :seated_leg_extension %>
+      </button>
+      <div class="collapse my-2" id="collapseText15">
+        <span>
+          <%= image_tag('Разгибания голени сидя.jpeg') %>
+          <ul>
+            <li>Сядьте в тренажер, прижмитесь спиной к его спинке и заведите ноги за валик.</li>
+            <li>Руками возьмитесь за специальные ручки по бокам от сиденья.</li>
+            <li>Носки стоп поднимите вверх.</li>
+            <li>На выдохе плавно разогните ноги в коленях.</li>
+            <li>Максимально напрягите квадрицепсы в верхней точке, задержитесь в таком положении на 1–2 секунды.</li>
+            <li>На вдохе подконтрольно опустите ноги вниз, но не сгибайте их до конца.</li>
+            <li>То есть даже в нижней точке квадрицепсы должны быть напряжены.</li>
+            <li>Следите за ощущениями в коленях, не бросайте резко ноги вниз.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :seated_leg_extension, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText16" aria-expanded="false"
+                aria-controls="collapseText16"><%= f.label :squats %>
+      </button>
+      <div class="collapse my-2" id="collapseText16">
+        <span>
+          <%= image_tag('Приседания со штангой.jpeg') %>
+          <ul>
+            <li>Возьмите гриф прямым закрытым хватом за плечами</li>
+            <li>Спину держите прямо, лопатки сведите.</li>
+            <li>После снятия штанги со стойки и перед приседом нужно максимально сконцентрироваться, сохраняя равновесие.</li>
+            <li>Поставьте стопы шире плеч и слегка разведите носки в стороны.</li>
+            <li>На вдохе отводите таз назад и разводите колени в стороны.</li>
+            <li>Спина сохраняет естественное положение.</li>
+            <li>Со стороны это выглядит так, будто вы садитесь на невидимый стул.</li>
+            <li>На выдохе поднимайтесь из максимальной точки приседа вверх.</li>
+            <li>Сохраняйте спину ровной, поднимая тело за счет выпрямления ног.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :squats, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText17" aria-expanded="false"
+                aria-controls="collapseText17"><%= f.label :leg_press %>
+      </button>
+      <div class="collapse my-2" id="collapseText17">
+        <span>
+          <%= image_tag('Жим ногами.jpeg') %>
+          <ul>
+            <li>Займите исходную позицию: стопы ставят на платформу, поясницу прижимают к скамье.</li>
+            <li>Убрерите фиксаторы отягощения с помощью рычагов.</li>
+            <li>На вдохе опустите платформу, согнув ноги в коленях.</li>
+            <li>В нижней точке ноги образуют угол 90 градусов.</li>
+            <li>На выдохе вытолкните ногами платформу вверх.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :leg_press, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText18" aria-expanded="false"
+                aria-controls="collapseText18"><%= f.label :lunges %>
+      </button>
+      <div class="collapse my-2" id="collapseText18">
+        <span>
+          <%= image_tag('Выпады.jpeg') %>
+          <ul>
+            <li>Возьмите пару гантелей, встаньте прямо, слегка согнув ноги в коленях.</li>
+            <li>Опустите руки с гантелями вниз по бокам.</li>
+            <li>Теперь Вы в исходном положении.</li>
+            <li>Сделайте шаг вперед левой ногой сохраняя равновесие, и присядьте вниз с помощью мышц бедра.</li>
+            <li>Держите торс прямо, сохраняя напряжение.</li>
+            <li>Не позволяйте колену левой ноги заходить за линию пальцев левой ноги.</li>
+            <li>Вернитесь в исходное положение, оттолкнувшись левой ногой.</li>
+            <li>Повторите движение с правой ноги.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :lunges, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText19" aria-expanded="false"
+                aria-controls="collapseText19"><%= f.label :lying_leg_flexion %>
+      </button>
+      <div class="collapse my-2" id="collapseText19">
+        <span>
+          <%= image_tag('Сгибание голени лежа.jpeg') %>
+          <ul>
+            <li>Лягте на тренажер и заведите ноги под валик.</li>
+            <li>Руками возьмитесь за специальные ручки или за края скамьи.</li>
+            <li>На выдохе согните голени, стараясь максимально приблизить валик к ягодицам.</li>
+            <li>Передняя поверхность бедер при этом прижата к скамье.</li>
+            <li>На вдохе разгибайте голени, аккуратно опуская вес вниз.</li>
+            <li>Полностью выпрямлять колени и расслаблять бицепс бедра в нижней точке не нужно.</li>
+          </ul>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :lying_leg_flexion, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <div class="col-sm-2 col-form-label">
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText20" aria-expanded="false"
+                aria-controls="collapseText20"><%= f.label :standing_calf_raises %>
+      </button>
+      <div class="collapse my-2" id="collapseText20">
+        <span>
+            <%= image_tag('Подъемы на носки стоя.jpeg') %>
+            <ul>
+              <li>Возьмите гантели в руки.</li>
+              <li>Полностью выпрямите ноги и торс.</li>
+              <li>Пятки, таз и плечи находятся в одной вертикальной плоскости.</li>
+              <li>Разгибая голеностопный сустав, плавно опуститесь на пятках до тех пор, пока не почувствуете, что ахиллесовы икроножные мышцы максимально растянуты.</li>
+              <li>Вернитесь в исходное положение</li>
+            </ul>
+          </span>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <%= f.text_field :standing_calf_raises, placeholder: t('activerecord.attributes.power.placeholder'),
+       class: 'form-control form-control-lg' %>
+    </div>
+  </div>
+
+  <%= f.submit t('users.global.forms.save'),
+    class: 'btn btn-primary btn-lg' %>
+<% end %>

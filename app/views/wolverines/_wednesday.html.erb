@@ -1,0 +1,197 @@
+<h3 class="my-4 center"><strong><%= t('activerecord.attributes.models.wolverine')%></strong></h3>
+  <div class="container my-4">
+    <div class="row row-cols-4 center">
+      <div class="col"><strong><%= t('views.exercise')%></strong></div>
+      <div class="col"><strong><%= t('views.count_sets')%></strong></div>
+      <div class="col"><strong><%= t('views.count_reps')%></strong></div>
+      <div class="col"><strong><%= t('views.weight')%></strong></div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText" aria-expanded="false"
+                aria-controls="collapseText"><%= t('activerecord.attributes.wolverine.pull_ups') %>
+        </button>
+        <div class="collapse my-2" id="collapseText">
+          <span>
+            <%= image_tag('Подтягивания.jpeg') %>
+            <ul>
+              <li>Подпрыгните и ухватитесь за перекладину широким хватом.</li>
+              <li>Повисните на перекладине.</li>
+              <li>Сделайте глубокий вдох и, задержав дыхание, напрягите широчайшие и подтянитесь вверх.</li>
+              <li>Подтягивайте себя вверх до тех пор, пока подбородок не окажется на одном уровне с перекладиной.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.wednesday_reps %></div>
+      <div class="col"><%= current_wolverine_training.pull_ups.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText1" aria-expanded="false"
+              aria-controls="collapseText1"><%= t('activerecord.attributes.wolverine.incline_dumbbell_row') %>
+        </button>
+        <div class="collapse my-2" id="collapseText1">
+          <span>
+            <%= image_tag('Тяга гантель в наклоне.jpeg') %>
+            <ul>
+              <li>Возьмите гантель так, чтобы гриф был параллелен вашему телу.</li>
+              <li>За счет силы широчайшей мышцы тянем гантель к поясу.</li>
+              <li>Локоть стараемся вести вверх.</li>
+              <li>Позвоночник остается в прямом положении.</li>
+              <li>Задержавшись в верхней точке на 1 секунду, опускаем гантель вниз.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.wednesday_reps %></div>
+      <div class="col"><%= current_wolverine_training.incline_dumbbell_row.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText2" aria-expanded="false"
+              aria-controls="collapseText2"><%= t('activerecord.attributes.wolverine.vertical_pull_block') %>
+        </button>
+        <div class="collapse my-2" id="collapseText2">
+          <span>
+            <%= image_tag('Вертикальная тяга блока.jpeg') %>
+            <ul>
+              <li>Сядьте на тренажер так, чтобы рукоятки тренажера были прямо над вашими плечами.</li>
+              <li>Ноги зафиксируйте упором, чтобы при поднятии рук таз не отрывался.</li>
+              <li>Возьмите рукоятку хватом шире плеч.</li>
+              <li>Втяните живот и напрягите пресс, слегка отклонитесь назад.</li>
+              <li>Сведите лопатки вместе, опустите их вниз и плавно начинайте тянуть вниз локти.</li>
+              <li>При правильной ширине хвата в конечной точке локти практически коснутся корпуса.</li>
+              <li>Если локти очень далеко от вашей талии, значит хват слишком широкий.</li>
+              <li>Задержитесь на секунду в нижней точке, затем на вдохе медленно возвращайтесь в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.wednesday_reps %></div>
+      <div class="col"><%= current_wolverine_training.vertical_pull_block.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseText3" aria-expanded="false"
+              aria-controls="collapseText3"><%= t('activerecord.attributes.wolverine.bent_over_barbell_pull') %>
+        </button>
+          <div class="collapse my-2" id="collapseText3">
+            <span>
+              <%= image_tag('Тяга штанги к поясу в наклоне.jpeg') %>
+              <ul>
+                <li>Встаем перед штангой.</li>
+                <li>Беремся за нее широким хватом (шире, чем плечи) и снимаем со стоек.</li>
+                <li>Хват – прямой (пальцы к себе, кулаки наружу).</li>
+                <li>В пояснице естественный прогиб, спина прямая, ноги чуть согнуты в коленях.</li>
+                <li>Наклоняем туловище вперед, стараемся достичь положения близкого к параллели с полом.</li>
+                <li>Равновесие держится за счет того, что во время наклона вы сгибаете колени, отводя таз назад.</li>
+                <li>Фиксируем корпус в этом положении.</li>
+                <li>Теперь тянем штангу к животу (к нижней части), максимально сводя лопатки вместе.</li>
+                <li>Тяга грифа осуществляется мышцами спины, а не рук.</li>
+                <li>Удерживаем в верхней точке 1 секунду и плавно опускаем снаряд назад, разводя лопатки в стороны.</li>
+                <li>Стараемся не менять положение спины. Просто опускаем руки максимально вниз за счет разведения лопаток.</li>
+              </ul>
+            </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.wednesday_reps %></div>
+      <div class="col"><%= current_wolverine_training.bent_over_barbell_pull.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText4" aria-expanded="false"
+                aria-controls="collapseText4"><%= t('activerecord.attributes.wolverine.hyperextension') %>
+        </button>
+        <div class="collapse my-2" id="collapseText4">
+          <span>
+            <%= image_tag('Гиперэкстензия.jpeg') %>
+            <ul>
+              <li>Отрегулируйте тренажер таким образом, чтобы ваш таз плотно лежал на его подушке.</li>
+              <li>Край подушки в том месте, где сгибается ваш корпус.</li>
+              <li>Задней частью ног упираемся в валики.</li>
+              <li>Нужно лечь так, чтобы валики упирались в ахиллово сухожилие, а не в икры.</li>
+              <li>Руки скрещиваем за головой или на груди.</li>
+              <li>Корпус – абсолютно прямая линия.</li>
+              <li>Доходим до угла в 90 градусов.</li>
+              <li>В случае проблем с позвоночником угол может быть меньше.</li>
+              <li>Возвращаемся назад и разгибаемся так чтобы корпус составлял одну линию с ногами.</li>
+              <li>Задерживаемся в верхней точке на 1–2 секунды.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.wednesday_reps %></div>
+      <div class="col"><%= current_wolverine_training.hyperextension.ceil%> кг.</div>
+    </div>
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText5" aria-expanded="false"
+                aria-controls="collapseText5"><%= t('activerecord.attributes.wolverine.barbell_forearm_curls') %>
+        </button>
+        <div class="collapse my-2" id="collapseText5">
+          <span>
+            <%= image_tag('Сгибания предплечий со штангой.jpeg') %>
+            <ul>
+              <li>Сделайте глубокий вдох, задержите дыхание и, сгибая руки в локтях, поднимите штангу до уровня верха груди.</li>
+              <li>Во время подъема штанги не двигайте локтями, держите их по бокам туловища и не сгибайте руки в запястьях.</li>
+              <li>Как только кисти окажутся на уровне верха груди, сделайте паузу, выдохните и еще сильнее напрягите бицепсы.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.wednesday_reps %></div>
+      <div class="col"><%= current_wolverine_training.barbell_forearm_curls.ceil%> кг.</div>
+    </div>
+
+    <div class="row row-cols-4 my-3 center">
+      <div class="col">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseText6" aria-expanded="false"
+                aria-controls="collapseText6"><%= t('activerecord.attributes.wolverine.incline_dumbbell_mahi') %>
+        </button>
+        <div class="collapse my-2" id="collapseText6">
+          <span>
+            <%= image_tag('Махи гантелей в наклоне.jpeg') %>
+            <ul>
+              <li>Возьмите гантели в обе руки.</li>
+              <li>Хват нейтральный, ладони смотрят в направлении туловища.</li>
+              <li>Ноги стоят на ширине плеч, чуть согнутые в коленях.</li>
+              <li>Ступни параллельно друг другу.</li>
+              <li>Отводим таз назад, а туловище наклоняем вперед.</li>
+              <li>Спина прямая, трапеция растянута, плечи опущены вниз.</li>
+              <li>Голова приподнята, взгляд направлен вперед.</li>
+              <li>На выдохе поднимаем локти вверх разводя их в стороны.</li>
+              <li>При этом лопатки остаются неподвижными, работаем только дельтами.</li>
+              <li>Задержитесь в верхней точке на несколько секунд, и на вдохе верните локти в исходное положение.</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="col">4</div>
+      <div class="col"><%= current_wolverine_training.wednesday_reps %></div>
+      <div class="col"><%= current_wolverine_training.incline_dumbbell_mahi.ceil%> кг.</div>
+    </div>
+
+    <div class="row row-cols-2 my-5">
+      <div class="col left">
+        <%= link_to t('global.button.fail'), user_update_wolverine_path(@user, @wolverine, complete_training: 'fail'), method: :put,
+          class: 'btn btn-danger btn-lg'%></div>
+
+      <div class="col right"><%= link_to t('global.button.complete'), user_update_wolverine_path(@user, @wolverine, complete_training: 'wednesday'), method: :put,
+        class: 'btn btn-success btn-lg'%></div>
+    </div>
+    
+

@@ -15,6 +15,9 @@ class User < ApplicationRecord
   has_many :powers, dependent: :destroy
   has_many :crossfits, dependent: :destroy
   has_many :gains, dependent: :destroy
+  has_many :batmen, dependent: :destroy
+  has_many :wolverines, dependent: :destroy
+  has_many :spiders, dependent: :destroy
 
   has_secure_password validations: false
 
